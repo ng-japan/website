@@ -1,3 +1,1 @@
-# ng-japan.github.io
-# ng-japan.github.io
-# ng-japan
+# ng-japan!
