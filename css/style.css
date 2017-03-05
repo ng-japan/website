@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+/* --------------------------------
+ * base
+ * -------------------------------- */
+html {
+  font-size: 62.5%;
+}
+body {
+  color: #333;
+  font-size: 1.6rem;
+  text-align: center;
+  font-family: Ubuntu, "Hiragino Kaku Gothic ProN",  Meiryo,  sans-serif;
+  font-weight: 400;
+  background: #fff url("../images/bg.png") repeat top center;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+a:link, a:visited, a:hover, a:active {
+  color: #d03c56;
+  text-decoration: none;
+}
+
+
+/* --------------------------------
+ * header
+ * -------------------------------- */
+.header {
+  padding: 4.0rem 0 10.0rem;
+  text-align: center;
+  font-weight: bold;
+}
+.title {
+  font-size: 2.4rem;
+  margin: 16.0rem auto 4.0rem;
+}
+.logo-img {
+  width: 118px;
+  margin-top: -1px;
+  margin-bottom: 3.0rem;
+}
+.logo-text {
+  font-size: 3.4rem;
+  margin-bottom: 3.0rem;
+}
+
+/* --------------------------------
+ * footer
+ * -------------------------------- */
+.footer {
+  font-size: 1.2rem;
+  padding: 2.0rem 0;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
