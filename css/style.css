@@ -12,7 +12,7 @@ body {
   text-align: center;
   font-family: Ubuntu, "Hiragino Kaku Gothic ProN",  Meiryo,  sans-serif;
   font-weight: 400;
-  background: #fff url("../images/bg.png") repeat top center;
+  background: #fff url("../images/bg.png") repeat center center;
 }
 *, *::before, *::after {
   box-sizing: border-box;
@@ -27,22 +27,29 @@ a:link, a:visited, a:hover, a:active {
  * header
  * -------------------------------- */
 .header {
-  padding: 4.0rem 0 10.0rem;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   font-weight: bold;
 }
 .title {
   font-size: 2.4rem;
-  margin: 16.0rem auto 4.0rem;
 }
 .logo-img {
   width: 118px;
-  margin-top: -1px;
+  margin-top: 2.0rem;
   margin-bottom: 3.0rem;
+  user-select: none;
 }
 .logo-text {
   font-size: 3.4rem;
   margin-bottom: 3.0rem;
+}
+.register-link {
+  margin-top: 4.0rem;
 }
 
 /* --------------------------------
