@@ -40,7 +40,8 @@ a:link, a:visited, a:hover, a:active {
 }
 .logo-img {
   width: 118px;
-  margin-bottom: 3.0rem;
+  margin-top: 2.0rem;
+  margin-bottom: 2.0rem;
   user-select: none;
 }
 .logo-text {
@@ -49,6 +50,44 @@ a:link, a:visited, a:hover, a:active {
 }
 .register-link {
   margin-top: 4.0rem;
+  display: inline-block;
+  padding: 13px 22px;
+  border: 2px solid  #d03c56;
+  border-radius: 5px;
+  background-color: rgba(255,255,255,.6);
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  transition: color .2s ease-in-out;
+}
+.register-link:hover {
+  color: #fff
+}
+.register-link::before,
+.register-link::after {
+  content: '';
+  display: block;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+}
+.register-link::before {
+  background: #e23030;
+  left: -100%;
+  transition: left .1s linear;
+}
+.register-link:hover::before {
+  left: 0;
+}
+.register-link::after {
+  background: #b52c2d;
+  right: -100%;
+  transition: right .1s linear;
+}
+.register-link:hover::after {
+  right: 0;
 }
 
 /* --------------------------------
