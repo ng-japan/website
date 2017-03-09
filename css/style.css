@@ -13,6 +13,13 @@ body {
   font-family: Ubuntu, "Hiragino Kaku Gothic ProN",  Meiryo,  sans-serif;
   font-weight: 400;
   background: #fff url("../images/bg.png") repeat center center;
+
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 *, *::before, *::after {
   box-sizing: border-box;
@@ -27,13 +34,8 @@ a:link, a:visited, a:hover, a:active {
  * header
  * -------------------------------- */
 .header {
-  display: flex;
-  height: 100vh;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   font-weight: bold;
+  margin-top: 100px;
 }
 .title {
   font-size: 2.4rem;
@@ -96,9 +98,7 @@ a:link, a:visited, a:hover, a:active {
 .footer {
   font-size: 1.2rem;
   padding: 2.0rem 0;
-  width: 100%;
-  position: fixed;
-  bottom: 0;
+  margin-top: 50px;
 }
 .share-buttons {
   text-align: center;
