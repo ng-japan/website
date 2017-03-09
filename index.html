@@ -16,6 +16,17 @@
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Ubuntu:400,700'>
 </head>
 <body>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.8";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+  <script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+
   <header class="header">
     <div class="title">
       <img src="images/logo.png" alt="ng-japan" class="logo-img">
@@ -25,7 +36,12 @@
     <a href="https://goo.gl/forms/gIJNtcRReB1J0IAr2" target="_blank" class="register-link">Call for Speakers</a>
   </header>
   <footer class="footer">
-    &copy; 2017 Angular Japan User Group
+    <div class="share-buttons">
+      <a href="https://twitter.com/share" class="twitter-share-button" data-hashtags="ng_jp">Tweet</a>
+      <div class="fb-share-button" data-href="http://ngjapan.org" data-layout="button" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fngjapan.org%2F&amp;src=sdkpreparse">シェア</a></div>
+      <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="basic" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a>
+    </div>
+    <p>&copy; 2017 Angular Japan User Group</p>
   </footer>
 </body>
 </html>
