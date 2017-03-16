@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+/* --------------------------------
+ * base
+ * -------------------------------- */
+html {
+  font-size: 62.5%;
+}
+body {
+  color: #333;
+  font-size: 1.6rem;
+  text-align: center;
+  font-family: Ubuntu, "Hiragino Kaku Gothic ProN",  Meiryo,  sans-serif;
+  font-weight: 400;
+  background: #fff url("../images/bg.png") repeat center center;
+
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+a:link, a:visited, a:hover, a:active {
+  color: #d03c56;
+  text-decoration: none;
+}
+
+
+/* --------------------------------
+ * header
+ * -------------------------------- */
+.header {
+  font-weight: bold;
+  margin-top: 100px;
+}
+.title {
+  font-size: 2.4rem;
+}
+.logo-img {
+  width: 118px;
+  margin-top: 2.0rem;
+  margin-bottom: 2.0rem;
+  user-select: none;
+}
+.logo-text {
+  font-size: 3.4rem;
+  margin-bottom: 3.0rem;
+}
+.register-link {
+  margin-top: 4.0rem;
+  display: inline-block;
+  padding: 13px 22px;
+  border: 2px solid  #d03c56;
+  border-radius: 5px;
+  background-color: rgba(255,255,255,.6);
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  transition: color .2s ease-in-out;
+}
+.register-link:hover {
+  color: #fff
+}
+.register-link::before,
+.register-link::after {
+  content: '';
+  display: block;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+}
+.register-link::before {
+  background: #e23030;
+  left: -100%;
+  transition: left .1s linear;
+}
+.register-link:hover::before {
+  left: 0;
+}
+.register-link::after {
+  background: #b52c2d;
+  right: -100%;
+  transition: right .1s linear;
+}
+.register-link:hover::after {
+  right: 0;
+}
+
+/* --------------------------------
+ * footer
+ * -------------------------------- */
+.footer {
+  font-size: 1.2rem;
+  padding: 2.0rem 0;
+  margin-top: 50px;
+}
+.share-buttons {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.share-buttons > * {
+  display: inline-block;
+  margin: 0 4px;
+  vertical-align: top;
+}
