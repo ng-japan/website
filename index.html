@@ -30,11 +30,19 @@
   <header id="header">
     <div class="eyecatch">
       <img src="images/logo.png" alt="ng-japan" class="eyecatch__img">
-      <h1 class="eyecatch__title">ng-japan 2017</h1>
+      <h1 class="title">ng-japan 2017</h1>
       <p class="eyecatch__description">2017-06-17 Tokyo, Japan</p>
     </div>
     <a href="https://goo.gl/forms/gIJNtcRReB1J0IAr2" target="_blank" class="register-btn">Call for Speakers</a>
   </header>
+  <section id="location">
+    <h2 class="title">location</h2>
+    <p class="location__info">
+      東京都港区港南 2-16-3 品川グランドセントラルタワー<br>
+      <a href="https://www.microsoft.com/ja-jp/mscorp/branch/sgt.aspx" target="_blank" rel="noreferrer noopener">日本マイクロソフト株式会社</a>
+    </p>
+    <iframe id="js-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3243.044559826947!2d139.7382424152574!3d35.626627980207004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188a5b118724df%3A0x824b080b86c84141!2z44CSMTA4LTAwNzUg5p2x5Lqs6YO95riv5Yy65riv5Y2X77yS5LiB55uu77yR77yW4oiS77yUIOWTgeW3neOCsOODqeODs-ODieOCu-ODs-ODiOODqeODq-OCv-ODr-ODvA!5e0!3m2!1sja!2sjp!4v1490275155880" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </section>
   <footer id="footer">
     <div class="share-buttons">
       <a href="https://twitter.com/share" class="twitter-share-button" data-via="ng_japan" data-hashtags="ng_jp">Tweet</a>
@@ -43,6 +51,32 @@
     </div>
     <p>&copy; 2017 Angular Japan User Group</p>
   </footer>
-  <script>if (atob) console.log(atob("QENvbmZlcmVuY2UoewogIHBsYWNlOiAndG9reW8tamFwYW4nLAogIHRlbXBsYXRlOiBgPGgxPkhlbGxvIEFuZ3VsYXIhITwvaDE+YAp9KQpjbGFzcyBOZ0NvbmYgeyB5ZWFyID0gMjAxNzsgfQ=="));</script>
+  <script>
+    var timer;
+    var map = document.getElementById('js-map');
+    var noScrollClass = 'no-scroll';
+    var supportsPassive = false;
+
+    try {
+      var opts = Object.defineProperty({}, 'passive', {
+        get: function() { supportsPassive = true; }
+      });
+      window.addEventListener("test", null, opts);
+    } catch (e) {}
+
+    window.addEventListener('scroll', function() {
+      clearTimeout(timer);
+      if(!map.classList.contains(noScrollClass)) {
+        map.classList.add(noScrollClass);
+      }
+      timer = setTimeout(function(){
+        map.classList.remove(noScrollClass)
+      }, 200);
+    }, supportsPassive ? { passive: true } : false);
+
+    if (atob) {
+      console.log(atob("QENvbmZlcmVuY2UoewogIHBsYWNlOiAndG9reW8tamFwYW4nLAogIHRlbXBsYXRlOiBgPGgxPkhlbGxvIEFuZ3VsYXIhITwvaDE+YAp9KQpjbGFzcyBOZ0NvbmYgeyB5ZWFyID0gMjAxNzsgfQ=="));
+    }
+  </script>
 </body>
 </html>
