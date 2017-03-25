@@ -99,6 +99,64 @@ a:link, a:visited, a:hover, a:active {
 
 
 /* --------------------------------
+ * speaker
+ * -------------------------------- */
+#speakers {
+  margin-bottom: 8.0rem;
+}
+
+.speaker-list {
+  margin: 5.0rem auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+.speaker-list__item {
+  flex: 0 0 200px;
+  height: 230px;
+  position: relative;
+  box-shadow: 0 0 5px rgba(0,0,0,.3);
+  margin-bottom: 5.0rem;
+}
+
+.speaker-list__item a:link,
+.speaker-list__item a:visited,
+.speaker-list__item a:hover,
+.speaker-list__item a:active {
+  color: inherit;
+}
+
+.speaker-list__img {
+  width: 100%;
+}
+
+.speaker-list__info {
+  position: absolute;
+  background-color: #fff;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+}
+
+.speaker-list__name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.speaker-list__org {
+  font-size: 0.9em;
+}
+
+.more {
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+/* --------------------------------
  * location
  * -------------------------------- */
 .no-scroll {
