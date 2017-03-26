@@ -12,14 +12,7 @@ body {
   text-align: center;
   font-family: Ubuntu, "Hiragino Kaku Gothic ProN",  Meiryo,  sans-serif;
   font-weight: 400;
-  background: #fff url("../images/bg.png") repeat center center;
-
-  display: flex;
-  height: 100vh;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  background: #fff url("../images/bg.png") repeat center 20vh;
 }
 *, *::before, *::after {
   box-sizing: border-box;
@@ -31,27 +24,40 @@ a:link, a:visited, a:hover, a:active {
 
 
 /* --------------------------------
- * header
+ * common
  * -------------------------------- */
-.header {
-  font-weight: bold;
-  margin-top: 100px;
-}
 .title {
-  font-size: 2.4rem;
-}
-.logo-img {
-  width: 118px;
-  margin-top: 2.0rem;
-  margin-bottom: 2.0rem;
-  user-select: none;
-}
-.logo-text {
   font-size: 3.4rem;
   margin-bottom: 3.0rem;
 }
-.register-link {
-  margin-top: 4.0rem;
+
+
+/* --------------------------------
+ * header
+ * -------------------------------- */
+#header {
+  font-weight: bold;
+  max-height: 96vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.eyecatch {
+  margin-top: 20vh;
+  margin-bottom: 12.0rem;
+}
+.eyecatch__img {
+  width: 118px;
+  margin-bottom: 2.5rem;
+  user-select: none;
+}
+.eyecatch__description {
+  font-size: 2.4rem;
+  margin-bottom: 6.0rem;
+}
+
+.register-btn {
   display: inline-block;
   padding: 13px 22px;
   border: 2px solid  #d03c56;
@@ -62,11 +68,11 @@ a:link, a:visited, a:hover, a:active {
   z-index: 0;
   transition: color .2s ease-in-out;
 }
-.register-link:hover {
+.register-btn:hover {
   color: #fff
 }
-.register-link::before,
-.register-link::after {
+.register-btn::before,
+.register-btn::after {
   content: '';
   display: block;
   width: 50%;
@@ -75,31 +81,106 @@ a:link, a:visited, a:hover, a:active {
   z-index: -1;
   top: 0;
 }
-.register-link::before {
+.register-btn::before {
   background: #e23030;
   left: -100%;
   transition: left .1s linear;
 }
-.register-link:hover::before {
+.register-btn:hover::before {
   left: 0;
 }
-.register-link::after {
+.register-btn::after {
   background: #b52c2d;
   right: -100%;
   transition: right .1s linear;
 }
-.register-link:hover::after {
+.register-btn:hover::after {
   right: 0;
 }
+
+
+/* --------------------------------
+ * speaker
+ * -------------------------------- */
+#speakers {
+  margin-bottom: 8.0rem;
+}
+
+.speaker-list {
+  margin: 5.0rem auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+.speaker-list__item {
+  flex: 0 0 200px;
+  height: 230px;
+  position: relative;
+  box-shadow: 0 0 5px rgba(0,0,0,.3);
+  margin: 0 2.0rem 5.0rem;
+}
+
+.speaker-list__item a:link,
+.speaker-list__item a:visited,
+.speaker-list__item a:hover,
+.speaker-list__item a:active {
+  color: inherit;
+}
+
+.speaker-list__img {
+  width: 100%;
+}
+
+.speaker-list__info {
+  position: absolute;
+  background-color: #fff;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+}
+
+.speaker-list__name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.speaker-list__org {
+  font-size: 0.9em;
+}
+
+.more {
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+/* --------------------------------
+ * location
+ * -------------------------------- */
+.no-scroll {
+  pointer-events: none;
+}
+
+.location__info {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 3.0rem;
+  padding: 0 5%;
+}
+
 
 /* --------------------------------
  * footer
  * -------------------------------- */
-.footer {
+#footer {
   font-size: 1.2rem;
   padding: 2.0rem 0;
   margin-top: 50px;
 }
+
 .share-buttons {
   text-align: center;
   margin-bottom: 15px;
