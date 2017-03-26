@@ -12,7 +12,7 @@ body {
   text-align: center;
   font-family: Ubuntu, "Hiragino Kaku Gothic ProN",  Meiryo,  sans-serif;
   font-weight: 400;
-  background: #fff url("../images/bg.png") repeat top center;
+  background: #fff url("../images/bg.png") repeat center 20vh;
 }
 *, *::before, *::after {
   box-sizing: border-box;
@@ -37,15 +37,15 @@ a:link, a:visited, a:hover, a:active {
  * -------------------------------- */
 #header {
   font-weight: bold;
-  height: 96vh;
+  max-height: 96vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
 .eyecatch {
-  margin-bottom: 6.0rem;
+  margin-top: 20vh;
+  margin-bottom: 12.0rem;
 }
 .eyecatch__img {
   width: 118px;
@@ -54,6 +54,7 @@ a:link, a:visited, a:hover, a:active {
 }
 .eyecatch__description {
   font-size: 2.4rem;
+  margin-bottom: 6.0rem;
 }
 
 .register-btn {
