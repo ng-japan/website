@@ -157,6 +157,63 @@ a:link, a:visited, a:hover, a:active {
   font-size: 1.8rem;
 }
 
+
+/* --------------------------------
+ * schedule
+ * -------------------------------- */
+.timetable {
+  margin: 50px auto 100px;
+}
+
+.timetable__room {
+  color: #e23030;
+  font-size: 20px;
+  padding-bottom: 30px;
+}
+
+.timetable__time,
+.timetable__break,
+.session {
+  padding: 10px;
+  vertical-align: top;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.timetable__time {
+  border: 1px solid #000;
+}
+
+.timetable__break {
+  border: 1px solid #000;
+}
+
+.session {
+  border: 1px solid #000;
+  text-align: left;
+}
+
+.session__image {
+  width: 70px;
+  height: 70px;
+  margin-right: 15px;
+  float: left;
+  background: no-repeat center center;
+  background-size: cover;
+}
+
+.session__title {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 5px;
+  margin-bottom: 8px;
+}
+
+.session__speaker {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+
 /* --------------------------------
  * location
  * -------------------------------- */
