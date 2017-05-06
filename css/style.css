@@ -163,32 +163,88 @@ a:link, a:visited, a:hover, a:active {
  * -------------------------------- */
 .timetable {
   margin: 50px auto 100px;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.timetable__rooms {
+  display: flex;
+  padding-left: 72px;
+  margin-bottom: 30px;
 }
 
 .timetable__room {
+  flex: 1 1 auto;
   color: #e23030;
   font-size: 20px;
-  padding-bottom: 30px;
 }
 
-.timetable__time,
-.timetable__break,
-.session {
-  padding: 10px;
-  vertical-align: top;
+.timetable__item,
+.timetable__item--break {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.timetable__item {
+  padding: 20px 0;
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-.timetable__time {
-  border: 1px solid #000;
+.timetable__item + .timetable__item {
+  padding-top: 0;
 }
 
-.timetable__break {
-  border: 1px solid #000;
+.timetable__item--break {
+  padding: 10px 0;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.timetable__time,
+.timetable__content {
+  padding: 0 20px;
+  vertical-align: top;
+}
+
+.timetable__time {
+  flex: 0 0 72px;
+}
+
+.timetable__content {
+  flex: 1 0 40%;
+}
+
+@media (max-width: 750px) {
+  .timetable__item  {
+    flex-direction: column;
+    padding-top: 0;
+  }
+  .timetable__item .timetable__time {
+    flex: 0 0 auto;
+    background-color: #ccc;
+    padding: 5px;
+    font-size: 14px;
+  }
+  .timetable__item .timetable__content {
+    padding-top: 20px;
+  }
+  .timetable__item--break {
+    flex-direction: row;
+    background-color: transparent;
+    font-size: 14px;
+  }
+  .timetable__item--break .timetable__time {
+    flex: 0 0 40%;
+    text-align: right;
+    padding-right: 0;
+  }
+  .timetable__item--break .timetable__content {
+    flex: 0 0 60%;
+    text-align: left;
+  }
 }
 
 .session {
-  border: 1px solid #000;
   text-align: left;
 }
 
