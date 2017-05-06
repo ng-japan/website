@@ -214,7 +214,7 @@ a:link, a:visited, a:hover, a:active {
   flex: 1 0 40%;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 667px) {
   .timetable__item  {
     flex-direction: column;
     padding-top: 0;
@@ -232,15 +232,6 @@ a:link, a:visited, a:hover, a:active {
     flex-direction: row;
     background-color: transparent;
     font-size: 14px;
-  }
-  .timetable__item--break .timetable__time {
-    flex: 0 0 40%;
-    text-align: right;
-    padding-right: 0;
-  }
-  .timetable__item--break .timetable__content {
-    flex: 0 0 60%;
-    text-align: left;
   }
 }
 
