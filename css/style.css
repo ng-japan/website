@@ -201,6 +201,10 @@ a:link, a:visited, a:hover, a:active {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
+.timetable__item--break--highlight {
+  background-color: rgba(226, 48, 48, 0.2);
+}
+
 .timetable__time,
 .timetable__content {
   padding: 0 20px;
@@ -220,13 +224,17 @@ a:link, a:visited, a:hover, a:active {
 }
 
 @media (max-width: 667px) {
+  .timetable__rooms {
+    display: none;
+  }
   .timetable__item  {
     flex-direction: column;
     padding-top: 0;
   }
   .timetable__item .timetable__time {
     flex: 0 0 auto;
-    background-color: #ccc;
+    background-color: #555;
+    color: #fff;
     padding: 5px;
     font-size: 14px;
   }
@@ -235,7 +243,6 @@ a:link, a:visited, a:hover, a:active {
   }
   .timetable__item--break {
     flex-direction: row;
-    background-color: transparent;
     font-size: 14px;
   }
   .timetable__content + .timetable__content {
@@ -275,11 +282,13 @@ a:link, a:visited, a:hover, a:active {
   .session__image::after {
     padding: 0 5px;
     height: 16px;
-    line-height: 16px;
+    line-height: 14px;
     font-size: 10px;
     text-align: center;
-    background-color: #555;
-    color: #fff;
+    background-color: #fff;
+    border: 1px solid currentColor;
+    color: #e23030;
+    font-weight: normal;
     border-radius: 5px;
     position: absolute;
     right: -7px;
