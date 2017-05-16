@@ -110,8 +110,8 @@ a:link, a:visited, a:hover, a:active {
   margin: 5.0rem auto 0;
   display: flex;
   flex-wrap: wrap;
-  max-width: 800px;
-  justify-content: space-around;
+  max-width: 1000px;
+  justify-content: center;
   list-style-type: none;
 }
 
