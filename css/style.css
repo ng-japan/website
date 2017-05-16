@@ -115,6 +115,25 @@ a:link, a:visited, a:hover, a:active {
   list-style-type: none;
 }
 
+.speaker-list + .speaker-list {
+  margin-top: 0;
+}
+
+.speaker-list--special {
+  color: #b52c2d;
+}
+.speaker-list--special .speaker-list__item::after {
+  content: '';
+  background: url('../images/logo.png') no-repeat left top;
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translate(40%, -40%);
+}
+
 .speaker-list__item {
   flex: 0 0 200px;
   height: 230px;
@@ -122,6 +141,17 @@ a:link, a:visited, a:hover, a:active {
   box-shadow: 0 0 5px rgba(0,0,0,.3);
   margin: 0 2.0rem 5.0rem;
   background-color: #eee;
+}
+
+@media (max-width: 667px) {
+  .speaker-list__item {
+    flex: 0 0 140px;
+    height: 180px;
+    font-size: 11px;
+  }
+  .speaker-list--special .speaker-list__item {
+    height: 165px;
+  }
 }
 
 .speaker-list__item a:link,
