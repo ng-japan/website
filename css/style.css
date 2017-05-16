@@ -215,6 +215,10 @@ a:link, a:visited, a:hover, a:active {
   flex: 1 0 40%;
 }
 
+.timetable__content + .timetable__content {
+  border-left: 1px solid rgba(0, 0, 0, 0.3);
+}
+
 @media (max-width: 667px) {
   .timetable__item  {
     flex-direction: column;
@@ -233,6 +237,9 @@ a:link, a:visited, a:hover, a:active {
     flex-direction: row;
     background-color: transparent;
     font-size: 14px;
+  }
+  .timetable__content + .timetable__content {
+    border: none;
   }
 }
 
@@ -261,6 +268,30 @@ a:link, a:visited, a:hover, a:active {
   line-height: 1.4;
 }
 
+@media (max-width: 667px) {
+  .session__image {
+    position: relative;
+  }
+  .session__image::after {
+    padding: 0 5px;
+    height: 16px;
+    line-height: 16px;
+    font-size: 10px;
+    text-align: center;
+    background-color: #555;
+    color: #fff;
+    border-radius: 5px;
+    position: absolute;
+    right: -7px;
+    bottom: -7px;
+  }
+  .session:not(:last-child) .session__image::after {
+    content: 'Track A';
+  }
+  .session + .session .session__image::after {
+    content: 'Track B';
+  }
+}
 
 /* --------------------------------
  * location
