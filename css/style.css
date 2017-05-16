@@ -379,7 +379,7 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .sponsor-list__img {
-  max-width: 90%;
+  max-width: 80%;
 }
 
 @media (max-width: 667px) {
