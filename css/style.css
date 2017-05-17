@@ -391,49 +391,6 @@ a:link, a:visited, a:hover, a:active {
 }
 
 /* --------------------------------
- * supports
- * -------------------------------- */
-#supports {
-  padding-top: 40px;
-}
-
-.support-list {
-  margin: 5.0rem auto 0;
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1000px;
-  justify-content: center;
-  list-style-type: none;
-}
-
-.support-list + .support-list {
-  margin-top: 0;
-}
-
-.support-list__item {
-  flex: 0 0 150px;
-  height: 150px;
-  box-shadow: 0 0 5px rgba(0,0,0,.3);
-  margin: 0 2.0rem 5.0rem;
-  background-color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.support-list__img {
-  max-width: 80%;
-}
-
-@media (max-width: 667px) {
-  .support-list__item {
-    flex: 0 0 120px;
-    height: 120px;
-    margin: 0 1.5rem 3.0rem;
-  }
-}
-
-/* --------------------------------
  * footer
  * -------------------------------- */
 #footer {
