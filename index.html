@@ -46,7 +46,7 @@
   <section id="speakers">
     <h2 class="title">Speakers</h2>
     <!-- v Angular Team v -->
-    <ul class="speaker-list">
+    <ul class="speaker-list speaker-list--special">
       <li class="speaker-list__item">
         <a href="https://plus.google.com/+stephenfluin" target="_blank" rel="noreferrer noopener">
           <img class="speaker-list__img" src="./images/speakers/stephenfluin.jpg" alt="Stephen Fluin">
@@ -72,7 +72,9 @@
           <div class="speaker-list__org">Angular Material team</div>
         </span>
       </li>
-      <!-- ^ Angular Team ^ -->
+    </ul>
+    <!-- ^ Angular Team ^ -->
+    <ul class="speaker-list">
       <li class="speaker-list__item">
         <img class="speaker-list__img" src="./images/speakers/agektmr.png" alt="Eiji Kitamura">
         <span class="speaker-list__info">
@@ -123,7 +125,7 @@
       </li>
       <li class="speaker-list__item">
         <a href="https://www.pxgrid.com/" target="_blank" rel="noreferrer noopener">
-          <img class="speaker-list__img" src="https://www.gravatar.com/avatar/a88cc23988f41bba5503dd0bd8ff7750.png?s=800" alt="Takeshi Takatsudo">
+          <img class="speaker-list__img" src="https://www.gravatar.com/avatar/a88cc23988f41bba5503dd0bd8ff7750.png" alt="Takeshi Takatsudo">
           <span class="speaker-list__info">
             <div class="speaker-list__name">Takeshi Takatsudo</div>
             <div class="speaker-list__org">株式会社ピクセルグリッド</div>
@@ -182,6 +184,147 @@
       </li>
     </ul>
     <p class="more">And more!! (Coming soon)</p>
+  </section>
+  <section id="schedule">
+    <h2 class="title">Schedule</h2>
+    <div class="timetable">
+      <div class="timetable__rooms">
+        <div class="timetable__room">Track A</div>
+        <div class="timetable__room">Track B</div>
+      </div>
+      <div class="timetable__item--break timetable__item--break--highlight">
+        <div class="timetable__time">12:30</div>
+        <div class="timetable__content">Open</div>
+      </div>
+      <div class="timetable__item">
+        <div class="timetable__time">13:00</div>
+        <div class="timetable__content session">
+          <div class="session__image" style="background-image: url('./images/speakers/stephenfluin.jpg');"></div>
+          <div class="session__title">Keynote</div>
+          <div class="session__speaker">Stephen Fluin (Angular Core Team)</div>
+        </div>
+      </div>
+      <div class="timetable__item--break">
+        <div class="timetable__time">13:50</div>
+        <div class="timetable__content">10min Break</div>
+      </div>
+      <div class="timetable__item">
+        <div class="timetable__time">14:00</div>
+        <div class="timetable__content session">
+          <div class="session__image" style="background-image: url('https://www.gravatar.com/avatar/46fd1af0653be8a364bfe76da33b6bb3.png?s=256');"></div>
+          <div class="session__title">RxJSを活用したアプリケーション開発</div>
+          <div class="session__speaker">Kentaro Okuno</div>
+        </div>
+        <div class="timetable__content session">
+          <div class="session__image" style="background-image: url('https://pbs.twimg.com/profile_images/807572328842334208/yKjouEr4.jpg');"></div>
+          <div class="session__title">Angularとionicで挑戦したモバイルアプリ開発</div>
+          <div class="session__speaker">Yasunobu Ikeda</div>
+        </div>
+      </div>
+      <div class="timetable__item">
+        <div class="timetable__time">14:35</div>
+        <div class="timetable__content session">
+          <div class="session__image" style="background-image: url('https://gravatar.com/avatar/31d309da3b3b96a39108fe77cdc5e7cd');"></div>
+          <div class="session__title">Web Components and Onsen UI</div>
+          <div class="session__speaker">Naoki Matagawa</div>
+        </div>
+        <div class="timetable__content session">
+          <div class="session__image" style="background-image: url('https://teratail.storage.googleapis.com/assets/img/expert/y_furukawa.jpg?03d0a55921cab547a74158ca81cb490d');"></div>
+          <div class="session__title">You need to know SSR</div>
+          <div class="session__speaker">Yosuke Furukawa</div>
+        </div>
+      </div>
+      <div class="timetable__item">
+        <div class="timetable__time">15:10</div>
+        <div class="timetable__content session">
+          <div class="session__image" style="background-image: url('https://ja.gravatar.com/userimage/76707121/03465ea54a188d36ee874ff6b5c72ed4.png');"></div>
+          <div class="session__title">Angularアプリのテストについて</div>
+          <div class="session__speaker">Yosuke Kurami</div>
+        </div>
+        <div class="timetable__content session">
+          <div class="session__image" style="background-image: url('./images/logo.png');"></div>
+          <div class="session__title">TBD</div>
+          <div class="session__speaker"></div>
+        </div>
+      </div>
+      <div class="timetable__item--break">
+        <div class="timetable__time">15:40</div>
+        <div class="timetable__content">20min Break</div>
+      </div>
+      <div class="timetable__item">
+        <div class="timetable__time">16:00</div>
+        <div class="timetable__content session">
+          <div class="session__image" style="background-image: url('./images/speakers/agektmr.png');"></div>
+          <div class="session__title">PWA Updates</div>
+          <div class="session__speaker">Eiji Kitamura</div>
+        </div>
+        <div class="timetable__content session">
+          <div class="session__image" style="background-image: url('https://www.gravatar.com/avatar/a88cc23988f41bba5503dd0bd8ff7750.png');"></div>
+          <div class="session__title">CSS設計</div>
+          <div class="session__speaker">Takeshi Takatsudo</div>
+        </div>
+      </div>
+      <div class="timetable__item">
+        <div class="timetable__time">16:35</div>
+        <div class="timetable__content session">
+          <div class="session__image" style="background-image: url('https://pbs.twimg.com/profile_images/2661433904/057795416c92ef3d612207198df569f4.jpeg');"></div>
+          <div class="session__title">Angular, Firebase, Cloud Functions for Firebase</div>
+          <div class="session__speaker">Tomohiro Noguchi</div>
+        </div>
+        <div class="timetable__content session">
+          <div class="session__image" style="background-image: url('https://html5experts.jp/wp-content/uploads/2015/01/bf985f8ff1bf6f607fcd1950db7ecac7-66x66.jpg');"></div>
+          <div class="session__title">Angular開発 七転八倒</div>
+          <div class="session__speaker">Shumpei Shiraishi</div>
+        </div>
+      </div>
+      <div class="timetable__item--break">
+        <div class="timetable__time">17:05</div>
+        <div class="timetable__content">10min Break</div>
+      </div>
+      <div class="timetable__item">
+        <div class="timetable__time">17:15</div>
+        <div class="timetable__content session">
+          <div class="session__image" style="background-image: url('https://ng-be.org/components/conference-day/img/gerard-sans.jpg');"></div>
+          <div class="session__title">Advanced Component styling with Angular (v4+)</div>
+          <div class="session__speaker">Gerard Sans</div>
+        </div>
+        <div class="timetable__content session">
+          <div class="session__image" style="background-image: url('https://avatars0.githubusercontent.com/u/17428768?v=3&u=c637ad3c7e6543fb9f7871831d82a9a190686101&s=400');"></div>
+          <div class="session__title">ReactiveFormsの説明</div>
+          <div class="session__speaker">Simon Takenaka</div>
+        </div>
+      </div>
+      <div class="timetable__item">
+        <div class="timetable__time">17:35</div>
+        <div class="timetable__content session">
+          <div class="session__image" style="background-image: url('https://avatars3.githubusercontent.com/u/1252570?v=3&s=460');"></div>
+          <div class="session__title">Best practices for modules in Angular</div>
+          <div class="session__speaker">Wilson Mendes</div>
+        </div>
+        <div class="timetable__content session">
+          <div class="session__image" style="background-image: url('https://s3.amazonaws.com/mixidea/profile.png');"></div>
+          <div class="session__title">webrtc + Firebase + Angular でのリアクティブweb app開発</div>
+          <div class="session__speaker">Yuta Moriyama</div>
+        </div>
+      </div>
+      <div class="timetable__item--break">
+        <div class="timetable__time">17:50</div>
+        <div class="timetable__content">10min Break</div>
+      </div>
+      <div class="timetable__item">
+        <div class="timetable__time">18:00</div>
+        <div class="timetable__content session">
+          <div class="session__image" style="background-image: url('./images/speakers/matias.jpg');"></div>
+          <div class="session__image" style="background-image: url('./images/speakers/malerba.jpg');"></div>
+          <div class="session__title">Animations and Angular Material</div>
+          <div class="session__speaker">Matias Niemelä (Core Team) / Miles Malerba (Angular Material Team)</div>
+        </div>
+      </div>
+      <div class="timetable__item--break timetable__item--break--highlight">
+        <div class="timetable__time">19:00</div>
+        <div class="timetable__content">Closing</div>
+      </div>
+    </div>
   </section>
   <section id="location">
     <h2 class="title">Location</h2>

@@ -110,9 +110,28 @@ a:link, a:visited, a:hover, a:active {
   margin: 5.0rem auto 0;
   display: flex;
   flex-wrap: wrap;
-  max-width: 800px;
-  justify-content: space-around;
+  max-width: 1000px;
+  justify-content: center;
   list-style-type: none;
+}
+
+.speaker-list + .speaker-list {
+  margin-top: 0;
+}
+
+.speaker-list--special {
+  color: #b52c2d;
+}
+.speaker-list--special .speaker-list__item::after {
+  content: '';
+  background: url('../images/angular.png') no-repeat left top;
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translate(40%, -40%);
 }
 
 .speaker-list__item {
@@ -121,6 +140,18 @@ a:link, a:visited, a:hover, a:active {
   position: relative;
   box-shadow: 0 0 5px rgba(0,0,0,.3);
   margin: 0 2.0rem 5.0rem;
+  background-color: #eee;
+}
+
+@media (max-width: 667px) {
+  .speaker-list__item {
+    flex: 0 0 140px;
+    height: 180px;
+    font-size: 11px;
+  }
+  .speaker-list--special .speaker-list__item {
+    height: 165px;
+  }
 }
 
 .speaker-list__item a:link,
@@ -155,6 +186,150 @@ a:link, a:visited, a:hover, a:active {
 .more {
   font-weight: bold;
   font-size: 1.8rem;
+}
+
+
+/* --------------------------------
+ * schedule
+ * -------------------------------- */
+.timetable {
+  margin: 50px auto 100px;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.timetable__rooms {
+  display: flex;
+  padding-left: 72px;
+  margin-bottom: 30px;
+}
+
+.timetable__room {
+  flex: 1 1 auto;
+  color: #e23030;
+  font-size: 20px;
+}
+
+.timetable__item,
+.timetable__item--break {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.timetable__item {
+  padding: 20px 0;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.timetable__item + .timetable__item {
+  padding-top: 0;
+}
+
+.timetable__item--break {
+  padding: 10px 0;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.timetable__item--break--highlight {
+  background-color: rgba(226, 48, 48, 0.2);
+}
+
+.timetable__time,
+.timetable__content {
+  padding: 0 20px;
+  vertical-align: top;
+}
+
+.timetable__time {
+  flex: 0 0 72px;
+}
+
+.timetable__content {
+  flex: 1 0 40%;
+}
+
+.timetable__content + .timetable__content {
+  border-left: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 667px) {
+  .timetable__rooms {
+    display: none;
+  }
+  .timetable__item  {
+    flex-direction: column;
+    padding-top: 0;
+  }
+  .timetable__item .timetable__time {
+    flex: 0 0 auto;
+    background-color: #555;
+    color: #fff;
+    padding: 5px;
+    font-size: 14px;
+  }
+  .timetable__item .timetable__content {
+    padding-top: 20px;
+  }
+  .timetable__item--break {
+    flex-direction: row;
+    font-size: 14px;
+  }
+  .timetable__content + .timetable__content {
+    border: none;
+  }
+}
+
+.session {
+  text-align: left;
+}
+
+.session__image {
+  width: 70px;
+  height: 70px;
+  margin-right: 15px;
+  float: left;
+  background: no-repeat center center;
+  background-size: cover;
+}
+
+.session__title {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 5px;
+  margin-bottom: 8px;
+}
+
+.session__speaker {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+@media (max-width: 667px) {
+  .session__image {
+    position: relative;
+  }
+  .session__image::after {
+    padding: 0 5px;
+    height: 16px;
+    line-height: 14px;
+    font-size: 10px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid currentColor;
+    color: #e23030;
+    font-weight: normal;
+    border-radius: 5px;
+    position: absolute;
+    right: -7px;
+    bottom: -7px;
+  }
+  .session:not(:last-child) .session__image::after {
+    content: 'Track A';
+  }
+  .session + .session .session__image::after {
+    content: 'Track B';
+  }
 }
 
 /* --------------------------------
