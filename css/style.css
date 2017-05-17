@@ -193,7 +193,7 @@ a:link, a:visited, a:hover, a:active {
  * schedule
  * -------------------------------- */
 .timetable {
-  margin: 50px auto 100px;
+  margin: 30px auto 100px;
   max-width: 800px;
   padding: 0 20px;
 }
@@ -201,13 +201,18 @@ a:link, a:visited, a:hover, a:active {
 .timetable__rooms {
   display: flex;
   padding-left: 72px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .timetable__room {
   flex: 1 1 auto;
   color: #e23030;
   font-size: 20px;
+  padding: 15px 0;
+}
+
+.timetable__room + .timetable__room {
+  border-left: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .timetable__item,
@@ -371,7 +376,7 @@ a:link, a:visited, a:hover, a:active {
   flex: 0 0 150px;
   height: 150px;
   box-shadow: 0 0 5px rgba(0,0,0,.3);
-  margin: 0 2.0rem 5.0rem;
+  margin: 0 2.0rem;
   background-color: #fff;
   display: flex;
   align-items: center;
@@ -380,6 +385,16 @@ a:link, a:visited, a:hover, a:active {
 
 .sponsor-list__img {
   max-width: 80%;
+}
+
+.sponsor-note {
+  display: block;
+  font-size: 13px;
+  color: #999;
+}
+
+.title + .sponsor-note {
+  margin-top: -18px;
 }
 
 @media (max-width: 667px) {
