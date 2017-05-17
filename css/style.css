@@ -124,7 +124,7 @@ a:link, a:visited, a:hover, a:active {
 }
 .speaker-list--special .speaker-list__item::after {
   content: '';
-  background: url('../images/logo.png') no-repeat left top;
+  background: url('../images/angular.png') no-repeat left top;
   background-size: contain;
   width: 40px;
   height: 40px;
