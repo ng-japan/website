@@ -378,6 +378,11 @@ a:link, a:visited, a:hover, a:active {
   box-shadow: 0 0 5px rgba(0,0,0,.3);
   margin: 0 2.0rem;
   background-color: #fff;
+}
+
+.sponsor-list__link {
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
