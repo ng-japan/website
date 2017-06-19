@@ -57,7 +57,7 @@ a:link, a:visited, a:hover, a:active {
   margin-bottom: 6.0rem;
 }
 
-.register-btn {
+.eyecatch-btn {
   display: inline-block;
   padding: 13px 22px;
   border: 2px solid  #d03c56;
@@ -68,15 +68,11 @@ a:link, a:visited, a:hover, a:active {
   z-index: 0;
   transition: color .2s ease-in-out;
 }
-.register-btn.closed {
-  border: 2px solid  #7a7a7a;
-  color: #7a7a7a;
-}
-.register-btn:not(.closed):hover {
+.eyecatch-btn:hover {
   color: #fff
 }
-.register-btn:not(.closed)::before,
-.register-btn:not(.closed)::after {
+.eyecatch-btn::before,
+.eyecatch-btn::after {
   content: '';
   display: block;
   width: 50%;
@@ -85,23 +81,30 @@ a:link, a:visited, a:hover, a:active {
   z-index: -1;
   top: 0;
 }
-.register-btn:not(.closed)::before {
+.eyecatch-btn::before {
   background: #e23030;
   left: -100%;
   transition: left .1s linear;
 }
-.register-btn:not(.closed):hover::before {
+.eyecatch-btn:hover::before {
   left: 0;
 }
-.register-btn:not(.closed)::after {
+.eyecatch-btn::after {
   background: #b52c2d;
   right: -100%;
   transition: right .1s linear;
 }
-.register-btn:not(.closed):hover::after {
+.eyecatch-btn:hover::after {
   right: 0;
 }
 
+.eyecatch__videos .title {
+  font-size: 2.0rem;
+}
+.eyecatch__videos a {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
 
 /* --------------------------------
  * speaker
