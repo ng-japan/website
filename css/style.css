@@ -68,11 +68,15 @@ a:link, a:visited, a:hover, a:active {
   z-index: 0;
   transition: color .2s ease-in-out;
 }
-.register-btn:hover {
+.register-btn.closed {
+  border: 2px solid  #7a7a7a;
+  color: #7a7a7a;
+}
+.register-btn:not(.closed):hover {
   color: #fff
 }
-.register-btn::before,
-.register-btn::after {
+.register-btn:not(.closed)::before,
+.register-btn:not(.closed)::after {
   content: '';
   display: block;
   width: 50%;
@@ -81,20 +85,20 @@ a:link, a:visited, a:hover, a:active {
   z-index: -1;
   top: 0;
 }
-.register-btn::before {
+.register-btn:not(.closed)::before {
   background: #e23030;
   left: -100%;
   transition: left .1s linear;
 }
-.register-btn:hover::before {
+.register-btn:not(.closed):hover::before {
   left: 0;
 }
-.register-btn::after {
+.register-btn:not(.closed)::after {
   background: #b52c2d;
   right: -100%;
   transition: right .1s linear;
 }
-.register-btn:hover::after {
+.register-btn:not(.closed):hover::after {
   right: 0;
 }
 
