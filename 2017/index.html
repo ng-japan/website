@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <base href="/2017/">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+  <meta name="description" content="Angular Conference ng-japan 2017-06-17 in Tokyo">
+  <title>ng-japan - The Angular conference in Tokyo, Japan (2017/6/17)</title>
+  <meta property="og:title" content="ng-japan">
+  <meta property="og:url" content="https://ngjapan.org/2017/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ng-japan">
+  <meta property="og:image" content="http://ngjapan.org/2017/images/ogp.png">
+  <meta property="og:description" content="Angular Conference ng-japan 2017-06-17 in Tokyo">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Ubuntu:400,700'>
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-59853299-1', 'auto');
+      ga('send', 'pageview');
+  </script>
+</head>
+<body>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.8";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+  <script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+
+  <header id="header">
+    <div class="eyecatch">
+      <img src="images/logo.png" alt="ng-japan" class="eyecatch__img">
+      <h1 class="title">ng-japan 2017</h1>
+      <p class="eyecatch__description">2017-06-17 Tokyo, Japan</p>
+      <div class="eyecatch__videos">
+        <h3 class="title">Youtube Archives</h3>
+        <a href="https://www.youtube.com/watch?v=LbnLSD2pL18" target="_blank" rel="noreferrer noopener" class="eyecatch-btn">Track A</a>
+        <a href="https://www.youtube.com/watch?v=P1X40cddHGU" target="_blank" rel="noreferrer noopener" class="eyecatch-btn">Track B</a>
+      </div>
+    </div>
+  </header>
+  <section id="speakers">
+    <h2 class="title">Speakers</h2>
+    <!-- v Angular Team v -->
+    <ul class="speaker-list speaker-list--special">
+      <li class="speaker-list__item">
+        <a href="https://plus.google.com/+stephenfluin" target="_blank" rel="noreferrer noopener">
+          <img class="speaker-list__img" src="./images/speakers/stephenfluin.jpg" alt="Stephen Fluin">
+          <span class="speaker-list__info">
+            <div class="speaker-list__name">Stephen Fluin</div>
+            <div class="speaker-list__org">Angular team</div>
+          </span>
+        </a>
+      </li>
+      <li class="speaker-list__item">
+        <a href="http://yearofmoo.com" target="_blank" rel="noreferrer noopener">
+          <img class="speaker-list__img" src="./images/speakers/matias.jpg" alt="Matias Niemela">
+          <span class="speaker-list__info">
+            <div class="speaker-list__name">Matias Niemela</div>
+            <div class="speaker-list__org">Angular team</div>
+          </span>
+        </a>
+      </li>
+      <li class="speaker-list__item">
+        <img class="speaker-list__img" src="./images/speakers/malerba.jpg" alt="Miles Malerba">
+        <span class="speaker-list__info">
+          <div class="speaker-list__name">Miles Malerba</div>
+          <div class="speaker-list__org">Angular Material team</div>
+        </span>
+      </li>
+    </ul>
+    <!-- ^ Angular Team ^ -->
+    <ul class="speaker-list">
+      <li class="speaker-list__item">
+        <img class="speaker-list__img" src="./images/speakers/agektmr.png" alt="Eiji Kitamura">
+        <span class="speaker-list__info">
+          <div class="speaker-list__name">Eiji Kitamura</div>
+          <div class="speaker-list__org">Google</div>
+        </span>
+      </li>
+      <li class="speaker-list__item">
+        <a href="https://medium.com/@gerard.sans" target="_blank" rel="noreferrer noopener">
+          <img class="speaker-list__img" src="https://ng-be.org/components/conference-day/img/gerard-sans.jpg" alt="Gerard Sans">
+          <span class="speaker-list__info">
+            <div class="speaker-list__name">Gerard Sans</div>
+            <div class="speaker-list__org">Google Developer Expert</div>
+          </span>
+        </a>
+      </li>
+      <li class="speaker-list__item">
+        <a href="https://github.com/armorik83" target="_blank" rel="noreferrer noopener">
+          <img class="speaker-list__img" src="https://www.gravatar.com/avatar/46fd1af0653be8a364bfe76da33b6bb3.png?s=256" alt="Kentaro Okuno">
+          <span class="speaker-list__info">
+            <div class="speaker-list__name">Kentaro Okuno</div>
+            <div class="speaker-list__org">株式会社ピクセルグリッド</div>
+          </span>
+        </a>
+      </li>
+      <li class="speaker-list__item">
+        <img class="speaker-list__img" src="https://gravatar.com/avatar/31d309da3b3b96a39108fe77cdc5e7cd" alt="Naoki Matagawa">
+        <span class="speaker-list__info">
+          <div class="speaker-list__name">Naoki Matagawa</div>
+          <div class="speaker-list__org">Asial Corporation</div>
+        </span>
+      </li>
+      <li class="speaker-list__item">
+        <img class="speaker-list__img" src="https://pbs.twimg.com/profile_images/816601661149827072/M21HSxTb_400x400.jpg" alt="Saki Homma">
+        <span class="speaker-list__info">
+          <div class="speaker-list__name">Saki Homma</div>
+          <div class="speaker-list__org">日本マイクロソフト</div>
+        </span>
+      </li>
+      <li class="speaker-list__item">
+        <a href="http://techfeed.io" target="_blank" rel="noreferrer noopener">
+          <img class="speaker-list__img" src="./images/speakers/shumpei.jpg" alt="Shumpei Shiraishi">
+          <span class="speaker-list__info">
+            <div class="speaker-list__name">Shumpei Shiraishi</div>
+            <div class="speaker-list__org">株式会社オープンウェブ・テクノロジー</div>
+          </span>
+        </a>
+      </li>
+      <li class="speaker-list__item">
+        <img class="speaker-list__img" src="https://avatars0.githubusercontent.com/u/17428768?v=3&u=c637ad3c7e6543fb9f7871831d82a9a190686101&s=400" alt="Simon Takenaka">
+        <span class="speaker-list__info">
+          <div class="speaker-list__name">Simon Takenaka</div>
+          <div class="speaker-list__org">株式会社カブク</div>
+        </span>
+      </li>
+      <li class="speaker-list__item">
+        <a href="https://www.pxgrid.com/" target="_blank" rel="noreferrer noopener">
+          <img class="speaker-list__img" src="https://www.gravatar.com/avatar/a88cc23988f41bba5503dd0bd8ff7750.png" alt="Takeshi Takatsudo">
+          <span class="speaker-list__info">
+            <div class="speaker-list__name">Takeshi Takatsudo</div>
+            <div class="speaker-list__org">株式会社ピクセルグリッド</div>
+          </span>
+        </a>
+      </li>
+      <li class="speaker-list__item">
+        <a href="https://github.com/ovrmrw" target="_blank" rel="noreferrer noopener">
+          <img class="speaker-list__img" src="https://pbs.twimg.com/profile_images/2661433904/057795416c92ef3d612207198df569f4.jpeg" alt="Tomohiro Noguchi">
+          <span class="speaker-list__info">
+            <div class="speaker-list__name">Tomohiro Noguchi</div>
+            <div class="speaker-list__org">Opt Technologies</div>
+          </span>
+        </a>
+      </li>
+      <li class="speaker-list__item">
+        <a href="https://willmendesneto.github.io" target="_blank" rel="noreferrer noopener">
+          <img class="speaker-list__img" src="https://avatars3.githubusercontent.com/u/1252570?v=3&s=460" alt="Wilson Mendes">
+          <span class="speaker-list__info">
+            <div class="speaker-list__name">Wilson Mendes</div>
+            <div class="speaker-list__org">Google Developer Expert</div>
+          </span>
+        </a>
+      </li>
+      <li class="speaker-list__item">
+        <a href="https://ics.media" target="_blank" rel="noreferrer noopener">
+          <img class="speaker-list__img" src="https://pbs.twimg.com/profile_images/807572328842334208/yKjouEr4.jpg" alt="Yasunobu Ikeda">
+          <span class="speaker-list__info">
+            <div class="speaker-list__name">Yasunobu Ikeda</div>
+            <div class="speaker-list__org">株式会社ICS</div>
+          </span>
+        </a>
+      </li>
+      <li class="speaker-list__item">
+        <a href="http://yosuke-furukawa.hatenablog.com/" target="_blank" rel="noreferrer noopener">
+          <img class="speaker-list__img" src="https://teratail.storage.googleapis.com/assets/img/expert/y_furukawa.jpg?03d0a55921cab547a74158ca81cb490d" alt="Yosuke Furukawa">
+          <span class="speaker-list__info">
+            <div class="speaker-list__name">Yosuke Furukawa</div>
+            <div class="speaker-list__org">Recruit Technologies</div>
+          </span>
+        </a>
+      </li>
+      <li class="speaker-list__item">
+        <img class="speaker-list__img" src="https://ja.gravatar.com/userimage/76707121/03465ea54a188d36ee874ff6b5c72ed4.png" alt="Yosuke Kurami">
+        <span class="speaker-list__info">
+          <div class="speaker-list__name">Yosuke Kurami</div>
+          <div class="speaker-list__org">株式会社WACUL</div>
+        </span>
+      </li>
+      <li class="speaker-list__item">
+        <img class="speaker-list__img" src="https://s3.amazonaws.com/mixidea/profile.png" alt="Yuta Moriyama">
+        <span class="speaker-list__info">
+          <div class="speaker-list__name">Yuta Moriyama</div>
+          <div class="speaker-list__org">English Debate Community</div>
+        </span>
+      </li>
+    </ul>
+  </section>
+  <section id="schedule">
+    <h2 class="title">Schedule</h2>
+    <div class="timetable">
+      <div class="timetable__rooms">
+        <div class="timetable__room">Track A</div>
+        <div class="timetable__room">Track B</div>
+      </div>
+      <div class="timetable__item--break timetable__item--break--highlight">
+        <div class="timetable__time">12:30</div>
+        <div class="timetable__content">Open</div>
+      </div>
+      <div class="timetable__item">
+        <div class="timetable__time">13:00</div>
+        <div class="timetable__content session">
+          <div class="session__image" style="background-image: url('./images/speakers/stephenfluin.jpg');"></div>
+          <div class="session__title">Keynote</div>
+          <div class="session__speaker">Stephen Fluin (Angular Core Team)</div>
+        </div>
+      </div>
+      <div class="timetable__item--break">
+        <div class="timetable__time">13:50</div>
+        <div class="timetable__content">10min Break</div>
+      </div>
+      <div class="timetable__item">
+        <div class="timetable__time">14:00</div>
+        <div class="timetable__content session">
+          <div class="session__image" style="background-image: url('https://www.gravatar.com/avatar/46fd1af0653be8a364bfe76da33b6bb3.png?s=256');"></div>
+          <div class="session__title">RxJSを活用したアプリケーション開発</div>
+          <div class="session__speaker">Kentaro Okuno</div>
+        </div>
+        <div class="timetable__content session">
+          <div class="session__image" style="background-image: url('https://pbs.twimg.com/profile_images/807572328842334208/yKjouEr4.jpg');"></div>
+          <div class="session__title">Angularとionicで挑戦したモバイルアプリ開発</div>
+          <div class="session__speaker">Yasunobu Ikeda</div>
+        </div>
+      </div>
+      <div class="timetable__item">
+        <div class="timetable__time">14:35</div>
+        <div class="timetable__content session">
+          <div class="session__image" style="background-image: url('https://gravatar.com/avatar/31d309da3b3b96a39108fe77cdc5e7cd');"></div>
+          <div class="session__title">Web Components and Onsen UI</div>
+          <div class="session__speaker">Naoki Matagawa</div>
+        </div>
+        <div class="timetable__content session">
+          <div class="session__image" style="background-image: url('https://teratail.storage.googleapis.com/assets/img/expert/y_furukawa.jpg?03d0a55921cab547a74158ca81cb490d');"></div>
+          <div class="session__title">You need to know SSR</div>
+          <div class="session__speaker">Yosuke Furukawa</div>
+        </div>
+      </div>
+      <div class="timetable__item">
+        <div class="timetable__time">15:10</div>
+        <div class="timetable__content session">
+          <div class="session__image" style="background-image: url('https://ja.gravatar.com/userimage/76707121/03465ea54a188d36ee874ff6b5c72ed4.png');"></div>
+          <div class="session__title">Angularアプリのテストについて</div>
+          <div class="session__speaker">Yosuke Kurami</div>
+        </div>
+        <div class="timetable__content session">
+          <div class="session__image" style="background-image: url('https://pbs.twimg.com/profile_images/816601661149827072/M21HSxTb_400x400.jpg');"></div>
+          <div class="session__title">Visual StudioとVisual Studio Codeで快適開発生活(仮)</div>
+          <div class="session__speaker">Saki Homma</div>
+        </div>
+      </div>
+      <div class="timetable__item--break">
+        <div class="timetable__time">15:40</div>
+        <div class="timetable__content">20min Break</div>
+      </div>
+      <div class="timetable__item">
+        <div class="timetable__time">16:00</div>
+        <div class="timetable__content session">
+          <div class="session__image" style="background-image: url('./images/speakers/agektmr.png');"></div>
+          <div class="session__title">Web Payments + Credential Management API</div>
+          <div class="session__speaker">Eiji Kitamura</div>
+        </div>
+        <div class="timetable__content session">
+          <div class="session__image" style="background-image: url('https://www.gravatar.com/avatar/a88cc23988f41bba5503dd0bd8ff7750.png');"></div>
+          <div class="session__title">あのモジュールこのコンポーネントそのブロック</div>
+          <div class="session__speaker">Takeshi Takatsudo</div>
+        </div>
+      </div>
+      <div class="timetable__item">
+        <div class="timetable__time">16:35</div>
+        <div class="timetable__content session">
+          <div class="session__image" style="background-image: url('https://pbs.twimg.com/profile_images/2661433904/057795416c92ef3d612207198df569f4.jpeg');"></div>
+          <div class="session__title">Angular, Firebase, Cloud Functions for Firebase</div>
+          <div class="session__speaker">Tomohiro Noguchi</div>
+        </div>
+        <div class="timetable__content session">
+          <div class="session__image" style="background-image: url('./images/speakers/shumpei.jpg');"></div>
+          <div class="session__title">【座談会】Angular開発の生々しい話</div>
+          <div class="session__speaker">Shumpei Shiraishi</div>
+        </div>
+      </div>
+      <div class="timetable__item--break">
+        <div class="timetable__time">17:05</div>
+        <div class="timetable__content">10min Break</div>
+      </div>
+      <div class="timetable__item">
+        <div class="timetable__time">17:15</div>
+        <div class="timetable__content session">
+          <div class="session__image" style="background-image: url('https://ng-be.org/components/conference-day/img/gerard-sans.jpg');"></div>
+          <div class="session__title">Advanced Component styling with Angular (v4+)</div>
+          <div class="session__speaker">Gerard Sans</div>
+        </div>
+        <div class="timetable__content session">
+          <div class="session__image" style="background-image: url('https://avatars0.githubusercontent.com/u/17428768?v=3&u=c637ad3c7e6543fb9f7871831d82a9a190686101&s=400');"></div>
+          <div class="session__title">ReactiveFormsの説明</div>
+          <div class="session__speaker">Simon Takenaka</div>
+        </div>
+      </div>
+      <div class="timetable__item">
+        <div class="timetable__time">17:35</div>
+        <div class="timetable__content session">
+          <div class="session__image" style="background-image: url('https://avatars3.githubusercontent.com/u/1252570?v=3&s=460');"></div>
+          <div class="session__title">Best practices for modules in Angular</div>
+          <div class="session__speaker">Wilson Mendes</div>
+        </div>
+        <div class="timetable__content session">
+          <div class="session__image" style="background-image: url('https://s3.amazonaws.com/mixidea/profile.png');"></div>
+          <div class="session__title">webrtc + Firebase + Angular でのリアクティブweb app開発</div>
+          <div class="session__speaker">Yuta Moriyama</div>
+        </div>
+      </div>
+      <div class="timetable__item--break">
+        <div class="timetable__time">17:50</div>
+        <div class="timetable__content">10min Break</div>
+      </div>
+      <div class="timetable__item">
+        <div class="timetable__time">18:00</div>
+        <div class="timetable__content session">
+          <div class="session__image" style="background-image: url('./images/speakers/matias.jpg');"></div>
+          <div class="session__title">Angular Animations</div>
+          <div class="session__speaker">Matias Niemelä (Core Team)</div>
+        </div>
+      </div>
+      <div class="timetable__item">
+        <div class="timetable__time">18:30</div>
+        <div class="timetable__content session">
+          <div class="session__image" style="background-image: url('./images/speakers/malerba.jpg');"></div>
+          <div class="session__title">Angular Material</div>
+          <div class="session__speaker">Miles Malerba (Angular Material Team)</div>
+        </div>
+      </div>
+      <div class="timetable__item--break timetable__item--break--highlight">
+        <div class="timetable__time">19:00</div>
+        <div class="timetable__content">Closing</div>
+      </div>
+    </div>
+  </section>
+  <section id="location">
+    <h2 class="title">Location</h2>
+    <p class="location__info">
+      <a href="https://www.microsoft.com/ja-jp/mscorp/branch/sgt.aspx" target="_blank" rel="noreferrer noopener">Microsoft Japan,</a><br>
+      Shinagawa Grand Central Tower
+    </p>
+    <iframe id="js-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3243.044559826947!2d139.7382424152574!3d35.626627980207004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188a5b118724df%3A0x824b080b86c84141!2z44CSMTA4LTAwNzUg5p2x5Lqs6YO95riv5Yy65riv5Y2X77yS5LiB55uu77yR77yW4oiS77yUIOWTgeW3neOCsOODqeODs-ODieOCu-ODs-ODiOODqeODq-OCv-ODr-ODvA!5e0!3m2!1sja!2sjp!4v1490275155880" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </section>
+  <section id="sponsors">
+    <h2 class="title">Sponsors</h2>
+    <small class="sponsor-note">(in alphabetical order)</small>
+    <ul class="sponsor-list">
+      <li class="sponsor-list__item">
+        <a href="http://ashiras.xyz/" target="_blank" class="sponsor-list__link">
+          <img class="sponsor-list__img" src="./images/sponsors/ashiras.png" alt="Ashiras, Inc.">
+        </a>
+      </li>
+      <li class="sponsor-list__item">
+        <a href="https://www.emotion-tech.co.jp" target="_blank" class="sponsor-list__link">
+          <img class="sponsor-list__img" src="./images/sponsors/emotion-tech.png" alt="株式会社Emotion Tech">
+        </a>
+      </li>
+      <li class="sponsor-list__item">
+        <a href="https://www.pxgrid.com" target="_blank" class="sponsor-list__link">
+          <img class="sponsor-list__img" src="./images/sponsors/pixelgrid.png" alt="株式会社ピクセルグリッド">
+        </a>
+      </li>
+      <li class="sponsor-list__item">
+        <a href="https://www.souzoh.com/jp/" target="_blank" class="sponsor-list__link">
+          <img class="sponsor-list__img" src="./images/sponsors/souzoh.png" alt="株式会社ソウゾウ">
+        </a>
+      </li>
+      <li class="sponsor-list__item">
+        <a href="https://toreta.in/jp/" target="_blank" class="sponsor-list__link">
+          <img class="sponsor-list__img" src="./images/sponsors/toreta.png" alt="株式会社トレタ">
+        </a>
+      </li>
+    </ul>
+  </section>
+  <footer id="footer">
+    <div class="share-buttons">
+      <a href="https://twitter.com/share" class="twitter-share-button" data-via="ng_japan" data-hashtags="ng_jp">Tweet</a>
+      <div class="fb-share-button" data-href="http://ngjapan.org" data-layout="button" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fngjapan.org%2F&amp;src=sdkpreparse">シェア</a></div>
+      <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="basic" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a>
+    </div>
+    <p>&copy; 2017 Angular Japan User Group</p>
+  </footer>
+  <script>
+    var timer;
+    var map = document.getElementById('js-map');
+    var noScrollClass = 'no-scroll';
+    var supportsPassive = false;
+
+    try {
+      var opts = Object.defineProperty({}, 'passive', {
+        get: function() { supportsPassive = true; }
+      });
+      window.addEventListener("test", null, opts);
+    } catch (e) {}
+
+    window.addEventListener('scroll', function() {
+      clearTimeout(timer);
+      if(!map.classList.contains(noScrollClass)) {
+        map.classList.add(noScrollClass);
+      }
+      timer = setTimeout(function(){
+        map.classList.remove(noScrollClass)
+      }, 200);
+    }, supportsPassive ? { passive: true } : false);
+
+    if (atob) {
+      console.log(atob("QENvbmZlcmVuY2UoewogIHNlbGVjdG9yOiAnbmctamFwYW4nLAogIHBsYWNlOiAndG9reW8nLAogIHRlbXBsYXRlOiBgPGgxPkhlbGxvIEFuZ3VsYXIhITwvaDE+YAp9KQpjbGFzcyBOZ0phcGFuIHsgeWVhciA9IDIwMTc7IH0="));
+    }
+  </script>
+</body>
+</html>
