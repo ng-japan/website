@@ -182,7 +182,6 @@ button:lang(en) {
 }
 
 .header__nav {
-  height: 72px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -234,12 +233,10 @@ button:lang(en) {
 }
 
 .wanted__cards {
-  margin-top: 64px;
+  margin: 64px auto 0;
+  width: 774px;
   display: flex;
-  justify-content: center;
-}
-.wanted__cards .card + .card {
-  margin-left: 120px;
+  justify-content: space-between;
 }
 
 
@@ -257,4 +254,92 @@ button:lang(en) {
 .footer__nav li {
   display: inline;
   margin-right: 6px;
+}
+
+
+
+/* ================================
+ * SP
+ * ================================ */
+@media (max-width: 667px) {
+  /* --------------------------------
+   * components
+   * -------------------------------- */
+  .titleLogo {
+    width: 70px;
+    height: 42px;
+    padding: 8px;
+    font-size: 11px;
+  }
+
+  .title {
+    font-size: 38px;
+  }
+
+  .subTitle {
+    font-size: 14px;
+  }
+
+  .sectionTitle {
+    font-size: 24px;
+  }
+
+
+  /* --------------------------------
+   * header
+   * -------------------------------- */
+  .header {
+    height: 480px;
+    padding: 32px 20px;
+  }
+
+  .header__main {
+    margin: 48px 0;
+  }
+
+  .header__main .title {
+    margin-bottom: 28px;
+  }
+
+  .header__main .subTitle {
+    margin-bottom: 38px;
+  }
+
+  .header__main .button {
+    margin: 0 auto 32px;
+  }
+
+
+  /* --------------------------------
+   * about
+   * -------------------------------- */
+  .about {
+    padding: 80px 20px;
+  }
+
+  .about__logo {
+    width: 80px;
+    margin-bottom: 28px;
+  }
+
+  .about__description {
+    margin-top: 24px;
+    font-size: 14px;
+    line-height: 2;
+  }
+
+
+  /* --------------------------------
+   * speakers & sponsors
+   * -------------------------------- */
+  .wanted {
+    padding: 56px 20px;
+  }
+
+  .wanted__cards {
+    margin-top: 24px;
+    width: 100%;
+    height: 768px;
+    flex-direction: column;
+  }
 }
