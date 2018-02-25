@@ -228,7 +228,7 @@ strong {
  * speakers & sponsors
  * -------------------------------- */
 .wanted {
-  background: #3F475C url('/images/bg-speakers.png') no-repeat center/cover;
+  background: #3F475C url('../images/bg-speakers.png') no-repeat center/cover;
   padding: 80px 0;
 }
 
