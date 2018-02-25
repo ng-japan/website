@@ -179,6 +179,7 @@ strong {
   position: relative;
   height: 700px;
   padding: 40px;
+  overflow: hidden;
 }
 
 .header__bg,
@@ -266,8 +267,10 @@ strong {
 .about__description {
   margin-top: 26px;
   font-size: 16px;
-  letter-spacing: 1.14px;
   line-height: 1.7;
+}
+.about__description:lang(ja) {
+  letter-spacing: 1.14px;
 }
 
 
@@ -287,6 +290,8 @@ strong {
 }
 .wanted__cards:lang(en) {
   justify-content: center;
+  width: auto;
+  height: auto;
 }
 
 
