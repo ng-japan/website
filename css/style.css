@@ -181,6 +181,13 @@ strong {
   padding: 40px;
   overflow: hidden;
 }
+.header::after {
+  content: url('../images/scroll.svg');
+  position: absolute;
+  bottom: 56px;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
 .header__bg,
 .header__bg::after,
@@ -346,6 +353,9 @@ strong {
   .header {
     height: 480px;
     padding: 32px 20px;
+  }
+  .header::after {
+    bottom: 24px;
   }
 
   .header__bg,
