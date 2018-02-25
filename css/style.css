@@ -294,6 +294,7 @@ strong {
   width: 774px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .wanted__cards:lang(en) {
   justify-content: center;
