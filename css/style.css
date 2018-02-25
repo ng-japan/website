@@ -1,14 +1,20 @@
 @charset "UTF-8";
 
 /* --------------------------------
+ * variables
+ * -------------------------------- 
+ main-light-red: #E23030
+ main-dark-red: #B52C2D
+ sub-orange: #FFA726
+ text-color: #3F475C
+ * -------------------------------- */
+
+/* --------------------------------
  * base
  * -------------------------------- */
-html {
-  font-size: 62.5%;
-}
 body {
-  color: #333;
-  font-size: 1.6rem;
+  color: #3F475C;
+  font-size: 14px;
   text-align: center;
   font-family: Poppins, "Hiragino Sans", "Hiragino Kaku Gothic ProN",  Meiryo,  sans-serif;
   font-weight: 400;
@@ -17,7 +23,238 @@ body {
   box-sizing: border-box;
 }
 a:link, a:visited, a:hover, a:active {
-  color: #d03c56;
-  text-decoration: none;
+  color: #E23030;
+}
+strong {
+  font-weight: 400;
 }
 
+
+/* --------------------------------
+ * helpers
+ * -------------------------------- */
+.inverse {
+  color: #FFF;
+}
+.inverse a {
+  color: #FFF;
+}
+
+
+/* --------------------------------
+ * components
+ * -------------------------------- */
+.titleLogo {
+  background-color: #FFF;
+  color: #E23030;
+  text-align: right;
+  width: 120px;
+  height: 72px;
+  padding: 14px 13px;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.lang {
+  color: #FFF;
+  white-space: nowrap;
+  font-size: 18px;
+}
+.lang__separator {
+  margin: 0 3px;
+}
+.lang a:link,
+.lang a:visited,
+.lang a:hover,
+.lang a:active {
+  color: rgba(255,255,255,0.4);
+  text-decoration: none;
+}
+.lang a.is-active:link,
+.lang a.is-active:visited,
+.lang a.is-active:hover,
+.lang a.is-active:active {
+  color: #FFF;
+}
+
+.title {
+  font-weight: 800;
+  font-size: 88px;
+}
+
+.subTitle {
+  font-size: 24px;
+  letter-spacing: 1.2px;
+}
+
+.sectionTitle {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.highlight {
+  color: #E23030;
+}
+
+.button {
+  display: block;
+  width: 286px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 100px;
+  background-color: #FFF;
+  color: #E23030;
+  font-size: 20px;
+  box-shadow: 0 8px 14px 0 rgba(0,0,0,0.16);
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+button:lang(en) {
+  font-weight: 700;
+}
+.button:hover,
+.button:focus {
+  box-shadow: 0 8px 14px 0 rgba(0,0,0,0.16),
+              0 0 5px rgba(255,255,255,0,1);
+}
+.button.is-disabled {
+  opacity: 0.37;
+}
+.button--ghost {
+  background: transparent;
+  border: 2px solid #FFF;
+  color: #FFF;
+}
+
+.card {
+  position: relative;
+  width: 327px;
+  height: 372px;
+  padding-top: 102px;
+  background-color: #FFF;
+  box-shadow: 0 16px 30px 0 rgba(0,0,0,0.24);
+  color: #E23030;
+  text-align: center;
+}
+.card--subColor {
+  color: #FFA726;
+}
+.card__title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.card__image {
+  width: 70px;
+  position: absolute;
+  top: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.card__description {
+  color: #3F475C;
+  line-height: 1.7;
+}
+.card__buttonBox {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 124px;
+  background-color: currentColor;
+}
+.card__buttonBox .button {
+  color: currentColor;
+  margin: 32px auto;
+}
+
+
+/* --------------------------------
+ * header
+ * -------------------------------- */
+.header {
+  height: 700px;
+  padding: 40px;
+  background-color: #E23030;
+}
+
+.header__nav {
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__main {
+  margin: 60px;
+}
+
+.header__main .title {
+  margin-bottom: 48px;
+}
+
+.header__main .subTitle {
+  margin-bottom: 40px;
+}
+
+.header__main .button {
+  margin: 0 auto 24px;
+}
+
+
+/* --------------------------------
+ * about
+ * -------------------------------- */
+.about {
+  padding: 160px 0;
+}
+
+.about__logo {
+  width: 140px;
+  margin-bottom: 50px;
+}
+
+.about__description {
+  margin-top: 26px;
+  font-size: 16px;
+  letter-spacing: 1.14px;
+  line-height: 1.7;
+}
+
+
+/* --------------------------------
+ * speakers & sponsors
+ * -------------------------------- */
+.wanted {
+  background: #3F475C url('/images/bg-speakers.png') no-repeat center/cover;
+  padding: 80px 0;
+}
+
+.wanted__cards {
+  margin-top: 64px;
+  display: flex;
+  justify-content: center;
+}
+.wanted__cards .card + .card {
+  margin-left: 120px;
+}
+
+
+/* --------------------------------
+ * footer
+ * -------------------------------- */
+.footer {
+  background-color: #1D212B;
+  padding: 32px 0;
+}
+
+.footer__nav {
+  margin-bottom: 12px;
+}
+.footer__nav li {
+  display: inline;
+  margin-right: 6px;
+}
