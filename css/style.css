@@ -145,7 +145,7 @@ strong {
 .card__title {
   font-size: 24px;
   font-weight: 700;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 }
 .card__image {
   width: 70px;
@@ -412,7 +412,9 @@ strong {
   .about__description {
     margin-top: 24px;
     font-size: 14px;
-    line-height: 2;
+  }
+  .about__description:lang(ja) {
+    letter-spacing: initial;
   }
 
 
