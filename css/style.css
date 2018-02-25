@@ -112,7 +112,7 @@ strong {
   cursor: pointer;
   text-decoration: none;
 }
-button:lang(en) {
+.button:lang(en) {
   font-weight: 700;
 }
 .button:hover,
@@ -237,6 +237,9 @@ button:lang(en) {
   width: 774px;
   display: flex;
   justify-content: space-between;
+}
+.wanted__cards:lang(en) {
+  justify-content: center;
 }
 
 
