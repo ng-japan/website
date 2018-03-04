@@ -189,6 +189,11 @@ strong {
   padding: 40px;
   overflow: hidden;
 }
+@media (min-width: 2000px) {
+  .header {
+    --triangle-width: 1800px;
+  }
+}
 .header::after {
   content: url('../images/scroll.svg');
   position: absolute;
