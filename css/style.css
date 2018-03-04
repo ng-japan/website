@@ -50,7 +50,7 @@ strong {
  * components
  * -------------------------------- */
 .titleLogo {
-  background: #fff url('/images/title-logo.svg') no-repeat left top;
+  background: #fff url('../images/title-logo.svg') no-repeat left top;
   background-size: 100%;
   color: transparent;
   text-align: right;
@@ -106,7 +106,7 @@ strong {
 
 .at {
   display: inline-block;
-  background: url('/images/at.svg') no-repeat center center;
+  background: url('../images/at.svg') no-repeat center center;
   background-size: contain;
   width: 20px;
   height: 20px;
@@ -278,7 +278,7 @@ strong {
 
 .header__main .title {
   margin-bottom: 32px;
-  background: url('/images/title.svg') no-repeat center center;
+  background: url('../images/title.svg') no-repeat center center;
   background-size: contain;
   color: transparent;
   height: 97px;
