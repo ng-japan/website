@@ -50,8 +50,9 @@ strong {
  * components
  * -------------------------------- */
 .titleLogo {
-  background-color: #FFF;
-  color: var(--color-main-light);
+  background: #fff url('/images/title-logo.svg') no-repeat left top;
+  background-size: 100%;
+  color: transparent;
   text-align: right;
   width: 120px;
   height: 72px;
@@ -101,6 +102,16 @@ strong {
 
 .highlight {
   color: var(--color-main-light);
+}
+
+.at {
+  display: inline-block;
+  background: url('/images/at.svg') no-repeat center center;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin: 0 6px;
 }
 
 .button {
@@ -266,8 +277,11 @@ strong {
 }
 
 .header__main .title {
-  margin-bottom: 48px;
-  white-space: nowrap;
+  margin-bottom: 32px;
+  background: url('/images/title.svg') no-repeat center center;
+  background-size: contain;
+  color: transparent;
+  height: 97px;
 }
 
 .header__main .subTitle {
@@ -402,11 +416,18 @@ strong {
   }
 
   .header__main .title {
-    margin-bottom: 28px;
+    margin-bottom: 24px;
+    height: 42px;
   }
 
   .header__main .subTitle {
     margin-bottom: 38px;
+  }
+
+  .header__main .at {
+    width: 12px;
+    height: 12px;
+    margin: 0 3px;
   }
 
   .header__main .button {
