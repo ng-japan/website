@@ -5,7 +5,8 @@ if (userAgent.indexOf('msie') !== -1 || userAgent.indexOf('trident') !== -1 || u
   window.document.body.innerHTML = 'お使いのブラウザは対応環境外です。';
 }
 
-window.document.querySelector('.header__scroller').addEventListener('click', function (){
+window.document.querySelector('.header__scroller').addEventListener('click', function (event){
+  event.preventDefault();
   var current = window.document.documentElement.scrollTop;
   var about = window.document.querySelector('#about').offsetTop;
   var diff = about - current
@@ -16,7 +17,7 @@ window.document.querySelector('.header__scroller').addEventListener('click', fun
         return
       }
       current = current + frameDiff
-      window.document.documentElement.scrollTop = current
+      window.document.documentElement.scrollTop = window.document.body.scrollTop = current
       frame();
     })
   }
