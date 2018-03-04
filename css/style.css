@@ -8,7 +8,7 @@
   --color-main-dark: #B52C2D;
   --color-sub: #FFA726;
   --color-text: #3F475C;
-  
+
   --weight-regular: 400;
   --weight-bold: 700;
   --weight-black: 800;
@@ -194,13 +194,6 @@ strong {
     --triangle-width: 1800px;
   }
 }
-.header::after {
-  content: url('../images/scroll.svg');
-  position: absolute;
-  bottom: 56px;
-  left: 50%;
-  transform: translateX(-50%);
-}
 
 .header__bg,
 .header__bg::after,
@@ -216,7 +209,7 @@ strong {
 }
 .header__bg,
 .header__shadow1,
-.header__shadow2, 
+.header__shadow2,
 .header__shadow3 {
   transform: translateX(-50%);
   border-width: var(--triangle-height) var(--triangle-width) 0 var(--triangle-width);
@@ -233,7 +226,7 @@ strong {
 .header__shadow1 {
   --added-width: 280px;
   --width: calc(var(--triangle-width) + calc(var(--added-width)));
-  
+
   border-left-width: var(--width);
   border-right-width: var(--width);
   opacity: 0.17;
@@ -242,7 +235,7 @@ strong {
 .header__shadow2 {
   --added-width: 700px;
   --width: calc(var(--triangle-width) + calc(var(--added-width)));
-  
+
   border-left-width: var(--width);
   border-right-width: var(--width);
   opacity: 0.15;
@@ -278,6 +271,16 @@ strong {
 
 .header__main .button {
   margin: 0 auto 24px;
+}
+
+.header__scroller {
+  position: absolute;
+  bottom: 56px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.header__scroller {
+  content: url('../images/scroll.svg');
 }
 
 
@@ -376,11 +379,8 @@ strong {
   .header {
     --triangle-width: 870px;
     --triangle-height: 480px;
-    
+
     padding: 32px 20px;
-  }
-  .header::after {
-    bottom: 24px;
   }
   .header__shadow1 {
     --added-width: 210px;
@@ -406,6 +406,10 @@ strong {
 
   .header__main .button {
     margin: 0 auto 32px;
+  }
+
+  .header__scroller {
+    bottom: 24px;
   }
 
 
