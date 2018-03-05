@@ -8,6 +8,7 @@
   --color-main-dark: #B52C2D;
   --color-sub: #FFA726;
   --color-text: #3F475C;
+  --color-twitter: #1B94E0;
 
   --weight-regular: 400;
   --weight-bold: 700;
@@ -100,8 +101,17 @@ strong {
   font-weight: var(--weight-bold);
 }
 
+.sectionTitle--sub {
+  font-size: 24px;
+  font-weight: var(--weight-bold);
+}
+
 .highlight {
   color: var(--color-main-light);
+}
+
+.twitter {
+  color: var(--color-twitter);
 }
 
 .at {
@@ -348,6 +358,22 @@ strong {
 
 
 /* --------------------------------
+ * follow us
+ * -------------------------------- */
+.followUs {
+  padding: 80px 0;
+}
+
+.followUs .sectionTitle--sub {
+  margin-bottom: 28px;
+}
+
+.followUs__twitterButton {
+  text-align: center;
+}
+
+
+/* --------------------------------
  * footer
  * -------------------------------- */
 .footer {
@@ -389,6 +415,10 @@ strong {
 
   .sectionTitle {
     font-size: 24px;
+  }
+
+  .sectionTitle--sub {
+    font-size: 16px;
   }
 
 
@@ -472,5 +502,13 @@ strong {
     width: 100%;
     height: 768px;
     flex-direction: column;
+  }
+
+
+  /* --------------------------------
+   * follow us
+   * -------------------------------- */
+  .followUs {
+    padding: 50px 20px;
   }
 }
