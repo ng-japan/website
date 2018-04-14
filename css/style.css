@@ -496,6 +496,11 @@ strong {
   font-size: 14px;
   line-height: 1.6;
   margin: 24px auto;
+  font-weight: bold;
+}
+
+.sponsor__wanted br {
+  display: none;
 }
 
 .sponsors .button {
@@ -715,6 +720,34 @@ strong {
     font-size: 14px;
   }
 
+  /* --------------------------------
+   * Sponsors
+   * -------------------------------- */
+  .sponsors {
+    padding-bottom: 16px;
+  }
+
+  .sponsors .sectionTitle {
+    padding-top: 80px;
+    margin-bottom: 32px;
+  }
+
+  .sponsors .sponsors__note {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+
+  .sponsors__list li {
+    margin-bottom: 16px;
+  }
+
+  .sponsor {
+    width: calc(100vw - 32px);
+  }
+
+  .sponsor__wanted br {
+    display: block;
+  }
 
   /* --------------------------------
    * follow us
