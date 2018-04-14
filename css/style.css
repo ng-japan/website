@@ -439,10 +439,11 @@ strong {
  * sponsors
  * -------------------------------- */
 .sponsors {
-  padding: 160px 24px;
+  padding-bottom: 96px;
 }
 
 .sponsors .sectionTitle {
+  padding-top: 160px;
   color: var(--color-main-light);
   margin-bottom: 64px;
 }
@@ -454,7 +455,8 @@ strong {
   font-weight: normal;
 }
 
-.sponsors__list {
+.sponsors__list,
+.sponsors__list--community {
   max-width: 980px;
   display: flex;
   flex-wrap: wrap;
@@ -500,6 +502,15 @@ strong {
   background-color: var(--color-main-light);
   color: #fff;
   margin: 0 auto;
+}
+
+.sponsors__list--community {
+  align-items: center;
+  justify-content: center;
+}
+
+.sponsors__list--community li {
+  margin: 0 32px 64px;
 }
 
 
