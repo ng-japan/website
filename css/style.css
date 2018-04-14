@@ -9,6 +9,7 @@
   --color-sub: #FFA726;
   --color-text: #3F475C;
   --color-speaker: #1D212B;
+  --color-background: #F7F8FA;
 
   --weight-regular: 400;
   --weight-bold: 700;
@@ -335,7 +336,7 @@ strong {
  * speakers
  * -------------------------------- */
 .speakers {
-  background-color: #F7F8FA;
+  background-color: var(--color-background);
   padding: 80px 24px;
   color: var(--color-speaker);
 }
@@ -364,7 +365,7 @@ strong {
   height: 180px;
   border-radius: 100%;
   overflow: hidden;
-  background: #FFFFFF;
+  background: #fff;
   box-shadow: 0 8px 14px 0 rgba(0,0,0,0.16);
   margin: 0 20px 24px;
   background-size: cover;
@@ -399,7 +400,7 @@ strong {
   bottom: 0;
   height: 65%;
   transform: translateX(-50%);
-  background-color: #E23030;
+  background-color: var(--color-main-light);
   z-index: 0;
 }
 .speakers__list--guest li {
@@ -410,7 +411,7 @@ strong {
 .speakers__list--guest .speaker__image {
   width: 220px;
   height: 220px;
-  border: 8px solid #E23030;
+  border: 8px solid var(--color-main-light);
 }
 .speakers__list--guest .speaker__image::before {
   content: '';
