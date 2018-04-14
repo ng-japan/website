@@ -33,72 +33,17 @@
 <section class="speakers">
   <h2 class="sectionTitle">Speakers</h2>
   <ul class="speakers__list--guest">
-    <li>
-      <div class="speaker__image" style="background-image: url('assets/images/speakers/Kara_Erickson.jpg');"></div>
-      <h3 class="speaker__name">Kara Erickson</h3>
-      <p class="speaker__company">Angular Core Team</p>
-    </li>
-    <li>
-      <div class="speaker__image" style="background-image: url('assets/images/speakers/Miles_Malerba.jpg');"></div>
-      <h3 class="speaker__name">Miles Malerba</h3>
-      <p class="speaker__company">Angular Material Core Team</p>
+    <li *ngFor="let guest of guests">
+      <div class="speaker__image" [ngStyle]="{'background-image': 'url(' + guest.profilePicture + ')'}"></div>
+      <h3 class="speaker__name">{{guest.fullName}}</h3>
+      <p class="speaker__company">{{guest.tagLine}}</p>
     </li>
   </ul>
   <ul class="speakers__list">
-    <li>
-      <div class="speaker__image" style="background-image: url('assets/images/speakers/Akira_Koyasu.png');"></div>
-      <h3 class="speaker__name">@akirakoyasu</h3>
-      <p class="speaker__company">Lead Engineer, Emotion Tech Inc.</p>
-    </li>
-    <li>
-      <div class="speaker__image" style="background-image: url('assets/images/speakers/Jia_Li.png');"></div>
-      <h3 class="speaker__name">JiaLiPassion</h3>
-      <p class="speaker__company">I am zone.js guy!!!</p>
-    </li>
-    <li>
-      <div class="speaker__image" style="background-image: url('assets/images/speakers/Junya_Terada.jpg');"></div>
-      <h3 class="speaker__name">Junya Terada</h3>
-      <p class="speaker__company">dev</p>
-    </li>
-    <li>
-      <div class="speaker__image" style="background-image: url('assets/images/speakers/Katsumi_Honda.jpg');"></div>
-      <h3 class="speaker__name">Katsumi Honda</h3>
-      <p class="speaker__company">IJGN Inc. CTO / QOX Inc. Founder</p>
-    </li>
-    <li>
-      <div class="speaker__image" style="background-image: url('assets/images/speakers/Kentaro_Okuno.jpg');"></div>
-      <h3 class="speaker__name">Kentaro Okuno</h3>
-      <p class="speaker__company">PixelGrid Inc.</p>
-    </li>
-    <li>
-      <div class="speaker__image" style="background-image: url('assets/images/speakers/kou_matsumoto.png');"></div>
-      <h3 class="speaker__name">kou matsumoto</h3>
-      <p class="speaker__company">ビットバンク株式会社</p>
-    </li>
-    <li>
-      <div class="speaker__image" style="background-image: url('assets/images/speakers/Rohan_Rehman.jpg');"></div>
-      <h3 class="speaker__name">Rohan Rehman</h3>
-      <p class="speaker__company">Director of Engineering and Inventor</p>
-    </li>
-    <li>
-      <div class="speaker__image" style="background-image: url('assets/images/speakers/Suguru_Inatomi.png');"></div>
-      <h3 class="speaker__name">Suguru Inatomi</h3>
-      <p class="speaker__company">Kaizen Platform, Inc.</p>
-    </li>
-    <li>
-      <div class="speaker__image" style="background-image: url('assets/images/speakers/Toshiya_Tanaka.jpg');"></div>
-      <h3 class="speaker__name">Toshiya Tanaka</h3>
-      <p class="speaker__company">Freelance</p>
-    </li>
-    <li>
-      <div class="speaker__image" style="background-image: url('assets/images/speakers/Yosuke_Kurami.png');"></div>
-      <h3 class="speaker__name">Yosuke Kurami</h3>
-      <p class="speaker__company">FOLIO Co., Ltd.</p>
-    </li>
-    <li>
-      <div class="speaker__image" style="background-image: url('assets/images/speakers/Yutaka_Shimizu.jpg');"></div>
-      <h3 class="speaker__name">Yutaka Shimizu</h3>
-      <p class="speaker__company">株式会社野村総合研究所</p>
+    <li *ngFor="let speaker of speakers">
+      <div class="speaker__image" [ngStyle]="{'background-image': 'url(' + speaker.profilePicture + ')'}"></div>
+      <h3 class="speaker__name">{{speaker.fullName}}</h3>
+      <p class="speaker__company">{{speaker.tagLine}}</p>
     </li>
   </ul>
 </section>
