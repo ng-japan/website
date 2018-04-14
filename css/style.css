@@ -8,6 +8,7 @@
   --color-main-dark: #B52C2D;
   --color-sub: #FFA726;
   --color-text: #3F475C;
+  --color-speaker: #1D212B;
   --color-twitter: #1B94E0;
 
   --weight-regular: 400;
@@ -336,24 +337,112 @@ strong {
 
 
 /* --------------------------------
- * speakers & sponsors
+ * speakers
  * -------------------------------- */
-.wanted {
-  background: var(--color-text) url('../images/bg-speakers.png') no-repeat center/cover;
-  padding: 80px 0;
+.speakers {
+  background-color: #F7F8FA;
+  padding: 80px 24px;
+  color: var(--color-speaker);
 }
 
-.wanted__cards {
-  margin: 64px auto 0;
-  width: 774px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.speakers .sectionTitle {
+  margin-bottom: 64px;
 }
-.wanted__cards:lang(en) {
-  justify-content: center;
-  width: auto;
-  height: auto;
+
+.speakers__list,
+.speakers__list--guest {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 952px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.speakers__list li,
+.speakers__list--guest li {
+  margin: 0 auto 50px;
+}
+
+.speaker__image {
+  width: 180px;
+  height: 180px;
+  border-radius: 100%;
+  overflow: hidden;
+  background: #FFFFFF;
+  box-shadow: 0 8px 14px 0 rgba(0,0,0,0.16);
+  margin: 0 20px 24px;
+  background-size: cover;
+}
+
+.speaker__name {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+.speaker__company {
+  font-size: 14px;
+  margin: 0 auto;
+  line-height: 1.4;
+}
+.speakers__list .speaker__company {
+  width: 160px;
+}
+
+.speakers__list--guest {
+  position: relative;
+  margin-bottom: 94px;
+  color: #fff;
+}
+.speakers__list--guest::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100vw;
+  left: 50%;
+  bottom: 0;
+  height: 65%;
+  transform: translateX(-50%);
+  background-color: #E23030;
+  z-index: 0;
+}
+.speakers__list--guest li {
+  position: relative;
+  z-index: 1;
+}
+
+.speakers__list--guest .speaker__image {
+  width: 220px;
+  height: 220px;
+  border: 8px solid #E23030;
+}
+.speakers__list--guest .speaker__image::before {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 44px;
+  height: 48px;
+  background: url('../images/guest.png') no-repeat;
+  background-size: contain;
+}
+
+.speakers__list--guest .speaker__name {
+  font-size: 24px;
+}
+
+.speakers__list--guest .speaker__company {
+  font-size: 18px;
+}
+
+
+/* --------------------------------
+ * sponsors
+ * -------------------------------- */
+.sponsors {
+  padding: 160px 24px;
 }
 
 
