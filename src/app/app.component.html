@@ -1,0 +1,153 @@
+<header class="header inverse">
+  <div class="header__bg"></div>
+  <div class="header__shadow1"></div>
+  <div class="header__shadow2"></div>
+  <div class="header__shadow3"></div>
+  <nav class="header__nav">
+    <div class="titleLogo">ng-japan 2018</div>
+    <div class="lang">
+      <a href="/" class="is-active">JP</a>
+      <span class="lang__separator">|</span>
+      <a href="/en/">EN</a>
+    </div>
+  </nav>
+  <div class="header__main">
+    <h1 class="title">ng-japan 2018</h1>
+    <p class="subTitle">
+      2018.06.16(Sat) -<span class="at"></span>Google Japan<br />
+      <span i18n="@@place">Tokyo, Roppongi Hills</span>
+    </p>
+    <div class="button button--ghost" i18n="@@connpass">coming soon...</div>
+  </div>
+  <span class="header__scroller" (click)="scroll()"></span>
+</header>
+<section class="about" id="about">
+  <img src="assets/images/logo.png" alt="ng-japan ロゴ" class="about__logo">
+  <h2 class="sectionTitle">What's <span class="highlight">ng-japan</span>?</h2>
+  <p class="about__description" i18n="@@description">
+    ng-japan 2018 is the 4th conference in Japan about Angular and web technologies around it.<br />
+    It'll have sessions with great speakers, including the Angular core team at Google.<br />
+    It will be held on Google Japan on Saturday, June 16, 2018.
+  </p>
+</section>
+<section class="speakers">
+  <h2 class="sectionTitle">Speakers</h2>
+  <ul class="speakers__list--guest">
+    <li *ngFor="let guest of guests">
+      <div class="speaker__image" [ngStyle]="{'background-image': 'url(' + guest.profilePicture + ')'}"></div>
+      <h3 class="speaker__name">{{guest.fullName}}</h3>
+      <p class="speaker__company">{{guest.tagLine}}</p>
+    </li>
+  </ul>
+  <ul class="speakers__list">
+    <li *ngFor="let speaker of speakers">
+      <div class="speaker__image" [ngStyle]="{'background-image': 'url(' + speaker.profilePicture + ')'}"></div>
+      <h3 class="speaker__name">{{speaker.fullName}}</h3>
+      <p class="speaker__company">{{speaker.tagLine}}</p>
+    </li>
+  </ul>
+</section>
+<section class="sponsors">
+  <h2 class="sectionTitle">
+    Sponsors
+    <span class="sponsors__note" i18n="@@alphabetical">(in alphabetical order)</span>
+  </h2>
+  <ul class="sponsors__list">
+    <li>
+      <a href="https://bitbank.cc/" target="_blank" rel="noreferrer noopener" class="sponsor">
+        <img src="assets/images/sponsors/bitbank.png" alt="bitbank" width="178">
+      </a>
+    </li>
+    <li>
+      <a href="https://classi.jp/corporate/" target="_blank" rel="noreferrer noopener" class="sponsor">
+        <img src="assets/images/sponsors/classi.png" alt="Classi" width="136">
+      </a>
+    </li>
+    <li>
+      <a href="https://corp.folio-sec.com/" target="_blank" rel="noreferrer noopener" class="sponsor">
+        <img src="assets/images/sponsors/folio.png" alt="FOLIO" width="180">
+      </a>
+    </li>
+    <li>
+      <a href="https://www.grapecity.co.jp/developer" target="_blank" rel="noreferrer noopener" class="sponsor">
+        <img src="assets/images/sponsors/grapecity.png" alt="GrapeCity" width="200">
+      </a>
+    </li>
+    <li>
+      <a href="https://www.hands-lab.com/" target="_blank" rel="noreferrer noopener" class="sponsor">
+        <img src="assets/images/sponsors/handslab.png" alt="HANDS LAB" width="240">
+      </a>
+    </li>
+    <li>
+      <a href="https://jp.infragistics.com/products/ignite-ui-angular" target="_blank" rel="noreferrer noopener" class="sponsor">
+        <img src="assets/images/sponsors/infragistics.png" alt="INFRAGISTICS" width="66">
+      </a>
+    </li>
+    <li>
+      <a href="http://www.nri.com/jp" target="_blank" rel="noreferrer noopener" class="sponsor">
+        <img src="assets/images/sponsors/nri.png" alt="NRI" width="142">
+      </a>
+    </li>
+    <li>
+      <a href="https://www.oro.com/ja/" target="_blank" rel="noreferrer noopener" class="sponsor">
+        <img src="assets/images/sponsors/oro.png" alt="oRo" width="74">
+      </a>
+    </li>
+    <li>
+      <a href="https://spotsale.jp" target="_blank" rel="noreferrer noopener" class="sponsor">
+        <img src="assets/images/sponsors/spotsale.png" alt="SPOTSALE" width="200">
+      </a>
+    </li>
+    <li>
+      <a href="https://www.stylez.co.jp/" target="_blank" rel="noreferrer noopener" class="sponsor">
+        <img src="assets/images/sponsors/stylez.png" alt="Stylez" width="148">
+      </a>
+    </li>
+  </ul>
+  <p class="sponsor__wanted">私たちはng-japan 2018を支援する <br> スポンサーを探しています。</p>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSfnRTSr7cncMIMMoNGcqBrpIoxA2DOpKDqWZ8Wb-Bf_bjlXsQ/viewform" target="_blank" rel="noopener noreferrer" class="button">支援する</a>
+
+  <h2 class="sectionTitle">Community Partners</h2>
+  <ul class="sponsors__list--community">
+    <li>
+      <a href="https://firebase.asia/" target="_blank" rel="noreferrer noopener" class="community">
+        <img src="assets/images/communities/fjug.png" alt="Firebase Japan User Group" width="85">
+      </a>
+    </li>
+    <li>
+      <a href="https://polymer-jp.org/" target="_blank" rel="noreferrer noopener" class="community">
+        <img src="assets/images/communities/polymer.png" alt="Polymer Japan" width="100">
+      </a>
+    </li>
+  </ul>
+</section>
+<footer class="footer inverse">
+  <section class="followUs">
+    <p class="followUs__text" i18n="@@twitter">Get updates on Twitter!</p>
+    <div class="followUs__twitterButton">
+      <a href="https://twitter.com/ng_japan?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @ng_japan</a>
+    </div>
+  </section>
+  <nav class="footer__nav">
+    <ul>
+      <li>
+        <a href="https://goo.gl/forms/utt8Dv4TIpHEcMMa2" target="_blank" rel="noreferrer noopener">Contact</a>
+      </li>
+      <li>
+        <a href="/coc.html" target="_blank">Code of Conduct</a>
+      </li>
+      <li>
+        <a href="/2017/" target="_blank">2017</a>
+      </li>
+      <li>
+        <a href="/2016/" target="_blank">2016</a>
+      </li>
+      <li>
+        <a href="/2015/" target="_blank">2015</a>
+      </li>
+    </ul>
+  </nav>
+  <p>© 2018 Angular Japan User Group</p>
+</footer>
+
+<router-outlet></router-outlet>
