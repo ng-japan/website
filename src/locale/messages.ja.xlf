@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="ja" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="place" datatype="html">
+        <source>Tokyo, Roppongi Hills</source>
+        <target>東京 六本木ヒルズ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="connpass" datatype="html">
+        <source>coming soon...</source>
+        <target>受付準備中...</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="description" datatype="html">
+        <source>
+    ng-japan 2018 is the 4th conference in Japan about Angular and web technologies around it.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+    It&apos;ll have sessions with great speakers, including the Angular core team at Google.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+    It will be held on Google Japan on Saturday, June 16, 2018.
+  </source>
+        <target>
+        ng-japan 2018は、第4回目のAngularとWeb技術に関する日本のカンファレンスです。<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+        GoogleのAngularコアチームを含む、素晴らしい講演者とのセッションが予定されています。<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+        2018年6月16日（土）、Google Japanのオフィスにて開催されます。
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="alphabetical" datatype="html">
+        <source>(in alphabetical order)</source>
+        <target>（アルファベット順）</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.ts</context>
+          <context context-type="linenumber">108</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="twitter" datatype="html">
+        <source>Get updates on Twitter!</source>
+        <target>最新情報は Twitter で確認しよう！</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.ts</context>
+          <context context-type="linenumber">181</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
