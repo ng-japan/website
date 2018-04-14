@@ -449,6 +449,7 @@ strong {
 }
 
 .sponsors .sponsors__note {
+  margin-top: 5px;
   font-size: 14px;
   color: #8E9299;
   display: block;
@@ -734,7 +735,6 @@ strong {
 
   .sponsors .sponsors__note {
     font-size: 12px;
-    margin-top: 5px;
   }
 
   .sponsors__list li {
