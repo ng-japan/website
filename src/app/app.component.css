@@ -262,6 +262,7 @@
 }
 
 .header__scroller {
+  cursor: pointer;
   position: absolute;
   bottom: 56px;
   left: 50%;

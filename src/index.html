@@ -21,6 +21,13 @@
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
     ga('create', 'UA-59853299-1', 'auto');
     ga('send', 'pageview');
+
+    var userAgent = window.navigator.userAgent.toLowerCase();
+    if (userAgent.indexOf('msie') !== -1 || userAgent.indexOf('trident') !== -1) {
+      window.document.body.innerHTML = 'お使いのブラウザは対応環境外です。';
+    }
+
+    console.log(atob("QENvbmZlcmVuY2UoewogIHNlbGVjdG9yOiAnbmctamFwYW4nLAogIHBsYWNlOiAndG9reW8nLAogIHRlbXBsYXRlOiBgPGgxPkhlbGxvIEFuZ3VsYXIhITwvaDE+YAp9KQpjbGFzcyBOZ0phcGFuIHsgeWVhciA9IDIwMTg7IH0="));
   </script>
   <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
