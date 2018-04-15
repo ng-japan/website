@@ -9,8 +9,8 @@ const Speakers = require('../data/speakers.json');
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  guests = Speakers.filter(s => s.tagLine.includes('Angular'));
-  speakers = Speakers.filter(s => !s.tagLine.includes('Angular'));
+  guests = Speakers.filter(s => s.isTopSpeaker);
+  speakers = Speakers.filter(s => !s.isTopSpeaker);
 
   constructor(@Inject(LOCALE_ID) public locale: string) {}
  
