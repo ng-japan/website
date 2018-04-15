@@ -39,7 +39,7 @@
         <target>（アルファベット順）</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/app.component.ts</context>
-          <context context-type="linenumber">108</context>
+          <context context-type="linenumber">53</context>
         </context-group>
       </trans-unit>
       <trans-unit id="twitter" datatype="html">
@@ -47,7 +47,15 @@
         <target>最新情報は Twitter で確認しよう！</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/app.component.ts</context>
-          <context context-type="linenumber">181</context>
+          <context context-type="linenumber">126</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0c409eea2cac35a9dc0facfe1d10588de6f9fb7d" datatype="html">
+        <source>/coc-en.html</source>
+        <target>/coc.html</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.ts</context>
+          <context context-type="linenumber">137</context>
         </context-group>
       </trans-unit>
     </body>

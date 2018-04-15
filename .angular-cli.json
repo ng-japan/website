@@ -5,16 +5,48 @@
   },
   "apps": [
     {
+      "name": "ja",
       "appShell": {
         "app": "ng-japan",
-        "route": "shell"
+        "route": ""
       },
       "root": "src",
       "outDir": "dist",
       "assets": [
         "assets",
         "favicon.ico",
-        "manifest.json"
+        "manifest.json",
+        "robots.txt",
+        {
+          "glob": "**/*",
+          "input": "../2015",
+          "output": "2015"
+        },
+        {
+          "glob": "**/*",
+          "input": "../2016",
+          "output": "2016"
+        },
+        {
+          "glob": "**/*",
+          "input": "../2017",
+          "output": "2017"
+        },
+        {
+          "glob": "coc.html",
+          "input": "../",
+          "output": "coc.html"
+        },
+        {
+          "glob": "coc-en.html",
+          "input": "../",
+          "output": "coc-en.html"
+        },
+        {
+          "glob": "call-for-sponsors.pdf",
+          "input": "../",
+          "output": "call-for-sponsors.pdf"
+        }
       ],
       "index": "index.html",
       "main": "main.ts",
@@ -24,9 +56,32 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "serviceWorker": true,
-      "styles": [
-        "styles.css"
-      ],
+      "styles": ["styles.css"],
+      "scripts": [],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    },
+    {
+      "name": "en",
+      "appShell": {
+        "app": "ng-japan",
+        "route": ""
+      },
+      "root": "src",
+      "outDir": "dist/en",
+      "assets": ["assets", "favicon.ico", "manifest.json"],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "tsconfig.spec.json",
+      "prefix": "app",
+      "serviceWorker": true,
+      "styles": ["styles.css"],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
       "environments": {
@@ -38,10 +93,7 @@
       "name": "ng-japan",
       "root": "src",
       "outDir": "dist-server",
-      "assets": [
-        "assets",
-        "favicon.ico"
-      ],
+      "assets": ["assets", "favicon.ico"],
       "platform": "server",
       "index": "index.html",
       "main": "main.server.ts",
@@ -50,9 +102,7 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "serviceWorker": true,
-      "styles": [
-        "styles.css"
-      ],
+      "styles": ["styles.css"],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
       "environments": {
@@ -87,7 +137,6 @@
   },
   "defaults": {
     "styleExt": "css",
-    "component": {
-    }
+    "component": {}
   }
 }

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, LOCALE_ID, Inject } from '@angular/core';
 
 declare function require(x: string): any;
 const Speakers = require('../data/speakers.json');
@@ -11,6 +11,9 @@ const Speakers = require('../data/speakers.json');
 export class AppComponent {
   guests = Speakers.filter(s => s.tagLine.includes('Angular'));
   speakers = Speakers.filter(s => !s.tagLine.includes('Angular'));
+
+  constructor(@Inject(LOCALE_ID) public locale: string) {}
+ 
   scroll () {
     let current = window.document.documentElement.scrollTop;
     const about = (window.document.querySelector('#about') as HTMLElement).offsetTop;

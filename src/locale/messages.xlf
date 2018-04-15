@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-  <file source-language="en" datatype="plaintext" original="ng2.template">
+  <file source-language="ja" datatype="plaintext" original="ng2.template">
     <body>
       <trans-unit id="place" datatype="html">
         <source>Tokyo, Roppongi Hills</source>
@@ -31,14 +31,21 @@
         <source>(in alphabetical order)</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/app.component.ts</context>
-          <context context-type="linenumber">108</context>
+          <context context-type="linenumber">53</context>
         </context-group>
       </trans-unit>
       <trans-unit id="twitter" datatype="html">
         <source>Get updates on Twitter!</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/app.component.ts</context>
-          <context context-type="linenumber">181</context>
+          <context context-type="linenumber">126</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0c409eea2cac35a9dc0facfe1d10588de6f9fb7d" datatype="html">
+        <source>/coc-en.html</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.ts</context>
+          <context context-type="linenumber">137</context>
         </context-group>
       </trans-unit>
     </body>
