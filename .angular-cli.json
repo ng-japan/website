@@ -72,6 +72,7 @@
       },
       "root": "src",
       "outDir": "dist/en",
+      "baseHref": "/en/",
       "assets": ["assets", "favicon.ico", "manifest.json"],
       "index": "index.html",
       "main": "main.ts",
