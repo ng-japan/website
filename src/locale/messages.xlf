@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="ja" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="place" datatype="html">
+        <source>Tokyo, Roppongi Hills</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="connpass" datatype="html">
+        <source>coming soon...</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="description" datatype="html">
+        <source>
+    ng-japan 2018 is the 4th conference in Japan about Angular and web technologies around it.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+    It&apos;ll have sessions with great speakers, including the Angular core team at Google.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+    It will be held on Google Japan on Saturday, June 16, 2018.
+  </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="alphabetical" datatype="html">
+        <source>(in alphabetical order)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.ts</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="twitter" datatype="html">
+        <source>Get updates on Twitter!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.ts</context>
+          <context context-type="linenumber">126</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0c409eea2cac35a9dc0facfe1d10588de6f9fb7d" datatype="html">
+        <source>/coc-en.html</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.ts</context>
+          <context context-type="linenumber">137</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
