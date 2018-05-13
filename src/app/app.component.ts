@@ -2,6 +2,7 @@ import { Component, LOCALE_ID, Inject } from '@angular/core';
 
 declare function require(x: string): any;
 const Speakers = require('../data/speakers.json');
+const Sessions = require('../data/sessions.json')[0].sessions;
 
 @Component({
   selector: 'app-root',
@@ -11,9 +12,11 @@ const Speakers = require('../data/speakers.json');
 export class AppComponent {
   guests = Speakers.filter(s => s.isTopSpeaker);
   speakers = Speakers.filter(s => !s.isTopSpeaker);
+  sessionMap = Sessions.reduce((obj, value) => ({ ...obj, [value.id]: value }), {});
+  speakerMap = Speakers.reduce((obj, value) => ({ ...obj, [value.id]: value }), {});
 
   constructor(@Inject(LOCALE_ID) public locale: string) {}
- 
+
   scroll () {
     let current = window.document.documentElement.scrollTop;
     const about = (window.document.querySelector('#about') as HTMLElement).offsetTop;

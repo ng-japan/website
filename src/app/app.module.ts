@@ -6,11 +6,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { AppComponent } from './app.component';
 
+import { TimetableComponent } from './timetable/timetable.component';
+import { TimetableCardComponent } from './timetable-card/timetable-card.component';
+
 import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TimetableComponent,
+    TimetableCardComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
