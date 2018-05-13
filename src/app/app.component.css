@@ -61,6 +61,7 @@
 .sectionTitle {
   font-size: 48px;
   font-weight: var(--weight-bold);
+  color: var(--color-main-light);
 }
 
 .sectionTitle--sub {
@@ -302,11 +303,11 @@
 .speakers {
   background-color: var(--color-background);
   padding: 80px 24px;
-  color: var(--color-speaker);
 }
 
 .speakers .sectionTitle {
   margin-bottom: 64px;
+  color: var(--color-speaker);
 }
 
 .speakers__list,
@@ -395,6 +396,18 @@
 
 .speakers__list--guest .speaker__company {
   font-size: 18px;
+}
+
+
+/* --------------------------------
+ * timetable
+ * -------------------------------- */
+.timetable {
+  padding: 160px 24px 0;
+}
+
+.timetable .sectionTitle {
+  margin-bottom: 64px;
 }
 
 
@@ -683,6 +696,19 @@
   .speakers__list--guest .speaker__company {
     font-size: 14px;
   }
+
+
+  /* --------------------------------
+   * timetable
+   * -------------------------------- */
+  .timetable {
+    padding: 80px 16px 0;
+  }
+
+  .timetable .sectionTitle {
+    margin-bottom: 32px;
+  }
+
 
   /* --------------------------------
    * Sponsors
