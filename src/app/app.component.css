@@ -4,7 +4,7 @@
 .inverse {
   color: #FFF;
 }
-.inverse a {
+.inverse a:not(.button) {
   color: #FFF;
 }
 
@@ -93,6 +93,7 @@
   background-color: #FFF;
   color: var(--color-main-light);
   font-size: 20px;
+  font-weight: bold;
   box-shadow: 0 8px 14px 0 rgba(0,0,0,0.16);
   outline: none;
   cursor: pointer;

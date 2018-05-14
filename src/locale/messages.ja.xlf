@@ -11,8 +11,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="connpass" datatype="html">
-        <source>coming soon...</source>
-        <target>受付準備中...</target>
+        <source>Join us!</source>
+        <target>参加する</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/app.component.ts</context>
           <context context-type="linenumber">20</context>

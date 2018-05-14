@@ -10,7 +10,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="connpass" datatype="html">
-        <source>coming soon...</source>
+        <source>Join us!</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/app.component.ts</context>
           <context context-type="linenumber">20</context>
