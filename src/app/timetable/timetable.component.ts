@@ -23,7 +23,6 @@ export class TimetableComponent implements OnInit {
   CSS = 40383
   CDK = 36329
   NGLVY = 36330
-  PANEL = 36332
 
   constructor() {}
 
