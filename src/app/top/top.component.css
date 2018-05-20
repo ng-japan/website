@@ -276,6 +276,14 @@
 .speakers__list--guest li {
   margin: 0 auto 50px;
 }
+.speakers__list li a {
+  color: var(--color-speaker);
+  text-decoration: none;
+}
+.speakers__list--guest li a {
+  color: #fff;
+  text-decoration: none;
+}
 
 .speaker__image {
   width: 180px;

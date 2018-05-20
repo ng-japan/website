@@ -2,7 +2,7 @@
 <app-sub-header title="Speakers"></app-sub-header>
 <div>
   <ul class="list">
-    <li class="item" *ngFor="let speaker of speakers">
+    <li class="item" *ngFor="let speaker of speakers" id="id-{{speaker.id}}">
       <app-speaker-avatar class="image" [speaker]="speaker"></app-speaker-avatar>
       <div class="info">
         <h3 class="name">{{speaker.fullName}}</h3>

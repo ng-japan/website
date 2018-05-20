@@ -1,4 +1,5 @@
 import { Component, LOCALE_ID, Inject } from '@angular/core';
+import {NavigationEnd, Router} from "@angular/router";
 
 declare function require(x: string): any;
 const Speakers = require('../../data/speakers.json');
@@ -18,7 +19,13 @@ export class TopComponent {
   isTop = true
   eventHandler: any
 
-  constructor(@Inject(LOCALE_ID) public locale: string) {}
+  constructor(@Inject(LOCALE_ID) public locale: string, router: Router) {
+    router.events.subscribe(s => {
+      if (s instanceof NavigationEnd) {
+        window.scrollTo(0, 0);
+      }
+    });
+  }
 
   ngOnInit() {
     this.eventHandler = document.addEventListener('scroll', () => {
@@ -33,7 +40,7 @@ export class TopComponent {
 
   scroll () {
     let current = window.document.documentElement.scrollTop;
-    const about = (window.document.querySelector('#about') as HTMLElement).offsetTop;
+    const about = (window.document.querySelector('#about') as HTMLElement).offsetTop - 100;
     const diff = about - current;
     const frameDiff = diff / 60 * 6;
     const frame = () => {

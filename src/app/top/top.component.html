@@ -27,16 +27,20 @@
   <h2 class="sectionTitle">Speakers</h2>
   <ul class="speakers__list--guest">
     <li *ngFor="let guest of guests">
-      <app-speaker-avatar class="speaker__image" [speaker]="guest"></app-speaker-avatar>
-      <h3 class="speaker__name">{{guest.fullName}}</h3>
-      <p class="speaker__company">{{guest.tagLine}}</p>
+      <a routerLink="/speakers" fragment="id-{{guest.id}}">
+        <app-speaker-avatar class="speaker__image" [speaker]="guest"></app-speaker-avatar>
+        <h3 class="speaker__name">{{guest.fullName}}</h3>
+        <p class="speaker__company">{{guest.tagLine}}</p>
+      </a>
     </li>
   </ul>
   <ul class="speakers__list">
     <li *ngFor="let speaker of speakers">
-      <app-speaker-avatar class="speaker__image" [speaker]="speaker"></app-speaker-avatar>
-      <h3 class="speaker__name">{{speaker.fullName}}</h3>
-      <p class="speaker__company">{{speaker.tagLine}}</p>
+      <a routerLink="/speakers" fragment="id-{{speaker.id}}">
+        <app-speaker-avatar class="speaker__image" [speaker]="speaker"></app-speaker-avatar>
+        <h3 class="speaker__name">{{speaker.fullName}}</h3>
+        <p class="speaker__company">{{speaker.tagLine}}</p>
+      </a>
     </li>
   </ul>
 </section>

@@ -1,3 +1,4 @@
+import {ActivatedRoute, NavigationEnd, Router} from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { Speaker } from '../../types';
 
@@ -24,9 +25,19 @@ export class SpeakersComponent implements OnInit {
         }
       })
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor(router: Router) {
+    router.events.subscribe(s => {
+      if (s instanceof NavigationEnd) {
+        const tree = router.parseUrl(router.url);
+        if (tree.fragment) {
+          window.requestAnimationFrame(() => {
+            const element: any = document.querySelector("#" + tree.fragment);
+            if (element) { element.scrollIntoView(element); }
+          })
+        }
+      }
+    });
   }
 
+  ngOnInit () { }
 }
