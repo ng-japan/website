@@ -1,7 +1,7 @@
-<div class="card">
+<a class="card" routerLink="/sessions" fragment="id-{{id}}">
   <div class="image" *ngFor="let imageUrl of imageUrls"  [ngStyle]="{'background-image': 'url(' + imageUrl + ')'}"></div>
   <div class="info">
     <div class="title">{{title}}</div>
     <div class="speaker">{{speaker}}</div>
   </div>
-</div>
+</a>

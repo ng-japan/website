@@ -6,6 +6,7 @@
   height: 100px;
   align-items: center;
   padding: 0 16px;
+  text-decoration: none;
 }
 @media (max-width: 667px) {
   .card {

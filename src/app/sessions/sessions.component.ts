@@ -1,7 +1,7 @@
+import { NavigationEnd, Router} from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 declare function require(x: string): any;
-const Speakers = require('../../data/sessions.json');
 const Sessions = require('../../data/sessions.json')[0].sessions;
 
 @Component({
@@ -10,12 +10,22 @@ const Sessions = require('../../data/sessions.json')[0].sessions;
   styleUrls: ['./sessions.component.css']
 })
 export class SessionsComponent implements OnInit {
-  sessionMap = Sessions.reduce((obj, value) => ({ ...obj, [value.id]: value }), {});
-  speakerMap = Speakers.reduce((obj, value) => ({ ...obj, [value.id]: value }), {});
+  sessions = Sessions
 
-  constructor() { }
+  constructor(router: Router) {
+    router.events.subscribe(s => {
+      if (s instanceof NavigationEnd) {
+        const tree = router.parseUrl(router.url);
+        if (tree.fragment) {
+          window.requestAnimationFrame(() => {
+            const element: any = document.querySelector("#" + tree.fragment);
+            if (element) { element.scrollIntoView(element); }
+          })
+        }
+      }
+    });
+  }
 
   ngOnInit() {
   }
-
 }

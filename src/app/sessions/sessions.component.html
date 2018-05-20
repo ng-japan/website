@@ -1,5 +1,16 @@
 <app-header></app-header>
 <app-sub-header title="Sessions"></app-sub-header>
-<p>
-  sessions works!
-</p>
+<ul class="list">
+  <li class="item" *ngFor="let session of sessions" id="id-{{session.id}}">
+    <h3 class="name">{{session.title}}</h3>
+    <div class="speakers">
+      by
+      <span class="speaker" *ngFor="let speaker of session.speakers">
+        <a routerLink="/speakers" fragment="id-{{speaker.id}}">
+          {{speaker.name}}
+        </a>
+      </span>
+    </div>
+    <p class="description">{{session.description}}</p>
+  </li>
+</ul>
