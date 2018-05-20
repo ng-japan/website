@@ -128,15 +128,17 @@ header.isTransparent li a {
     position: fixed;
     width: 100%;
     height: 100%;
-    left: 100%;
+    left: 0;
     top: 0;
     overflow: hidden;
     background-color: #fff;
-    transition: left 0.2s ease-out;
+    transition: transform 0.2s ease-out;
     z-index: 20;
+    transform-origin: right top;
+    transform: rotate(-90deg);
   }
   .mobile.isOpen {
-    left: 0;
+    transform: rotate(0deg);
   }
 
   .mobile .titleLogo {
