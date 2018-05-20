@@ -36,7 +36,7 @@ export class SpeakersComponent implements OnInit {
               element.scrollIntoView(element);
               window.requestAnimationFrame(() => {
                 document.documentElement.scrollTop = document.body.scrollTop =
-                  (document.documentElement.scrollTop || document.body.scrollTop) + 80
+                  (document.documentElement.scrollTop || document.body.scrollTop) - 80
               })
             }
           })
