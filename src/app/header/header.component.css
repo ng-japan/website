@@ -121,6 +121,9 @@ header.isTransparent li a {
 
   .menuButton {
     color: currentColor;
+    appearance: none;
+    border: none;
+    background-color: transparent;
   }
 
   .mobile {
@@ -151,6 +154,9 @@ header.isTransparent li a {
     position: absolute;
     right: 18px;
     top: 25px;
+    appearance: none;
+    border: none;
+    background-color: transparent;
   }
 
   .mobile .header__nav {

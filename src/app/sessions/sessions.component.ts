@@ -19,7 +19,13 @@ export class SessionsComponent implements OnInit {
         if (tree.fragment) {
           window.requestAnimationFrame(() => {
             const element: any = document.querySelector("#" + tree.fragment);
-            if (element) { element.scrollIntoView(element); }
+            if (element) {
+              element.scrollIntoView(element);
+              window.requestAnimationFrame(() => {
+                document.documentElement.scrollTop = document.body.scrollTop =
+                  (document.documentElement.scrollTop || document.body.scrollTop) + 80
+              })
+            }
           })
         }
       }

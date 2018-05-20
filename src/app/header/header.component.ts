@@ -17,7 +17,6 @@ export class HeaderComponent implements OnInit {
   }
 
   open() {
-    console.log('open');
     this.isOpen = true
   }
 
