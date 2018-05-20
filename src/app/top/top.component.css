@@ -13,16 +13,8 @@
  * components
  * -------------------------------- */
 .titleLogo {
-  background: #fff url('assets/images/title-logo.svg') no-repeat left top;
-  background-size: 100%;
-  color: transparent;
-  text-align: right;
-  width: 120px;
-  height: 72px;
-  padding: 14px 13px;
-  font-size: 19px;
-  font-weight: var(--weight-bold);
-  line-height: 1.3;
+  color: var(--color-main-light);
+  background-color: #fff;
 }
 
 .lang {
@@ -544,13 +536,6 @@
   /* --------------------------------
    * components
    * -------------------------------- */
-  .titleLogo {
-    width: 70px;
-    height: 42px;
-    padding: 8px;
-    font-size: 11px;
-  }
-
   .title {
     font-size: 38px;
   }
