@@ -364,12 +364,6 @@
   width: 220px;
   height: 220px;
 }
-.speakers__list--guest .speaker__image::before {
-  right: 20px;
-  top: 20px;
-  width: 44px;
-  height: 48px;
-}
 
 .speakers__list--guest .speaker__name {
   font-size: 24px;
@@ -657,8 +651,6 @@
     border-width: 6px;
   }
   .speakers__list--guest .speaker__image::before {
-    right: 14px;
-    top: 14px;
     width: 28px;
     height: 31px;
   }

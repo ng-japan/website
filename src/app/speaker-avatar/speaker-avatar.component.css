@@ -1,5 +1,6 @@
 :host {
   display: block;
+  position: relative;
 }
 
 .avatar {
@@ -19,8 +20,8 @@
   content: '';
   display: block;
   position: absolute;
-  right: 20px;
-  top: 20px;
+  right: 0;
+  top: 10%;
   width: 44px;
   height: 48px;
   background: url('assets/images/guest.png') no-repeat;
@@ -28,13 +29,4 @@
 }
 
 @media (max-width: 667px) {
-  .avatar.guest {
-    border-width: 6px;
-  }
-  .avatar.guest::before {
-    right: 14px;
-    top: 14px;
-    width: 28px;
-    height: 31px;
-  }
 }

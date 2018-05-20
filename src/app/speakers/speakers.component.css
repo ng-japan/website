@@ -1,0 +1,62 @@
+.list {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.item {
+  border-bottom: 1px solid #d7dce6;
+  padding-bottom: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 64px;
+}
+.item:last-child {
+  border: none;
+}
+
+.image {
+  width: 182px;
+  height: 182px;
+  margin-right: 40px;
+}
+
+.info {
+  width: 640px;
+  text-align: left;
+  color: var(--color-speaker);
+  line-height: 1.5;
+}
+
+.name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.company {
+  font-size: 14px;
+}
+
+.account {
+  font-size: 14px;
+  color: var(--color-main-light);
+  margin-top: 8px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.description {
+  font-size: 14px;
+  position: relative;
+  margin-top: 43px;
+}
+.description::before {
+  content: '';
+  display: block;
+  position: absolute;
+  background: var(--color-main-light);
+  width: 120px;
+  height: 3px;
+  left: 0;
+  top: -23px;
+}
