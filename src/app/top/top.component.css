@@ -471,46 +471,6 @@
 }
 
 
-/* --------------------------------
- * follow us
- * -------------------------------- */
-.followUs {
-  padding-bottom: 32px;
-  border-bottom: 1px solid rgba(255,255,255,0.2);
-  margin: 0 80px 32px;
-}
-
-.followUs strong {
-  font-weight: bold;
-}
-
-.followUs__text {
-  font-size: 24px;
-  margin-bottom: 24px;
-}
-
-.followUs__twitterButton {
-  text-align: center;
-}
-
-
-/* --------------------------------
- * footer
- * -------------------------------- */
-.footer {
-  background-color: #1D212B;
-  padding: 32px 0;
-}
-
-.footer__nav {
-  margin-bottom: 12px;
-}
-.footer__nav li {
-  display: inline;
-  margin-right: 6px;
-}
-
-
 
 /* ================================
  * SP
@@ -702,16 +662,5 @@
 
   .sponsor__wanted br {
     display: block;
-  }
-
-  /* --------------------------------
-   * follow us
-   * -------------------------------- */
-  .followUs {
-    margin: 0 16px 32px;
-  }
-
-  .followUs__text {
-    font-size: 16px;
   }
 }
