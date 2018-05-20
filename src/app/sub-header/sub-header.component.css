@@ -1,5 +1,5 @@
 .subHeader {
-  background: var(--color-main-light);
+  background: var(--color-main-light) url('assets/images/angular-skeleton.png') no-repeat center 30px;
   width: 100%;
   height: 404px;
   padding-top: 222px;
@@ -23,9 +23,21 @@
   transform: translateX(-50%);
 }
 
-.angular {
-  position: absolute;
-  left: 50%;
-  top: 30px;
-  transform: translateX(-50%);
+@media (max-width: 667px) {
+  .subHeader {
+    height: 210px;
+    background-position: center 64px;
+    background-size: 160px auto;
+    font-size: 24px;
+    padding-top: 112px;
+  }
+  .subHeader::after {
+    width: calc(100% - 16px);
+    height: 32px;
+  }
+
+  .angular {
+    width: 160px;
+    height: 175px;
+  }
 }

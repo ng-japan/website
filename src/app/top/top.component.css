@@ -471,7 +471,7 @@
     --triangle-width: 870px;
     --triangle-height: 480px;
 
-    padding: 32px 20px;
+    padding: 68px 20px 32px;
   }
   .header__shadow1 {
     --added-width: 210px;
@@ -573,14 +573,6 @@
   }
   .speakers__list--guest::after {
     height: 70%;
-  }
-
-  .speakers__list--guest .speaker__image {
-    border-width: 6px;
-  }
-  .speakers__list--guest .speaker__image::before {
-    width: 28px;
-    height: 31px;
   }
 
   .speakers__list--guest .speaker__name {

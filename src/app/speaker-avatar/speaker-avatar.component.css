@@ -29,4 +29,14 @@
 }
 
 @media (max-width: 667px) {
+  .avatar.guest {
+    border-width: 6px;
+  }
+
+  .avatar.guest::before {
+    width: 28px;
+    height: 31px;
+    right: 0;
+    top: 6%;
+  }
 }

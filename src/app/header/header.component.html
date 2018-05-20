@@ -15,4 +15,31 @@
   <ng-container *ngIf="showJoinButton">
     <a class="button" i18n="@@connpass" href="https://ngjapan.connpass.com/event/88084/" target="_blank" rel="noreferrer noopener">Join us!</a>
   </ng-container>
+  <div class="menu">
+    <span class="menuTitle">Menu</span>
+    <button class="menuButton" (click)="open()">
+      <svg width="24" height="16" xmlns="http://www.w3.org/2000/svg"><g fill="currentColor" fill-rule="evenodd"><rect width="24" height="2" rx="1"/><rect y="7" width="24" height="2" rx="1"/><rect y="14" width="24" height="2" rx="1"/></g></svg>
+    </button>
+  </div>
 </header>
+<div class="mobile" [class.isOpen]="isOpen">
+  <app-logo class="titleLogo"></app-logo>
+  <nav class="header__nav">
+    <ul>
+      <li><a class="navLink" routerLink="/">TOP</a></li>
+      <li><a class="navLink" routerLink="/speakers">SPEAKERS</a></li>
+      <li><a class="navLink" routerLink="/sessions">SESSIONS</a></li>
+      <li>
+        <a class="localeLink" routerLink="/" [class.is-active]="locale === 'ja'">JP</a>
+        <span class="separator">|</span>
+        <a routerLink="/en/" [class.is-active]="locale === 'en-US'">EN</a>
+      </li>
+      <li>
+        <a class="button" i18n="@@connpass" href="https://ngjapan.connpass.com/event/88084/" target="_blank" rel="noreferrer noopener">Join us!</a>
+      </li>
+    </ul>
+  </nav>
+  <button class="closeButton" (click)="close()">
+    <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg"><g transform="translate(-1 -1)" fill="#1D212B" fill-rule="evenodd"><rect transform="rotate(45 10 10)" x="-2" y="9" width="24" height="2" rx="1"/><rect transform="rotate(135 10 10)" x="-2" y="9" width="24" height="2" rx="1"/></g></svg>
+  </button>
+</div>

@@ -9,9 +9,19 @@ export class HeaderComponent implements OnInit {
   @Input() isTransparent: boolean
   @Input() showJoinButton = true
 
+  isOpen= false
+
   constructor() { }
 
   ngOnInit() {
   }
 
+  open() {
+    console.log('open');
+    this.isOpen = true
+  }
+
+  close() {
+    this.isOpen = false
+  }
 }
