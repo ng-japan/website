@@ -320,12 +320,7 @@
 .speaker__image {
   width: 180px;
   height: 180px;
-  border-radius: 100%;
-  overflow: hidden;
-  background: #fff;
-  box-shadow: 0 8px 14px 0 rgba(0,0,0,0.16);
   margin: 0 20px 24px;
-  background-size: cover;
 }
 
 .speaker__name {
@@ -368,18 +363,12 @@
 .speakers__list--guest .speaker__image {
   width: 220px;
   height: 220px;
-  border: 8px solid var(--color-main-light);
 }
 .speakers__list--guest .speaker__image::before {
-  content: '';
-  display: block;
-  position: absolute;
   right: 20px;
   top: 20px;
   width: 44px;
   height: 48px;
-  background: url('assets/images/guest.png') no-repeat;
-  background-size: contain;
 }
 
 .speakers__list--guest .speaker__name {

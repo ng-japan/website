@@ -34,14 +34,14 @@
   <h2 class="sectionTitle">Speakers</h2>
   <ul class="speakers__list--guest">
     <li *ngFor="let guest of guests">
-      <div class="speaker__image" [ngStyle]="{'background-image': 'url(' + guest.profilePicture + ')'}"></div>
+      <app-speaker-avatar class="speaker__image" [speaker]="guest"></app-speaker-avatar>
       <h3 class="speaker__name">{{guest.fullName}}</h3>
       <p class="speaker__company">{{guest.tagLine}}</p>
     </li>
   </ul>
   <ul class="speakers__list">
     <li *ngFor="let speaker of speakers">
-      <div class="speaker__image" [ngStyle]="{'background-image': 'url(' + speaker.profilePicture + ')'}"></div>
+      <app-speaker-avatar class="speaker__image" [speaker]="speaker"></app-speaker-avatar>
       <h3 class="speaker__name">{{speaker.fullName}}</h3>
       <p class="speaker__company">{{speaker.tagLine}}</p>
     </li>

@@ -14,6 +14,7 @@ import { SubHeaderComponent } from './sub-header/sub-header.component';
 import { LogoComponent } from './logo/logo.component';
 import { TimetableComponent } from './timetable/timetable.component';
 import { TimetableCardComponent } from './timetable-card/timetable-card.component';
+import { SpeakerAvatarComponent } from './speaker-avatar/speaker-avatar.component';
 
 import { environment } from '../environments/environment';
 
@@ -28,6 +29,7 @@ import { environment } from '../environments/environment';
     TimetableCardComponent,
     SpeakersComponent,
     SessionsComponent,
+    SpeakerAvatarComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
