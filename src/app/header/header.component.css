@@ -10,6 +10,13 @@ header {
   align-items: center;
   padding: 0 calc((100% - 1200px) / 2);
   z-index: 10;
+  transition: all 0.3s ease-out;
+}
+
+header.isTransparent {
+  background: transparent;
+  color: #fff;
+  box-shadow: none;
 }
 
 .titleLogo {
@@ -17,6 +24,12 @@ header {
   color: #fff;
   margin-left: 50px;
   margin-right: auto;
+  transition: all 0.3s ease-out;
+}
+
+header.isTransparent .titleLogo {
+  color: var(--color-main-light);
+  background-color: #fff;
 }
 
 ul {
@@ -32,6 +45,11 @@ li a {
   font-size: 18px;
   text-decoration: none;
   transition: color 0.1s ease-out, opacity 0.1s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+header.isTransparent li a {
+  color: #fff;
 }
 
 .navLink:focus,

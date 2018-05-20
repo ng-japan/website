@@ -1,4 +1,4 @@
-<header>
+<header [class.isTransparent]="isTransparent">
   <app-logo class="titleLogo"></app-logo>
   <nav class="header__nav">
     <ul>
@@ -12,5 +12,7 @@
       </li>
     </ul>
   </nav>
-  <a class="button" i18n="@@connpass" href="https://ngjapan.connpass.com/event/88084/" target="_blank" rel="noreferrer noopener">Join us!</a>
+  <ng-container *ngIf="showJoinButton">
+    <a class="button" i18n="@@connpass" href="https://ngjapan.connpass.com/event/88084/" target="_blank" rel="noreferrer noopener">Join us!</a>
+  </ng-container>
 </header>

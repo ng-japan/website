@@ -15,7 +15,21 @@ export class TopComponent {
   sessionMap = Sessions.reduce((obj, value) => ({ ...obj, [value.id]: value }), {});
   speakerMap = Speakers.reduce((obj, value) => ({ ...obj, [value.id]: value }), {});
 
+  isTop = true
+  eventHandler: any
+
   constructor(@Inject(LOCALE_ID) public locale: string) {}
+
+  ngOnInit() {
+    this.eventHandler = document.addEventListener('scroll', () => {
+      this.isTop =
+        (document.documentElement.scrollTop || document.body.scrollTop) < 50
+    })
+  }
+
+  ngOnDestroy() {
+    document.removeEventListener('scroll', this.eventHandler)
+  }
 
   scroll () {
     let current = window.document.documentElement.scrollTop;

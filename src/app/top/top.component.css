@@ -1,44 +1,6 @@
 /* --------------------------------
- * helpers
- * -------------------------------- */
-.inverse {
-  color: #FFF;
-}
-.inverse a:not(.button) {
-  color: #FFF;
-}
-
-
-/* --------------------------------
  * components
  * -------------------------------- */
-.titleLogo {
-  color: var(--color-main-light);
-  background-color: #fff;
-}
-
-.lang {
-  color: #FFF;
-  white-space: nowrap;
-  font-size: 18px;
-}
-.lang__separator {
-  margin: 0 3px;
-}
-.lang a:link,
-.lang a:visited,
-.lang a:hover,
-.lang a:active {
-  color: rgba(255,255,255,0.4);
-  text-decoration: none;
-}
-.lang a.is-active:link,
-.lang a.is-active:visited,
-.lang a.is-active:hover,
-.lang a.is-active:active {
-  color: #FFF;
-}
-
 .title {
   font-weight: var(--weight-black);
   font-size: 88px;
@@ -164,8 +126,12 @@
 
   position: relative;
   height: var(--triangle-height);
-  padding: 40px 100px;
+  padding: 140px 100px 40px;
   overflow: hidden;
+  color: #fff;
+}
+.header a:not(.button) {
+  color: #fff;
 }
 @media (min-width: 2000px) {
   .header {
@@ -227,12 +193,6 @@
   border-right-width: var(--width);
   opacity: 0.06;
   z-index: -5;
-}
-
-.header__nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .header__main {

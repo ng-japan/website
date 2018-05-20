@@ -1,16 +1,9 @@
-<header class="header inverse">
+<app-header class="global-header" [isTransparent]="isTop" [showJoinButton]="false"></app-header>
+<div class="header">
   <div class="header__bg"></div>
   <div class="header__shadow1"></div>
   <div class="header__shadow2"></div>
   <div class="header__shadow3"></div>
-  <nav class="header__nav">
-    <app-logo class="titleLogo"></app-logo>
-    <div class="lang">
-      <a href="/" [class.is-active]="locale === 'ja'">JP</a>
-      <span class="lang__separator">|</span>
-      <a href="/en/" [class.is-active]="locale === 'en-US'">EN</a>
-    </div>
-  </nav>
   <div class="header__main">
     <h1 class="title">ng-japan 2018</h1>
     <p class="subTitle">
@@ -20,7 +13,7 @@
     <a class="button" i18n="@@connpass" href="https://ngjapan.connpass.com/event/88084/" target="_blank" rel="noreferrer noopener">Join us!</a>
   </div>
   <span class="header__scroller" (click)="scroll()"></span>
-</header>
+</div>
 <section class="about" id="about">
   <img src="assets/images/logo.png" alt="ng-japan ロゴ" class="about__logo">
   <h2 class="sectionTitle">What's <span class="highlight">ng-japan</span>?</h2>
