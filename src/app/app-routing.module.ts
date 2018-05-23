@@ -7,6 +7,7 @@ import { SessionsComponent } from './sessions/sessions.component';
 
 const routes: Routes = [
   { path: '', component: TopComponent },
+  { path: 'en', component: TopComponent },
   { path: 'speakers', component: SpeakersComponent },
   { path: 'sessions', component: SessionsComponent },
 ];
