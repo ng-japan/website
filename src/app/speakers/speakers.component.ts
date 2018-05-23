@@ -33,10 +33,9 @@ export class SpeakersComponent implements OnInit {
           window.requestAnimationFrame(() => {
             const element: any = document.querySelector("#" + tree.fragment);
             if (element) {
-              element.scrollIntoView(element);
+              const { top } = element.getBoundingClientRect()
               window.requestAnimationFrame(() => {
-                document.documentElement.scrollTop = document.body.scrollTop =
-                  (document.documentElement.scrollTop || document.body.scrollTop) - 80
+                document.documentElement.scrollTop = document.body.scrollTop = top - 130
               })
             }
           })
