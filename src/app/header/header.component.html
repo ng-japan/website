@@ -6,9 +6,9 @@
       <li><a class="navLink" routerLink="/speakers">SPEAKERS</a></li>
       <!--<li><a class="navLink" routerLink="/sessions">SESSIONS</a></li>-->
       <li>
-        <a class="localeLink" routerLink="/" [class.is-active]="locale === 'ja'">JP</a>
+        <a class="localeLink" href="/" [class.is-active]="locale === 'ja'">JP</a>
         <span class="separator">|</span>
-        <a href="/en/" [class.is-active]="locale === 'en-US'">EN</a>
+        <a class="localeLink" href="/en/" [class.is-active]="locale === 'en-US'">EN</a>
       </li>
     </ul>
   </nav>
@@ -30,9 +30,9 @@
       <li><a class="navLink" routerLink="/speakers">SPEAKERS</a></li>
       <!--<li><a class="navLink" routerLink="/sessions">SESSIONS</a></li>-->
       <li>
-        <a class="localeLink" routerLink="/" [class.is-active]="locale === 'ja'">JP</a>
+        <a class="localeLink" href="/" [class.is-active]="locale === 'ja'">JP</a>
         <span class="separator">|</span>
-        <a href="/en/" [class.is-active]="locale === 'en-US'">EN</a>
+        <a class="localeLink" href="/en/" [class.is-active]="locale === 'en-US'">EN</a>
       </li>
       <li>
         <a class="button" i18n="@@connpass" href="https://ngjapan.connpass.com/event/88084/" target="_blank" rel="noreferrer noopener">Join us!</a>
