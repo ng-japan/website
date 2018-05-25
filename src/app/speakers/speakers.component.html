@@ -1,0 +1,15 @@
+<app-header></app-header>
+<app-sub-header title="Speakers"></app-sub-header>
+<ul class="list">
+  <li class="item" *ngFor="let speaker of speakers" id="id-{{speaker.id}}">
+    <app-speaker-avatar class="image" [speaker]="speaker"></app-speaker-avatar>
+    <div class="info">
+      <h3 class="name">{{speaker.fullName}}</h3>
+      <div class="company">{{speaker.tagLine}}</div>
+      <ng-container *ngIf="speaker.twitterId">
+        <a class="account" href="https://twitter.com/{{speaker.twitterId}}" target="_blank" rel="noreferrer noopener">@{{speaker.twitterId}}</a>
+      </ng-container>
+    </div>
+    <p class="description">{{speaker.bio}}</p>
+  </li>
+</ul>

@@ -12,4 +12,5 @@ export type Speaker = {
   tagLine: string,
   profilePicture: string,
   isTopSpeaker: boolean,
+  twitterId?: string,
 };

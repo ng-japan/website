@@ -17,6 +17,7 @@
         "favicon.ico",
         "manifest.json",
         "robots.txt",
+        "_redirects",
         {
           "glob": "**/*",
           "input": "../2015",

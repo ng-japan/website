@@ -12,6 +12,10 @@ export class TimetableCardComponent implements OnInit {
 
   constructor() {}
 
+  get id() {
+    return this.session ? this.session.id : ''
+  }
+
   get title() {
     return this.session ? this.session.title : ''
   }

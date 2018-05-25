@@ -1,0 +1,22 @@
+.logo {
+  display: block;
+  width: 120px;
+  height: 72px;
+  color: currentColor;
+}
+
+svg {
+  display: block;
+}
+
+@media (max-width: 667px) {
+  .logo {
+    width: 70px;
+    height: 42px;
+  }
+
+  svg {
+    transform: scale(0.58);
+    transform-origin: left top;
+  }
+}
