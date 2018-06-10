@@ -28,6 +28,13 @@
   justify-content: center;
 }
 
+.description {
+  padding-top: 16px;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--color-speaker);
+}
+
 .roomA {
   grid-column: 2 / 3;
 }
@@ -106,6 +113,11 @@
 
   .text {
     text-align: center;
+  }
+
+  .description {
+    text-align: center;
+    padding-bottom: 32px;
   }
 
   .roomA,
