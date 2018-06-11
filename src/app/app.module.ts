@@ -34,7 +34,7 @@ import { environment } from '../environments/environment';
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
-    ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production, scope: environment.swScope }),
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production, scope: environment.swScope }),
   ],
   providers: [],
   bootstrap: [AppComponent]
