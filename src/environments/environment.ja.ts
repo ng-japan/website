@@ -5,5 +5,5 @@
 
 export const environment = {
   production: false,
-  swScope: '/en/'
+  swScope: '/'
 };

@@ -18,21 +18,6 @@
       }
     },
     {
-      "name": "en",
-      "installMode": "prefetch",
-      "resources": {
-        "files": [
-          "/en/",
-          "/en/index.html",
-          "/en/favicon.ico",
-          "/en/*.css",
-          "/en/*.js",
-          "/en/*.png",
-          "/en/*.svg"
-        ]
-      }
-    },
-    {
       "name": "assets",
       "installMode": "prefetch",
       "updateMode": "prefetch",
