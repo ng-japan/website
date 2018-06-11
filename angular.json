@@ -83,13 +83,7 @@
               "baseHref": "/",
               "i18nFile": "src/locale/messages.ja.xlf",
               "i18nFormat": "xlf",
-              "i18nLocale": "ja",
-              "fileReplacements": [
-                {
-                  "replace": "src/manifest.json",
-                  "with": "src/manifest.ja.json"
-                }
-              ]
+              "i18nLocale": "ja"
             },
             "production-ja": {
               "aot": true,
@@ -112,10 +106,6 @@
                 {
                   "replace": "src/environments/environment.ts",
                   "with": "src/environments/environment.prod.ts"
-                },
-                {
-                  "replace": "src/manifest.json",
-                  "with": "src/manifest.ja.json"
                 }
               ]
             }

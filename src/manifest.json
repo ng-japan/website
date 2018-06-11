@@ -3,7 +3,7 @@
   "short_name": "ng-japan",
   "theme_color": "#E23030",
   "background_color": "#F7F8FA",
-  "start_url": "/en/?utm_source=a2hs",
+  "start_url": "/?utm_source=a2hs",
   "display": "standalone",
   "orientation": "portrait",
   "icons": [
