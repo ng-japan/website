@@ -5744,7 +5744,7 @@ rxjs@^6.0.0, rxjs@^6.2.0:
   dependencies:
     tslib "^1.9.0"
 
-rxjs@^6.0.0:
+rxjs@^6.0.0, rxjs@^6.2.0:
   version "6.2.0"
   resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-6.2.0.tgz#e024d0e180b72756a83c2aaea8f25423751ba978"
   dependencies:
