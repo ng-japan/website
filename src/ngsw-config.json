@@ -6,21 +6,32 @@
     "resources": {
       "files": [
         "/favicon.ico",
-        "/index.html"
-      ],
-      "versionedFiles": [
-        "/*.bundle.css",
-        "/*.bundle.js",
-        "/*.chunk.js"
+        "/index.html",
+        "/coc.html",
+        "/coc-en.html",
+        "/*.css",
+        "/*.js",
+        "/*.png",
+        "/*.svg"
       ]
     }
   }, {
     "name": "assets",
-    "installMode": "lazy",
+    "installMode": "prefetch",
     "updateMode": "prefetch",
     "resources": {
       "files": [
         "/assets/**"
+      ]
+    }
+  },
+  {
+    "name": "cdn",
+    "installMode": "lazy",
+    "updateMode": "prefetch",
+    "resources": {
+      "urls": [
+        "https://fonts.googleapis.com/"
       ]
     }
   }]
