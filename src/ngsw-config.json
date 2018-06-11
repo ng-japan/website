@@ -22,8 +22,9 @@
       "installMode": "prefetch",
       "resources": {
         "files": [
-          "/en/favicon.ico",
+          "/en/",
           "/en/index.html",
+          "/en/favicon.ico",
           "/en/*.css",
           "/en/*.js",
           "/en/*.png",
