@@ -1,38 +1,51 @@
 {
   "index": "/index.html",
-  "assetGroups": [{
-    "name": "app",
-    "installMode": "prefetch",
-    "resources": {
-      "files": [
-        "/favicon.ico",
-        "/index.html",
-        "/coc.html",
-        "/coc-en.html",
-        "/*.css",
-        "/*.js",
-        "/*.png",
-        "/*.svg"
-      ]
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "resources": {
+        "files": [
+          "/favicon.ico",
+          "/index.html",
+          "/coc.html",
+          "/coc-en.html",
+          "/*.css",
+          "/*.js",
+          "/*.png",
+          "/*.svg"
+        ]
+      }
+    },
+    {
+      "name": "en",
+      "installMode": "prefetch",
+      "resources": {
+        "files": [
+          "/en/favicon.ico",
+          "/en/index.html",
+          "/en/*.css",
+          "/en/*.js",
+          "/en/*.png",
+          "/en/*.svg"
+        ]
+      }
+    },
+    {
+      "name": "assets",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "resources": {
+        "files": ["/assets/**", "/en/assets/**"]
+      }
+    },
+    {
+      "name": "cdn",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "resources": {
+        "urls": ["https://fonts.googleapis.com/"]
+      }
     }
-  }, {
-    "name": "assets",
-    "installMode": "prefetch",
-    "updateMode": "prefetch",
-    "resources": {
-      "files": [
-        "/assets/**"
-      ]
-    }
-  },
-  {
-    "name": "cdn",
-    "installMode": "lazy",
-    "updateMode": "prefetch",
-    "resources": {
-      "urls": [
-        "https://fonts.googleapis.com/"
-      ]
-    }
-  }]
+  ]
 }
