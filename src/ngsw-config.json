@@ -22,7 +22,7 @@
     }
   },
   {
-    "name": "fonts",
+    "name": "cdn",
     "installMode": "lazy",
     "updateMode": "prefetch",
     "resources": {
