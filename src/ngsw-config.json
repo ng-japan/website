@@ -26,7 +26,7 @@
     },
     {
       "name": "archives",
-      "installMode": "lazy",
+      "installMode": "prefetch",
       "updateMode": "prefetch",
       "resources": {
         "files": ["/2017/**", "/2016/**", "/2015/**"]
