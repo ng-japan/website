@@ -7,7 +7,7 @@ import {Component, OnInit, Input, LOCALE_ID, Inject} from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   @Input() isTransparent: boolean
-  @Input() showJoinButton = true
+  @Input() showJoinButton = false
 
   isOpen = false
 
