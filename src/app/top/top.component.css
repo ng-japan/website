@@ -45,11 +45,11 @@
   line-height: 60px;
   text-align: center;
   border-radius: 100px;
-  background-color: #FFF;
+  background-color: #fff;
   color: var(--color-main-light);
   font-size: 20px;
   font-weight: bold;
-  box-shadow: 0 8px 14px 0 rgba(0,0,0,0.16);
+  box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.16);
   outline: none;
   cursor: pointer;
   text-decoration: none;
@@ -60,7 +60,7 @@
 }
 .button:hover,
 .button:focus {
-  box-shadow: 0 3px 7px 0 rgba(0,0,0,0.16);
+  box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.16);
   transform: translateY(1px);
 }
 .button.is-disabled {
@@ -68,8 +68,8 @@
 }
 .button--ghost {
   background: transparent;
-  border: 2px solid #FFF;
-  color: #FFF;
+  border: 2px solid #fff;
+  color: #fff;
 }
 
 .card {
@@ -78,8 +78,8 @@
   height: 372px;
   max-width: 100%;
   padding-top: 102px;
-  background-color: #FFF;
-  box-shadow: 0 16px 30px 0 rgba(0,0,0,0.24);
+  background-color: #fff;
+  box-shadow: 0 16px 30px 0 rgba(0, 0, 0, 0.24);
   color: var(--color-main-light);
   text-align: center;
 }
@@ -115,7 +115,6 @@
   color: currentColor;
   margin: 32px auto;
 }
-
 
 /* --------------------------------
  * header
@@ -156,7 +155,8 @@
 .header__shadow2,
 .header__shadow3 {
   transform: translateX(-50%);
-  border-width: var(--triangle-height) var(--triangle-width) 0 var(--triangle-width);
+  border-width: var(--triangle-height) var(--triangle-width) 0
+    var(--triangle-width);
   border-color: var(--color-main-light) transparent transparent transparent;
   z-index: -2;
 }
@@ -226,6 +226,27 @@
   content: url('assets/images/scroll.svg');
 }
 
+/*
+ * Strean Links
+ */
+
+.stream-links-header {
+  font-size: 32px;
+  font-weight: var(--weight-bold);
+  margin-bottom: 16px;
+}
+
+.stream-links {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  grid-gap: 24px;
+}
+
+.stream-link {
+  display: block;
+  font-size: 24px;
+}
 
 /* --------------------------------
  * about
@@ -247,7 +268,6 @@
 .about__description:lang(ja) {
   letter-spacing: 1.14px;
 }
-
 
 /* --------------------------------
  * speakers
@@ -341,7 +361,6 @@
   font-size: 18px;
 }
 
-
 /* --------------------------------
  * timetable
  * -------------------------------- */
@@ -352,7 +371,6 @@
 .timetable .sectionTitle {
   margin-bottom: 64px;
 }
-
 
 /* --------------------------------
  * sponsors
@@ -370,7 +388,7 @@
 .sponsors .sponsors__note {
   margin-top: 5px;
   font-size: 14px;
-  color: #8E9299;
+  color: #8e9299;
   display: block;
   font-weight: normal;
 }
@@ -397,14 +415,14 @@
   align-items: center;
   justify-content: center;
   background: #fff;
-  box-shadow: 0 6px 18px 0 rgba(0,0,0,0.16);
+  box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.16);
   border-radius: 8px;
   margin: 0 auto;
   transition: all 0.2s ease-out;
 }
 .sponsor:hover {
   transform: translateY(2px);
-  box-shadow: 0 3px 7px 0 rgba(0,0,0,0.16);
+  box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.16);
 }
 
 .sponsor img {
@@ -438,8 +456,6 @@
   margin: 0 32px 64px;
 }
 
-
-
 /* ================================
  * SP
  * ================================ */
@@ -462,7 +478,6 @@
   .sectionTitle--sub {
     font-size: 16px;
   }
-
 
   /* --------------------------------
    * header
@@ -510,6 +525,13 @@
     bottom: 24px;
   }
 
+  /*
+   * Strean Links
+   */
+
+  .stream-links {
+    grid-column-gap: 8px;
+  }
 
   /* --------------------------------
    * about
@@ -530,7 +552,6 @@
   .about__description:lang(ja) {
     letter-spacing: initial;
   }
-
 
   /* --------------------------------
    * speakers
@@ -583,7 +604,6 @@
     font-size: 14px;
   }
 
-
   /* --------------------------------
    * timetable
    * -------------------------------- */
@@ -594,7 +614,6 @@
   .timetable .sectionTitle {
     margin-bottom: 32px;
   }
-
 
   /* --------------------------------
    * Sponsors
