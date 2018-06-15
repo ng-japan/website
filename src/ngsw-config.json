@@ -7,9 +7,8 @@
       "resources": {
         "files": [
           "/favicon.ico",
-          "/index.html",
-          "/coc.html",
-          "/coc-en.html",
+          "/*.html",
+          "/*.pdf",
           "/*.css",
           "/*.js",
           "/*.png",
@@ -23,6 +22,14 @@
       "updateMode": "prefetch",
       "resources": {
         "files": ["/assets/**"]
+      }
+    },
+    {
+      "name": "archives",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "resources": {
+        "files": ["/2017/**", "/2016/**", "/2015/**"]
       }
     },
     {

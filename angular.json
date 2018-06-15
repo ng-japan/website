@@ -39,17 +39,17 @@
               {
                 "glob": "coc.html",
                 "input": "",
-                "output": "/coc.html"
+                "output": "/"
               },
               {
                 "glob": "coc-en.html",
                 "input": "",
-                "output": "/coc-en.html"
+                "output": "/"
               },
               {
                 "glob": "call-for-sponsors.pdf",
                 "input": "",
-                "output": "/call-for-sponsors.pdf"
+                "output": "/"
               }
             ],
             "styles": ["src/styles.css"],
