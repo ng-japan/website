@@ -4,7 +4,7 @@
   publish = "public/"
 
   # Default build command.
-  command = "npm build"
+  command = "npm run build"
 
 # Current Year Redirect
 
