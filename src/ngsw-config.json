@@ -25,14 +25,6 @@
       }
     },
     {
-      "name": "archives",
-      "installMode": "lazy",
-      "updateMode": "prefetch",
-      "resources": {
-        "files": ["/2017/**", "/2016/**", "/2015/**"]
-      }
-    },
-    {
       "name": "cdn",
       "installMode": "lazy",
       "updateMode": "prefetch",

@@ -16,46 +16,12 @@
             "tsConfig": "src/tsconfig.app.json",
             "polyfills": "src/polyfills.ts",
             "assets": [
-              "src/assets",
-              "src/favicon.ico",
-              "src/manifest.json",
-              "src/robots.txt",
-              "src/_redirects",
-              {
-                "glob": "**/*",
-                "input": "2015",
-                "output": "/2015"
-              },
-              {
-                "glob": "**/*",
-                "input": "2016",
-                "output": "/2016"
-              },
-              {
-                "glob": "**/*",
-                "input": "2017",
-                "output": "/2017"
-              },
-              {
-                "glob": "coc.html",
-                "input": "",
-                "output": "/"
-              },
-              {
-                "glob": "coc-en.html",
-                "input": "",
-                "output": "/"
-              },
-              {
-                "glob": "call-for-sponsors.pdf",
-                "input": "",
-                "output": "/"
-              }
+              "src/assets"
             ],
             "styles": ["src/styles.css"],
             "scripts": [],
-            "outputPath": "dist/en",
-            "baseHref": "/en/"
+            "outputPath": "public/2018/en",
+            "baseHref": "/2018/en/"
           },
           "configurations": {
             "production": {
@@ -79,8 +45,8 @@
             },
             "ja": {
               "aot": true,
-              "outputPath": "dist",
-              "baseHref": "/",
+              "outputPath": "public/2018/ja",
+              "baseHref": "/2018/ja/",
               "i18nFile": "src/locale/messages.ja.xlf",
               "i18nFormat": "xlf",
               "i18nLocale": "ja",
@@ -93,8 +59,8 @@
             },
             "production-ja": {
               "aot": true,
-              "outputPath": "dist",
-              "baseHref": "/",
+              "outputPath": "public/2018/ja",
+              "baseHref": "/2018/ja/",
               "i18nFile": "src/locale/messages.ja.xlf",
               "i18nFormat": "xlf",
               "i18nLocale": "ja",
