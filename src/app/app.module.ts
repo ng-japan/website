@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, Injector, Type } from '@angular/core';
+import { createCustomElement } from '@angular/elements';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -17,6 +18,14 @@ import { TimetableCardComponent } from './timetable-card/timetable-card.componen
 import { SpeakerAvatarComponent } from './speaker-avatar/speaker-avatar.component';
 
 import { environment } from '../environments/environment';
+import { TwitterFollowComponent } from './elements/twitter-follow/twitter-follow.component';
+
+const componentsForElement: { type: Type<any>; selector: string }[] = [
+  {
+    type: TwitterFollowComponent,
+    selector: 'twitter-follow'
+  }
+];
 
 @NgModule({
   declarations: [
@@ -29,8 +38,10 @@ import { environment } from '../environments/environment';
     TimetableCardComponent,
     SpeakersComponent,
     SessionsComponent,
-    SpeakerAvatarComponent
+    SpeakerAvatarComponent,
+    TwitterFollowComponent
   ],
+  entryComponents: [...componentsForElement.map(item => item.type)],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -42,4 +53,11 @@ import { environment } from '../environments/environment';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule {
+  constructor(injector: Injector) {
+    componentsForElement.forEach(cmp => {
+      const elType = createCustomElement(cmp.type, { injector });
+      window.customElements.define(cmp.selector, elType);
+    });
+  }
+}

@@ -1,0 +1,19 @@
+:host {
+  display: block;
+  padding-bottom: 32px;
+}
+
+.text {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.link {
+  text-align: center;
+}
+
+@media (max-width: 667px) {
+  .text {
+    font-size: 16px;
+  }
+}

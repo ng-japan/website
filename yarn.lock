@@ -162,6 +162,13 @@
   dependencies:
     tslib "^1.9.0"
 
+"@angular/elements@^7.2.1":
+  version "7.2.1"
+  resolved "https://registry.yarnpkg.com/@angular/elements/-/elements-7.2.1.tgz#9efb69a53791b30a83cd79a45b215d986de08403"
+  integrity sha512-OYQCl6p+6WkJqg5posZv8AxeuFqo9IAgQFbX6ZdNr4m1YdMaVOFJZnR6Oz089nUYCT7/OZraDJzjo4B2W+4zmA==
+  dependencies:
+    tslib "^1.9.0"
+
 "@angular/forms@^7.2.1":
   version "7.2.1"
   resolved "https://registry.yarnpkg.com/@angular/forms/-/forms-7.2.1.tgz#0515af60668c380602aa820c0df29767002a576a"
@@ -2245,6 +2252,13 @@ dns-txt@^2.0.2:
   resolved "https://registry.yarnpkg.com/dns-txt/-/dns-txt-2.0.2.tgz#b91d806f5d27188e4ab3e7d107d881a1cc4642b6"
   dependencies:
     buffer-indexof "^1.0.0"
+
+document-register-element@^1.7.2:
+  version "1.13.1"
+  resolved "https://registry.yarnpkg.com/document-register-element/-/document-register-element-1.13.1.tgz#dad8cb7be38e04ee3f56842e6cf81af46c1249ba"
+  integrity sha512-92ZyLDKg9j4rOll//NNXj25f+8rAzOkYsGJonhugKwXfeqH7bzs8Ucpvey0WzZ2ZzKdrvW9RnUw3UyOZ/uhBFw==
+  dependencies:
+    lightercollective "^0.1.0"
 
 dom-serialize@^2.2.0:
   version "2.2.1"
@@ -4424,6 +4438,11 @@ license-webpack-plugin@2.0.4:
   dependencies:
     "@types/webpack-sources" "^0.1.5"
     webpack-sources "^1.2.0"
+
+lightercollective@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/lightercollective/-/lightercollective-0.1.0.tgz#70df102c530dcb8d0ccabfe6175a8d00d5f61300"
+  integrity sha512-J9tg5uraYoQKaWbmrzDDexbG6hHnMcWS1qLYgJSWE+mpA3U5OCSeMUhb+K55otgZJ34oFdR0ECvdIb3xuO5JOQ==
 
 load-json-file@^1.0.0:
   version "1.1.0"

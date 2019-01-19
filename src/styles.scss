@@ -1,1 +1,32 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  --background--black: #1d212b;
+  --text-white: #fff;
+}
+
+/*
+ * footer
+ */
+
+footer {
+  background-color: var(--background--black);
+  padding: 32px 16px;
+  color: var(--text-white);
+
+  .footer__twitterFollow {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 32px;
+  }
+
+  a:not(.button) {
+    color: var(--text-white);
+  }
+
+  .footer__nav {
+    margin-bottom: 12px;
+
+    li {
+      display: inline;
+      margin-right: 6px;
+    }
+  }
+}
