@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="68px" height="68px" viewBox="0 0 68 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>firstview__scrollButton</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="20" cy="20" r="20"></circle>
+        <filter x="-62.5%" y="-42.5%" width="225.0%" height="225.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="8" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="2" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="8" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feGaussianBlur stdDeviation="7" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.16 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="PC（EN）" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-666.000000, -574.000000)">
+        <g id="Firstview">
+            <g id="firstview__scrollButton" transform="translate(680.000000, 580.000000)">
+                <g id="Oval">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <circle stroke="#FFFFFF" stroke-width="2" cx="20" cy="20" r="19"></circle>
+                </g>
+                <g id="Group-13" transform="translate(20.000000, 17.878680) rotate(-45.000000) translate(-20.000000, -17.878680) translate(13.500000, 11.378680)" fill="#FFFFFF">
+                    <rect id="Rectangle-10" x="0.414213562" y="0.585786438" width="2" height="12" rx="1"></rect>
+                    <rect id="Rectangle-10" transform="translate(6.414214, 11.585786) rotate(-270.000000) translate(-6.414214, -11.585786) " x="5.41421356" y="5.58578644" width="2" height="12" rx="1"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
