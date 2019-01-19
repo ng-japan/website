@@ -9,9 +9,7 @@ import { Speaker } from '../../types';
 export class SpeakerAvatarComponent implements OnInit {
   @Input() speaker: Speaker;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

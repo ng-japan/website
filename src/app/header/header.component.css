@@ -5,7 +5,7 @@ header {
   width: 100%;
   height: 104px;
   background-color: #fff;
-  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.10);
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
   padding: 0 calc((100% - 1200px) / 2);
@@ -19,7 +19,8 @@ header.isTransparent {
   box-shadow: none;
 }
 
-.mobile, .menu {
+.mobile,
+.menu {
   display: none;
 }
 
@@ -63,7 +64,6 @@ header.isTransparent li a {
 
 .localeLink {
   opacity: 0.4;
-
 }
 .localeLink:focus,
 .localeLink:hover,

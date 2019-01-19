@@ -8,7 +8,7 @@ import { SessionsComponent } from './sessions/sessions.component';
 const routes: Routes = [
   { path: '', component: TopComponent },
   { path: 'en', component: TopComponent },
-  { path: 'speakers', component: SpeakersComponent },
+  { path: 'speakers', component: SpeakersComponent }
   // { path: 'sessions', component: SessionsComponent },
 ];
 
@@ -16,4 +16,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

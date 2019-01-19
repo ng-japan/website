@@ -1,10 +1,10 @@
 .footer {
-  background-color: #1D212B;
+  background-color: #1d212b;
   padding: 32px 0;
-  color: #FFF;
+  color: #fff;
 }
 .footer a:not(.button) {
-  color: #FFF;
+  color: #fff;
 }
 
 .footer__nav {
@@ -17,7 +17,7 @@
 
 .followUs {
   padding-bottom: 32px;
-  border-bottom: 1px solid rgba(255,255,255,0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   margin: 0 80px 32px;
 }
 

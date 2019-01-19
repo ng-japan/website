@@ -29,14 +29,17 @@ import { environment } from '../environments/environment';
     TimetableCardComponent,
     SpeakersComponent,
     SessionsComponent,
-    SpeakerAvatarComponent,
+    SpeakerAvatarComponent
   ],
   imports: [
-    BrowserModule.withServerTransition({ appId: 'serverApp' }),
+    BrowserModule,
     AppRoutingModule,
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production, scope: environment.swScope }),
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: false,
+      scope: environment.swScope
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

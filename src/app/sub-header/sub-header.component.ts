@@ -8,9 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class SubHeaderComponent implements OnInit {
   @Input() title: string;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

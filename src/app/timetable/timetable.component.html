@@ -1,119 +1,147 @@
 <div class="timetable">
-  <div class="roomA roomTitle">Room
-    <span class="roomHighlight--A">A</span>
+  <div class="roomA roomTitle">
+    Room <span class="roomHighlight--A">A</span>
   </div>
-  <div class="roomB roomTitle">Room
-    <span class="roomHighlight--B">B</span>
+  <div class="roomB roomTitle">
+    Room <span class="roomHighlight--B">B</span>
   </div>
   <div class="line strong"></div>
 
   <div class="time">12:30 - 13:00</div>
-  <div class="roomAB">
-    <div class="text">Registration</div>
-  </div>
+  <div class="roomAB"><div class="text">Registration</div></div>
   <div class="line"></div>
-
 
   <div class="time">13:00 - 13:50</div>
   <div class="roomAB">
-    <app-timetable-card [session]="sessions[KEYNOTE]" [speakers]="speakers"></app-timetable-card>
+    <app-timetable-card
+      [session]="sessions[KEYNOTE]"
+      [speakers]="speakers"
+    ></app-timetable-card>
   </div>
   <div class="line"></div>
 
   <div class="time">14:00 - 14:25</div>
   <div class="roomA">
-    <app-timetable-card [session]="sessions[PWA]" [speakers]="speakers"></app-timetable-card>
+    <app-timetable-card
+      [session]="sessions[PWA]"
+      [speakers]="speakers"
+    ></app-timetable-card>
   </div>
   <div class="roomB">
-    <app-timetable-card [session]="sessions[ZONE]" [speakers]="speakers"></app-timetable-card>
+    <app-timetable-card
+      [session]="sessions[ZONE]"
+      [speakers]="speakers"
+    ></app-timetable-card>
   </div>
   <div class="line"></div>
 
   <div class="time">14:30 - 14:55</div>
   <div class="roomA">
-    <app-timetable-card [session]="sessions[HAMARI]" [speakers]="speakers"></app-timetable-card>
+    <app-timetable-card
+      [session]="sessions[HAMARI]"
+      [speakers]="speakers"
+    ></app-timetable-card>
   </div>
   <div class="roomB">
-    <app-timetable-card [session]="sessions[DAIKIBO]" [speakers]="speakers"></app-timetable-card>
+    <app-timetable-card
+      [session]="sessions[DAIKIBO]"
+      [speakers]="speakers"
+    ></app-timetable-card>
   </div>
   <div class="line"></div>
 
   <div class="time">14:55 - 15:10</div>
-  <div class="roomAB">
-    <div class="text">🍪Cookie Time 🍪</div>
-  </div>
+  <div class="roomAB"><div class="text">🍪Cookie Time 🍪</div></div>
   <div class="line"></div>
 
   <div class="time">15:10 - 15:35</div>
   <div class="roomA">
-    <app-timetable-card [session]="sessions[FIREBASE]" [speakers]="speakers"></app-timetable-card>
+    <app-timetable-card
+      [session]="sessions[FIREBASE]"
+      [speakers]="speakers"
+    ></app-timetable-card>
   </div>
   <div class="roomB">
-    <app-timetable-card [session]="sessions[NEW_SERVICE]" [speakers]="speakers"></app-timetable-card>
+    <app-timetable-card
+      [session]="sessions[NEW_SERVICE]"
+      [speakers]="speakers"
+    ></app-timetable-card>
   </div>
   <div class="line"></div>
 
   <div class="time">15:40 - 16:05</div>
-  <div class="roomAB">
-    <div class="text">Ask Me Anything</div>
-  </div>
+  <div class="roomAB"><div class="text">Ask Me Anything</div></div>
   <div class="line"></div>
 
   <div class="time">16:05 - 16:20</div>
-  <div class="roomAB">
-    <div class="text">Break</div>
-  </div>
+  <div class="roomAB"><div class="text">Break</div></div>
   <div class="line"></div>
 
   <div class="time">16:20 - 16:30</div>
   <div class="roomA">
-    <app-timetable-card [session]="sessions[SCREENSHOT_TEST]" [speakers]="speakers"></app-timetable-card>
+    <app-timetable-card
+      [session]="sessions[SCREENSHOT_TEST]"
+      [speakers]="speakers"
+    ></app-timetable-card>
   </div>
   <div class="roomB">
     <div class="text">企画枠: Angularユーザー座談会</div>
-    <div class="description">Angularを利用している国内企業の開発者による<br>座談会</div>
+    <div class="description">
+      Angularを利用している国内企業の開発者による<br />座談会
+    </div>
   </div>
   <div class="line half"></div>
 
   <div class="time">16:35 - 16:45</div>
   <div class="roomA">
-    <app-timetable-card [session]="sessions[PROTRACTOR]" [speakers]="speakers"></app-timetable-card>
+    <app-timetable-card
+      [session]="sessions[PROTRACTOR]"
+      [speakers]="speakers"
+    ></app-timetable-card>
   </div>
   <div class="line half"></div>
 
   <div class="time">16:50 - 17:00</div>
   <div class="roomA">
-    <app-timetable-card [session]="sessions[PLANT_UML]" [speakers]="speakers"></app-timetable-card>
+    <app-timetable-card
+      [session]="sessions[PLANT_UML]"
+      [speakers]="speakers"
+    ></app-timetable-card>
   </div>
   <div class="line half"></div>
 
   <div class="time">17:05 - 17:15</div>
   <div class="roomA">
-    <app-timetable-card [session]="sessions[CSS]" [speakers]="speakers"></app-timetable-card>
+    <app-timetable-card
+      [session]="sessions[CSS]"
+      [speakers]="speakers"
+    ></app-timetable-card>
   </div>
   <div class="line"></div>
 
   <div class="time">17:15 - 17:30</div>
-  <div class="roomAB">
-    <div class="text">Break</div>
-  </div>
+  <div class="roomAB"><div class="text">Break</div></div>
   <div class="line"></div>
 
   <div class="time">17:30 - 17:55</div>
   <div class="roomAB">
-    <app-timetable-card [session]="sessions[CDK]" [speakers]="speakers"></app-timetable-card>
+    <app-timetable-card
+      [session]="sessions[CDK]"
+      [speakers]="speakers"
+    ></app-timetable-card>
   </div>
   <div class="line"></div>
 
   <div class="time">18:00 - 18:25</div>
   <div class="roomAB">
-    <app-timetable-card [session]="sessions[NGLVY]" [speakers]="speakers"></app-timetable-card>
+    <app-timetable-card
+      [session]="sessions[NGLVY]"
+      [speakers]="speakers"
+    ></app-timetable-card>
   </div>
   <div class="line"></div>
 
   <div class="time">18:30 - 19:00</div>
-  <div class="roomAB">
-    <div class="text">Panel QA</div>
-  </div>
+  <div class="roomAB"><div class="text">Panel QA</div></div>
   <div class="line"></div>
 </div>

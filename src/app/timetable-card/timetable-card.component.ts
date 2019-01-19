@@ -13,22 +13,24 @@ export class TimetableCardComponent implements OnInit {
   constructor() {}
 
   get id() {
-    return this.session ? this.session.id : ''
+    return this.session ? this.session.id : '';
   }
 
   get title() {
-    return this.session ? this.session.title : ''
+    return this.session ? this.session.title : '';
   }
 
   get speaker() {
-    return this.speakers ? this.session.speakers.map(s => s.name).join(', ') : ''
+    return this.speakers
+      ? this.session.speakers.map(s => s.name).join(', ')
+      : '';
   }
 
   get imageUrls() {
-    return this.session && this.speakers ? this.session.speakers.map(s => this.speakers[s.id].profilePicture) : []
+    return this.session && this.speakers
+      ? this.session.speakers.map(s => this.speakers[s.id].profilePicture)
+      : [];
   }
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

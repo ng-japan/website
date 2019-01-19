@@ -1,4 +1,4 @@
-import {Component, OnInit, Input, LOCALE_ID, Inject} from '@angular/core';
+import { Component, OnInit, Input, LOCALE_ID, Inject } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -6,21 +6,20 @@ import {Component, OnInit, Input, LOCALE_ID, Inject} from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  @Input() isTransparent: boolean
-  @Input() showJoinButton = false
+  @Input() isTransparent: boolean;
+  @Input() showJoinButton = false;
 
-  isOpen = false
+  isOpen = false;
 
   constructor(@Inject(LOCALE_ID) public locale: string) {}
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   open() {
-    this.isOpen = true
+    this.isOpen = true;
   }
 
   close() {
-    this.isOpen = false
+    this.isOpen = false;
   }
 }

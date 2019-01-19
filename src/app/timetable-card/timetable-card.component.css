@@ -1,6 +1,6 @@
 .card {
-  background: #FFFFFF;
-  box-shadow: 0 6px 18px 0 rgba(0,0,0,0.18);
+  background: #ffffff;
+  box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.18);
   border-radius: 8px;
   display: flex;
   height: 100px;
@@ -21,7 +21,7 @@
   border-radius: 50%;
   background-size: cover;
   margin-right: 8px;
-  border: 1px solid #D7DCE6;
+  border: 1px solid #d7dce6;
 }
 
 .info {
@@ -32,13 +32,13 @@
 
 .title {
   font-size: 12px;
-  color: #E23030;
+  color: #e23030;
   font-weight: bold;
 }
 
 .speaker {
   font-size: 12px;
-  color: #8E9299;
+  color: #8e9299;
 }
 .speaker::before {
   content: 'by ';

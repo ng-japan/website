@@ -8,9 +8,8 @@ describe('TimetableCardComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TimetableCardComponent ]
-    })
-    .compileComponents();
+      declarations: [TimetableCardComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {
