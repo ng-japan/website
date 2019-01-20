@@ -1,0 +1,49 @@
+<nav class="headerNav" *ngIf="!showMenuButton">
+  <ul>
+    <li><a class="navLink" href="#">TOP</a></li>
+    <li><a class="navLink" href="#speakers">SPEAKERS</a></li>
+  </ul>
+</nav>
+
+<div class="menu" *ngIf="showMenuButton">
+  <button class="menuButton" (click)="openMenu()">
+    <svg width="24" height="16" xmlns="http://www.w3.org/2000/svg">
+      <g fill="currentColor" fill-rule="evenodd">
+        <rect width="24" height="2" rx="1" />
+        <rect y="7" width="24" height="2" rx="1" />
+        <rect y="14" width="24" height="2" rx="1" />
+      </g>
+    </svg>
+  </button>
+</div>
+
+<div class="menuPane" [class.isOpen]="isMenuOpen">
+  <nav class="headerNav">
+    <ul>
+      <li><a class="navLink" href="#">TOP</a></li>
+      <li><a class="navLink" href="#speakers">SPEAKERS</a></li>
+    </ul>
+  </nav>
+  <button class="closeButton" (click)="closeMenu()">
+    <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+      <g transform="translate(-1 -1)" fill="#1D212B" fill-rule="evenodd">
+        <rect
+          transform="rotate(45 10 10)"
+          x="-2"
+          y="9"
+          width="24"
+          height="2"
+          rx="1"
+        />
+        <rect
+          transform="rotate(135 10 10)"
+          x="-2"
+          y="9"
+          width="24"
+          height="2"
+          rx="1"
+        />
+      </g>
+    </svg>
+  </button>
+</div>

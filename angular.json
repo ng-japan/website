@@ -102,7 +102,9 @@
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "app",
-      "styleext": "scss"
+      "styleext": "scss",
+      "spec": false,
+      "changeDetection": "OnPush"
     },
     "@schematics/angular:directive": {
       "prefix": "app"

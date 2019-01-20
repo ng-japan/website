@@ -10,7 +10,6 @@ import { TopComponent } from './top/top.component';
 import { SpeakersComponent } from './speakers/speakers.component';
 import { SessionsComponent } from './sessions/sessions.component';
 
-import { HeaderComponent } from './header/header.component';
 import { SubHeaderComponent } from './sub-header/sub-header.component';
 import { LogoComponent } from './logo/logo.component';
 import { TimetableComponent } from './timetable/timetable.component';
@@ -19,11 +18,22 @@ import { SpeakerAvatarComponent } from './speaker-avatar/speaker-avatar.componen
 
 import { environment } from '../environments/environment';
 import { TwitterFollowComponent } from './elements/twitter-follow/twitter-follow.component';
+import { TitleLogoComponent } from './elements/title-logo/title-logo.component';
+import { HeaderMenuComponent } from './elements/header-menu/header-menu.component';
+import { LayoutModule } from '@angular/cdk/layout';
 
 const componentsForElement: { type: Type<any>; selector: string }[] = [
   {
     type: TwitterFollowComponent,
     selector: 'twitter-follow'
+  },
+  {
+    type: TitleLogoComponent,
+    selector: 'title-logo'
+  },
+  {
+    type: HeaderMenuComponent,
+    selector: 'header-menu'
   }
 ];
 
@@ -31,7 +41,6 @@ const componentsForElement: { type: Type<any>; selector: string }[] = [
   declarations: [
     AppComponent,
     TopComponent,
-    HeaderComponent,
     SubHeaderComponent,
     LogoComponent,
     TimetableComponent,
@@ -39,7 +48,9 @@ const componentsForElement: { type: Type<any>; selector: string }[] = [
     SpeakersComponent,
     SessionsComponent,
     SpeakerAvatarComponent,
-    TwitterFollowComponent
+    TwitterFollowComponent,
+    TitleLogoComponent,
+    HeaderMenuComponent
   ],
   entryComponents: [...componentsForElement.map(item => item.type)],
   imports: [
@@ -48,7 +59,8 @@ const componentsForElement: { type: Type<any>; selector: string }[] = [
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: false,
       scope: environment.swScope
-    })
+    }),
+    LayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

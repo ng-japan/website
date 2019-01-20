@@ -1,0 +1,36 @@
+header {
+  position: absolute;
+  width: 100%;
+  height: 104px;
+  background: transparent;
+  color: var(--color-text-contrast);
+  display: flex;
+  align-items: center;
+  padding: 0 calc((100% - 1200px) / 2);
+  z-index: 10;
+  transition: all 0.3s ease-out;
+
+  .titleLogo {
+    color: var(--color-main-light);
+    background-color: #fff;
+    margin-left: 50px;
+    margin-right: auto;
+    transition: all 0.3s ease-out;
+  }
+
+  .headerMenu {
+    color: var(--color-text-contrast);
+  }
+}
+
+@media (max-width: 667px) {
+  header {
+    height: 70px;
+    padding: 0 16px;
+    justify-content: space-between;
+
+    .titleLogo {
+      margin: 0;
+    }
+  }
+}

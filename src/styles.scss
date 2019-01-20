@@ -9,7 +9,7 @@
   --color-speaker: #1d212b;
   --color-border: #d7dce6;
   --color-background: #f7f8fa;
-  --color-text--contrast: #fff;
+  --color-text-contrast: #fff;
 
   --weight-regular: 400;
   --weight-bold: 700;
@@ -43,3 +43,4 @@ strong {
 }
 
 @import 'styles/footer';
+@import 'styles/header';

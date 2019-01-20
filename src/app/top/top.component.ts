@@ -22,26 +22,12 @@ export class TopComponent {
     {}
   );
 
-  isTop = true;
-  eventHandler: any;
-
   constructor(@Inject(LOCALE_ID) public locale: string, router: Router) {
     router.events.subscribe(s => {
       if (s instanceof NavigationEnd) {
         window.scrollTo(0, 0);
       }
     });
-  }
-
-  ngOnInit() {
-    this.eventHandler = document.addEventListener('scroll', () => {
-      this.isTop =
-        (document.documentElement.scrollTop || document.body.scrollTop) < 50;
-    });
-  }
-
-  ngOnDestroy() {
-    document.removeEventListener('scroll', this.eventHandler);
   }
 
   scroll() {
