@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { HeaderMenuComponent } from './components/header-menu/header-menu.component';
 import { TitleLogoComponent } from './components/title-logo/title-logo.component';
 import { SharedModule } from './shared/shared.module';
+import { TopModule } from './pages/top/top.module';
 
 @NgModule({
   declarations: [AppComponent, TitleLogoComponent, HeaderMenuComponent],
@@ -19,7 +20,8 @@ import { SharedModule } from './shared/shared.module';
       scope: environment.swScope
     }),
     LayoutModule,
-    SharedModule
+    SharedModule,
+    TopModule // Initial Page (Eager Loading)
   ],
   providers: [],
   bootstrap: [AppComponent]
