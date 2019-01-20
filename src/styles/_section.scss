@@ -1,0 +1,28 @@
+.section {
+  padding: 128px 0;
+
+  .sectionTitle {
+    margin: 32px 0;
+    font-size: 48px;
+    font-weight: var(--weight-bold);
+    color: var(--color-main-light);
+  }
+
+  .sectionDescription {
+    padding: 24px 16px;
+    font-size: 16px;
+    line-height: 1.7;
+    letter-spacing: 1.14px;
+  }
+
+  @media (max-width: 667px) {
+    .sectionTitle {
+      font-size: 24px;
+    }
+
+    .sectionDescription {
+      font-size: 14px;
+      letter-spacing: initial;
+    }
+  }
+}

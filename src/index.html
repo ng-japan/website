@@ -76,7 +76,38 @@
       <header-menu class="headerMenu"></header-menu>
     </header>
 
-    <app-root></app-root>
+    <main>
+      <div class="hero">
+        <hero-background></hero-background>
+
+        <div class="hero__main">
+          <h1 class="hero__title">ng-japan 2018</h1>
+          <p class="hero__subTitle">
+            2018.06.16(Sat) 13:00 - Google Japan<br />
+            <span>Tokyo, Roppongi Hills</span>
+          </p>
+        </div>
+        <span class="header__scroller" (click)="scroll()"></span>
+      </div>
+
+      <section class="youtube" hidden><!-- TODO (conditional) --></section>
+
+      <section class="section eventIntroduction" id="about">
+        <h2 class="sectionTitle">
+          What's <span class="highlight">ng-japan</span>?
+        </h2>
+        <img src="assets/images/logo.png" alt="ng-japan ロゴ" height="128" />
+        <p class="sectionDescription">
+          ng-japan 2018 is the 4th conference in Japan about Angular and web
+          technologies around it.<br />
+          It'll have sessions with great speakers, including the Angular core
+          team at Google.<br />
+          It will be held on Google Japan on Saturday, June 16, 2018.
+        </p>
+      </section>
+
+      <app-root></app-root>
+    </main>
 
     <footer>
       <section class="footer__twitterFollow">

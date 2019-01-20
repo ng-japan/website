@@ -20,6 +20,7 @@ import { TwitterFollowComponent } from './elements/twitter-follow/twitter-follow
 import { TitleLogoComponent } from './elements/title-logo/title-logo.component';
 import { HeaderMenuComponent } from './elements/header-menu/header-menu.component';
 import { LayoutModule } from '@angular/cdk/layout';
+import { HeroBackgroundComponent } from './elements/hero-background/hero-background.component';
 
 const componentsForElement: { type: Type<any>; selector: string }[] = [
   {
@@ -33,6 +34,10 @@ const componentsForElement: { type: Type<any>; selector: string }[] = [
   {
     type: HeaderMenuComponent,
     selector: 'header-menu'
+  },
+  {
+    type: HeroBackgroundComponent,
+    selector: 'hero-background'
   }
 ];
 
@@ -48,7 +53,8 @@ const componentsForElement: { type: Type<any>; selector: string }[] = [
     SpeakerAvatarComponent,
     TwitterFollowComponent,
     TitleLogoComponent,
-    HeaderMenuComponent
+    HeaderMenuComponent,
+    HeroBackgroundComponent
   ],
   entryComponents: [...componentsForElement.map(item => item.type)],
   imports: [

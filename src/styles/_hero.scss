@@ -1,0 +1,79 @@
+/* --------------------------------
+ * hero
+ * -------------------------------- */
+.hero {
+  --triangle-width: 1250px;
+  --triangle-height: 700px;
+
+  position: relative;
+  height: var(--triangle-height);
+  padding: 140px 100px 40px;
+  overflow: hidden;
+  color: var(--color-text-contrast);
+}
+.hero a:not(.button) {
+  color: var(--color-text-contrast);
+}
+
+@media (min-width: 2000px) {
+  .hero {
+    --triangle-width: 1800px;
+  }
+}
+
+.hero__main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+
+.hero__title {
+  font-weight: var(--weight-black);
+  font-size: 88px;
+  margin-bottom: 24px;
+  background: url('assets/images/title.svg') no-repeat center center;
+  background-size: contain;
+  color: transparent;
+  height: 97px;
+}
+
+.hero__subTitle {
+  font-size: 23px;
+  letter-spacing: 1.2px;
+  line-height: 1.8;
+}
+
+.hero__scroller {
+  cursor: pointer;
+  position: absolute;
+  bottom: 56px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hero__scroller {
+  content: url('assets/images/scroll.svg');
+}
+
+@media (max-width: 667px) {
+  .hero {
+    --triangle-width: 870px;
+    --triangle-height: 480px;
+
+    padding: 68px 20px 32px;
+  }
+
+  .hero__title {
+    font-size: 38px;
+    margin-bottom: 24px;
+    height: 42px;
+  }
+  .hero__subTitle {
+    font-size: 13px;
+  }
+
+  .hero__scroller {
+    bottom: 24px;
+  }
+}
