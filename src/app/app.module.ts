@@ -11,7 +11,6 @@ import { SpeakersComponent } from './speakers/speakers.component';
 import { SessionsComponent } from './sessions/sessions.component';
 
 import { SubHeaderComponent } from './sub-header/sub-header.component';
-import { LogoComponent } from './logo/logo.component';
 import { TimetableComponent } from './timetable/timetable.component';
 import { TimetableCardComponent } from './timetable-card/timetable-card.component';
 import { SpeakerAvatarComponent } from './speaker-avatar/speaker-avatar.component';
@@ -42,7 +41,6 @@ const componentsForElement: { type: Type<any>; selector: string }[] = [
     AppComponent,
     TopComponent,
     SubHeaderComponent,
-    LogoComponent,
     TimetableComponent,
     TimetableCardComponent,
     SpeakersComponent,
