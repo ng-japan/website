@@ -6,9 +6,8 @@ const Speakers = require('../../data/speakers.json');
 const Sessions = require('../../data/sessions.json')[0].sessions;
 
 @Component({
-  selector: 'app-top',
   templateUrl: './top.component.html',
-  styleUrls: ['./top.component.css']
+  styleUrls: ['./top.component.scss']
 })
 export class TopComponent {
   guests = Speakers.filter(s => s.isTopSpeaker);

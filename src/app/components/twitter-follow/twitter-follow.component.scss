@@ -1,6 +1,11 @@
 :host {
   display: block;
   padding-bottom: 32px;
+  color: var(--color-text-contrast);
+}
+
+a:not(.button) {
+  color: var(--color-text-contrast);
 }
 
 .text {

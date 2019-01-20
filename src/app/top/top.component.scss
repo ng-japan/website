@@ -1,16 +1,6 @@
 /* --------------------------------
  * components
  * -------------------------------- */
-.title {
-  font-weight: var(--weight-black);
-  font-size: 88px;
-}
-
-.subTitle {
-  font-size: 23px;
-  letter-spacing: 1.2px;
-  line-height: 1.8;
-}
 
 .sectionTitle {
   font-size: 48px;
@@ -25,16 +15,6 @@
 
 .highlight {
   color: var(--color-main-light);
-}
-
-.at {
-  display: inline-block;
-  background: url('assets/images/at.svg') no-repeat center center;
-  background-size: contain;
-  width: 18px;
-  height: 18px;
-  vertical-align: middle;
-  margin: 0 6px;
 }
 
 .button {
@@ -353,13 +333,6 @@
   /* --------------------------------
    * components
    * -------------------------------- */
-  .title {
-    font-size: 38px;
-  }
-
-  .subTitle {
-    font-size: 13px;
-  }
 
   .sectionTitle {
     font-size: 24px;

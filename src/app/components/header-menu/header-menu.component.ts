@@ -10,6 +10,7 @@ import { Subject } from 'rxjs';
 import { map, takeUntil } from 'rxjs/operators';
 
 @Component({
+  selector: 'app-header-menu',
   templateUrl: './header-menu.component.html',
   styleUrls: ['./header-menu.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush

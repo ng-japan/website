@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, Injector, Type } from '@angular/core';
-import { createCustomElement } from '@angular/elements';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -16,30 +15,12 @@ import { TimetableCardComponent } from './timetable-card/timetable-card.componen
 import { SpeakerAvatarComponent } from './speaker-avatar/speaker-avatar.component';
 
 import { environment } from '../environments/environment';
-import { TwitterFollowComponent } from './elements/twitter-follow/twitter-follow.component';
-import { TitleLogoComponent } from './elements/title-logo/title-logo.component';
-import { HeaderMenuComponent } from './elements/header-menu/header-menu.component';
+import { TwitterFollowComponent } from './components/twitter-follow/twitter-follow.component';
+import { TitleLogoComponent } from './components/title-logo/title-logo.component';
+import { HeaderMenuComponent } from './components/header-menu/header-menu.component';
 import { LayoutModule } from '@angular/cdk/layout';
-import { HeroBackgroundComponent } from './elements/hero-background/hero-background.component';
-
-const componentsForElement: { type: Type<any>; selector: string }[] = [
-  {
-    type: TwitterFollowComponent,
-    selector: 'twitter-follow'
-  },
-  {
-    type: TitleLogoComponent,
-    selector: 'title-logo'
-  },
-  {
-    type: HeaderMenuComponent,
-    selector: 'header-menu'
-  },
-  {
-    type: HeroBackgroundComponent,
-    selector: 'hero-background'
-  }
-];
+import { HeroBackgroundComponent } from './components/hero-background/hero-background.component';
+import { HeroComponent } from './components/hero/hero.component';
 
 @NgModule({
   declarations: [
@@ -54,9 +35,9 @@ const componentsForElement: { type: Type<any>; selector: string }[] = [
     TwitterFollowComponent,
     TitleLogoComponent,
     HeaderMenuComponent,
-    HeroBackgroundComponent
+    HeroBackgroundComponent,
+    HeroComponent
   ],
-  entryComponents: [...componentsForElement.map(item => item.type)],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -69,11 +50,4 @@ const componentsForElement: { type: Type<any>; selector: string }[] = [
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {
-  constructor(injector: Injector) {
-    componentsForElement.forEach(cmp => {
-      const elType = createCustomElement(cmp.type, { injector });
-      window.customElements.define(cmp.selector, elType);
-    });
-  }
-}
+export class AppModule {}
