@@ -22,7 +22,7 @@ a:not(.button) {
   color: var(--color-text-contrast);
 }
 
-.information {
+.content {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -39,10 +39,11 @@ a:not(.button) {
   height: 97px;
 }
 
-.subtitle {
-  font-size: 23px;
+.information {
+  font-size: 24px;
   letter-spacing: 1.2px;
   line-height: 1.8;
+  margin-bottom: 24px;
 }
 
 @media (max-width: 667px) {
@@ -51,7 +52,7 @@ a:not(.button) {
     margin-bottom: 24px;
     height: 42px;
   }
-  .subtitle {
+  .information {
     font-size: 13px;
   }
 }
