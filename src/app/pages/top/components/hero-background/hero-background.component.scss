@@ -1,72 +1,23 @@
 :host {
-  height: var(--triangle-height);
+  display: block;
+  position: relative;
 }
 
-.hero__bg,
-.hero__bg::after,
-.hero__shadow1,
-.hero__shadow2,
-.hero__shadow3 {
+.bgImage {
   position: absolute;
   top: 0;
-  left: 50%;
-  width: 0;
-  height: 0;
-  border-style: solid;
-}
-.hero__bg,
-.hero__shadow1,
-.hero__shadow2,
-.hero__shadow3 {
-  transform: translateX(-50%);
-  border-width: var(--triangle-height) var(--triangle-width) 0
-    var(--triangle-width);
-  border-color: var(--color-main-light) transparent transparent transparent;
-  z-index: -2;
-}
-.hero__bg::after {
-  content: '';
-  transform: translateY(-100%);
-  border-width: var(--triangle-height) var(--triangle-width) 0 0;
-  border-color: var(--color-main-dark) transparent transparent transparent;
-  z-index: -1;
-}
-.hero__shadow1 {
-  --added-width: 280px;
-  --width: calc(var(--triangle-width) + calc(var(--added-width)));
-
-  border-left-width: var(--width);
-  border-right-width: var(--width);
-  opacity: 0.17;
-  z-index: -3;
-}
-.hero__shadow2 {
-  --added-width: 700px;
-  --width: calc(var(--triangle-width) + calc(var(--added-width)));
-
-  border-left-width: var(--width);
-  border-right-width: var(--width);
-  opacity: 0.15;
-  z-index: -4;
-}
-.hero__shadow3 {
-  --added-width: 1250px;
-  --width: calc(var(--triangle-width) + calc(var(--added-width)));
-
-  border-left-width: var(--width);
-  border-right-width: var(--width);
-  opacity: 0.06;
-  z-index: -5;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url('/assets/images/hero-background.jpg') no-repeat;
+  background-size: cover;
 }
 
-@media (max-width: 667px) {
-  .hero__shadow1 {
-    --added-width: 210px;
-  }
-  .hero__shadow2 {
-    --added-width: 530px;
-  }
-  .hero__shadow3 {
-    --added-width: 980px;
-  }
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.66);
 }

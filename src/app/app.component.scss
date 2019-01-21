@@ -39,16 +39,11 @@ footer {
   padding: 32px 16px;
   color: var(--color-text-contrast);
 
-  .footer__twitterFollow {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    margin-bottom: 32px;
-  }
-
   a {
     color: var(--color-text-contrast);
   }
 
-  .footer__nav {
+  .footerNav {
     margin-bottom: 12px;
 
     li {

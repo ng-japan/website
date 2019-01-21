@@ -1,21 +1,18 @@
 :host {
-  --triangle-width: 1250px;
-  --triangle-height: 700px;
-
   display: block;
   position: relative;
-  height: var(--triangle-height);
+  height: 100vh;
   overflow: hidden;
   color: var(--color-text-contrast);
+}
 
-  @media (min-width: 2000px) {
-    --triangle-width: 1800px;
-  }
-
-  @media (max-width: 667px) {
-    --triangle-width: 870px;
-    --triangle-height: 480px;
-  }
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1000;
 }
 
 a:not(.button) {
@@ -31,26 +28,33 @@ a:not(.button) {
 
 .title {
   font-weight: var(--weight-black);
-  font-size: 88px;
   margin-bottom: 24px;
   background: url('assets/images/title.svg') no-repeat center center;
   background-size: contain;
   color: transparent;
-  height: 97px;
+  height: 96px;
+}
+
+.subtitle {
+  font-size: 32px;
+  letter-spacing: 1.2px;
+  margin-bottom: 16px;
 }
 
 .information {
-  font-size: 24px;
+  font-size: 20px;
   letter-spacing: 1.2px;
-  line-height: 1.8;
+  line-height: 1.2;
   margin-bottom: 24px;
 }
 
 @media (max-width: 667px) {
   .title {
-    font-size: 38px;
     margin-bottom: 24px;
-    height: 42px;
+    height: 48px;
+  }
+  .subtitle {
+    font-size: 24px;
   }
   .information {
     font-size: 13px;
