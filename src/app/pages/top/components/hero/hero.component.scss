@@ -27,16 +27,16 @@ a:not(.button) {
 }
 
 .title {
-  font-weight: var(--weight-black);
-  margin-bottom: 24px;
+  margin-bottom: 32px;
   background: url('assets/images/title.svg') no-repeat center center;
   background-size: contain;
   color: transparent;
-  height: 96px;
+  height: 160px;
 }
 
 .subtitle {
-  font-size: 32px;
+  font-size: 28px;
+  letter-spacing: 1.5px;
   margin-bottom: 16px;
 }
 
@@ -49,7 +49,7 @@ a:not(.button) {
 @media (max-width: 667px) {
   .title {
     margin-bottom: 24px;
-    height: 48px;
+    height: 160px;
   }
   .subtitle {
     font-size: 24px;

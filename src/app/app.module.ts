@@ -6,12 +6,12 @@ import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderMenuComponent } from './components/header-menu/header-menu.component';
-import { TitleLogoComponent } from './components/title-logo/title-logo.component';
+import { LogoComponent } from './components/logo/logo.component';
 import { SharedModule } from './shared/shared.module';
 import { TopModule } from './pages/top/top.module';
 
 @NgModule({
-  declarations: [AppComponent, TitleLogoComponent, HeaderMenuComponent],
+  declarations: [AppComponent, LogoComponent, HeaderMenuComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

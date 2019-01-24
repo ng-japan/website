@@ -1,10 +1,10 @@
 <app-hero-background class="background"></app-hero-background>
 
 <div class="content">
-  <h1 class="title">ng-japan 2019</h1>
-  <p class="subtitle">"World x Angular"</p>
+  <h1 class="title">{{ eventTitle }}</h1>
+  <p class="subtitle">{{ eventSubtitle }}</p>
   <p class="information">
-    2018.06.16(Sat) 13:00 - Google Japan<br />
-    <span>Tokyo, Roppongi Hills</span>
+    {{ eventStartDate | date: 'yyyy.MM.dd' }} - {{ eventVenue }}<br />
+    <span>{{ eventVenueLocation }}</span>
   </p>
 </div>

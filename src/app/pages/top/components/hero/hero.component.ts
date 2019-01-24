@@ -1,4 +1,5 @@
-import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { EventInfoService } from '../../../../services/event-info.service';
 
 @Component({
   selector: 'app-hero',
@@ -6,8 +7,12 @@ import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
   styleUrls: ['./hero.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class HeroComponent implements OnInit {
-  constructor() {}
+export class HeroComponent {
+  eventTitle = this.eventInfo.getTitle();
+  eventSubtitle = this.eventInfo.getSubtitle();
+  eventStartDate = this.eventInfo.getEventStartDate();
+  eventVenue = this.eventInfo.getVenue();
+  eventVenueLocation = this.eventInfo.getVenueLocation();
 
-  ngOnInit() {}
+  constructor(private eventInfo: EventInfoService) {}
 }
