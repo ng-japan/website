@@ -22,8 +22,8 @@
               "src/styles.scss"
             ],
             "scripts": [],
-            "outputPath": "public/2019/",
-            "baseHref": "/2019/"
+            "outputPath": "dist",
+            "baseHref": "/"
           },
           "configurations": {
             "production": {
