@@ -5,8 +5,9 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod",
-    "postbuild": "cp -R public/* dist",
+    "build": "npm run ~build:app && npm run ~build:assets",
+    "~build:app": "ng build --prod",
+    "~build:assets": "cp -R public/* dist",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
