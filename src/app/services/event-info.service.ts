@@ -7,9 +7,9 @@ import { DateTime } from 'luxon';
 export class EventInfoService {
   getEventStartDate() {
     return DateTime.fromObject({
-      year: 2018,
-      month: 6,
-      day: 16,
+      year: 2019,
+      month: 7,
+      day: 13,
       zone: 'Asia/Tokyo'
     }).toJSDate();
   }

@@ -16,8 +16,7 @@ import { TopModule } from './pages/top/top.module';
     BrowserModule,
     AppRoutingModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
-      enabled: false,
-      scope: environment.swScope
+      enabled: environment.production
     }),
     LayoutModule,
     SharedModule,

@@ -7,13 +7,15 @@ import { HeroBackgroundComponent } from './components/hero-background/hero-backg
 import { HeroComponent } from './components/hero/hero.component';
 import { SharedModule } from '../../shared/shared.module';
 import { IntroductionComponent } from './components/introduction/introduction.component';
+import { HighlightsComponent } from './components/highlights/highlights.component';
 
 @NgModule({
   declarations: [
     TopComponent,
     HeroBackgroundComponent,
     HeroComponent,
-    IntroductionComponent
+    IntroductionComponent,
+    HighlightsComponent
   ],
   imports: [CommonModule, TopRoutingModule, SharedModule]
 })
