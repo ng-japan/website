@@ -7,4 +7,24 @@
     {{ eventStartDate | date: 'yyyy.MM.dd' }} - {{ eventVenue }}<br />
     <span>{{ eventVenueLocation }}</span>
   </p>
+
+  <nav class="links">
+    <a
+      class="link"
+      *ngIf="showCallForSpeakersLink"
+      href="https://sessionize.com/ng-japan-2019"
+      target="_blank"
+      rel="noopener"
+      >スピーカー募集中 / Call for Speakers</a
+    >
+
+    <a
+      class="link"
+      *ngIf="showCallForSponsorsLink"
+      href="https://sessionize.com/ng-japan-2019"
+      target="_blank"
+      rel="noopener"
+      >Become a Sponsor</a
+    >
+  </nav>
 </div>

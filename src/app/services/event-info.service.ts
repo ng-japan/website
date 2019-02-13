@@ -11,7 +11,7 @@ export class EventInfoService {
       month: 7,
       day: 13,
       zone: 'Asia/Tokyo'
-    }).toJSDate();
+    });
   }
 
   getVenue() {
@@ -28,5 +28,21 @@ export class EventInfoService {
 
   getSubtitle() {
     return `"World x Angular"`;
+  }
+
+  isCallingForSpeakers(date: DateTime) {
+    return (
+      DateTime.fromObject({
+        year: 2019,
+        month: 3,
+        day: 16,
+        zone: 'Asia/Tokyo'
+      }).diff(date, 'minutes').minutes > 0
+    );
+  }
+
+  isCallingForSponsors(date: DateTime) {
+    // TBD
+    return false;
   }
 }

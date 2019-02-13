@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { DateTime } from 'luxon';
 import { EventInfoService } from '../../../../services/event-info.service';
 
 @Component({
@@ -8,11 +9,18 @@ import { EventInfoService } from '../../../../services/event-info.service';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class HeroComponent {
+  constructor(private eventInfo: EventInfoService) {}
+
   eventTitle = this.eventInfo.getTitle();
   eventSubtitle = this.eventInfo.getSubtitle();
-  eventStartDate = this.eventInfo.getEventStartDate();
+  eventStartDate = this.eventInfo.getEventStartDate().toJSDate();
   eventVenue = this.eventInfo.getVenue();
   eventVenueLocation = this.eventInfo.getVenueLocation();
 
-  constructor(private eventInfo: EventInfoService) {}
+  showCallForSpeakersLink = this.eventInfo.isCallingForSpeakers(
+    DateTime.local()
+  );
+  showCallForSponsorsLink = this.eventInfo.isCallingForSponsors(
+    DateTime.local()
+  );
 }
