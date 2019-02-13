@@ -1,0 +1,462 @@
+/* --------------------------------
+ * components
+ * -------------------------------- */
+
+.sectionTitle {
+  font-size: 48px;
+  font-weight: var(--weight-bold);
+  color: var(--color-main-light);
+}
+
+.sectionTitle--sub {
+  font-size: 24px;
+  font-weight: var(--weight-bold);
+}
+
+.highlight {
+  color: var(--color-main-light);
+}
+
+.button {
+  display: block;
+  width: 286px;
+  height: 60px;
+  max-width: 100%;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 100px;
+  background-color: #fff;
+  color: var(--color-main-light);
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.16);
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s ease-out;
+}
+.button:lang(en) {
+  font-weight: var(--weight-bold);
+}
+.button:hover,
+.button:focus {
+  box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.16);
+  transform: translateY(1px);
+}
+.button.is-disabled {
+  opacity: 0.37;
+}
+.button--ghost {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.card {
+  position: relative;
+  width: 327px;
+  height: 372px;
+  max-width: 100%;
+  padding-top: 102px;
+  background-color: #fff;
+  box-shadow: 0 16px 30px 0 rgba(0, 0, 0, 0.24);
+  color: var(--color-main-light);
+  text-align: center;
+}
+.card--subColor {
+  color: var(--color-sub);
+}
+.card__title {
+  font-size: 24px;
+  font-weight: var(--weight-bold);
+  margin-bottom: 24px;
+}
+.card__image {
+  width: 70px;
+  position: absolute;
+  top: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.card__description {
+  color: var(--color-text);
+  line-height: 1.7;
+}
+.card__buttonBox {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 124px;
+  padding: 0 20px;
+  background-color: currentColor;
+}
+.card__buttonBox .button {
+  color: currentColor;
+  margin: 32px auto;
+}
+
+/*
+ * Strean Links
+ */
+
+.stream-links-header {
+  font-size: 32px;
+  font-weight: var(--weight-bold);
+  margin-bottom: 16px;
+}
+
+.stream-links {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  grid-gap: 24px;
+}
+
+.stream-link {
+  display: block;
+  font-size: 24px;
+}
+
+/* --------------------------------
+ * about
+ * -------------------------------- */
+.about {
+  padding: 160px 0;
+}
+
+.about__logo {
+  width: 140px;
+  margin-bottom: 50px;
+}
+
+.about__description {
+  margin-top: 26px;
+  font-size: 16px;
+  line-height: 1.7;
+}
+.about__description:lang(ja) {
+  letter-spacing: 1.14px;
+}
+
+/* --------------------------------
+ * speakers
+ * -------------------------------- */
+.speakers {
+  background-color: var(--color-background);
+  padding: 80px 24px;
+}
+
+.speakers .sectionTitle {
+  margin-bottom: 64px;
+  color: var(--color-speaker);
+}
+
+.speakers__list,
+.speakers__list--guest {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 952px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.speakers__list li,
+.speakers__list--guest li {
+  margin: 0 auto 50px;
+}
+.speakers__list li a {
+  color: var(--color-speaker);
+  text-decoration: none;
+}
+.speakers__list--guest li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.speaker__image {
+  width: 180px;
+  height: 180px;
+  margin: 0 20px 24px;
+}
+
+.speaker__name {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+.speaker__company {
+  font-size: 14px;
+  margin: 0 auto;
+  line-height: 1.4;
+}
+.speakers__list .speaker__company {
+  width: 160px;
+}
+
+.speakers__list--guest {
+  position: relative;
+  margin-bottom: 94px;
+  color: #fff;
+}
+.speakers__list--guest::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100vw;
+  left: 50%;
+  bottom: 0;
+  height: 65%;
+  transform: translateX(-50%);
+  background-color: var(--color-main-light);
+  z-index: 0;
+}
+.speakers__list--guest li {
+  position: relative;
+  z-index: 1;
+}
+
+.speakers__list--guest .speaker__image {
+  width: 220px;
+  height: 220px;
+}
+
+.speakers__list--guest .speaker__name {
+  font-size: 24px;
+}
+
+.speakers__list--guest .speaker__company {
+  font-size: 18px;
+}
+
+/* --------------------------------
+ * timetable
+ * -------------------------------- */
+.timetable {
+  padding: 160px 24px 0;
+}
+
+.timetable .sectionTitle {
+  margin-bottom: 64px;
+}
+
+/* --------------------------------
+ * sponsors
+ * -------------------------------- */
+.sponsors {
+  padding-bottom: 96px;
+}
+
+.sponsors .sectionTitle {
+  padding-top: 160px;
+  color: var(--color-main-light);
+  margin-bottom: 64px;
+}
+
+.sponsors .sponsors__note {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #8e9299;
+  display: block;
+  font-weight: normal;
+}
+
+.sponsors__list,
+.sponsors__list--community {
+  max-width: 980px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0 auto;
+}
+
+.sponsors__list li {
+  margin: 0 auto 40px;
+}
+
+.sponsor {
+  width: 300px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.16);
+  border-radius: 8px;
+  margin: 0 auto;
+  transition: all 0.2s ease-out;
+}
+.sponsor:hover {
+  transform: translateY(2px);
+  box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.16);
+}
+
+.sponsor img {
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.sponsor__wanted {
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 24px auto;
+  font-weight: bold;
+}
+
+.sponsor__wanted br {
+  display: none;
+}
+
+.sponsors .button {
+  background-color: var(--color-main-light);
+  color: #fff;
+  margin: 0 auto;
+}
+
+.sponsors__list--community {
+  align-items: center;
+  justify-content: center;
+}
+
+.sponsors__list--community li {
+  margin: 0 32px 64px;
+}
+
+/* ================================
+ * SP
+ * ================================ */
+@media (max-width: 667px) {
+  /* --------------------------------
+   * components
+   * -------------------------------- */
+
+  .sectionTitle {
+    font-size: 24px;
+  }
+
+  .sectionTitle--sub {
+    font-size: 16px;
+  }
+
+  /*
+   * Strean Links
+   */
+
+  .stream-links {
+    grid-column-gap: 8px;
+  }
+
+  /* --------------------------------
+   * about
+   * -------------------------------- */
+  .about {
+    padding: 80px 20px;
+  }
+
+  .about__logo {
+    width: 80px;
+    margin-bottom: 28px;
+  }
+
+  .about__description {
+    margin-top: 24px;
+    font-size: 14px;
+  }
+  .about__description:lang(ja) {
+    letter-spacing: initial;
+  }
+
+  /* --------------------------------
+   * speakers
+   * -------------------------------- */
+  .speakers {
+    padding: 40px 0;
+  }
+
+  .speakers .sectionTitle {
+    margin-bottom: 24px;
+  }
+
+  .speakers__list,
+  .speakers__list--guest {
+    width: 100%;
+  }
+  .speakers__list li,
+  .speakers__list--guest li {
+    margin-bottom: 32px;
+  }
+
+  .speakers__list .speaker__image,
+  .speakers__list--guest .speaker__image {
+    width: 120px;
+    height: 120px;
+    margin: 0 20px 16px;
+  }
+
+  .speaker__name {
+    font-size: 14px;
+  }
+
+  .speaker__company {
+    font-size: 12px;
+    width: 140px;
+  }
+
+  .speakers__list--guest {
+    margin-bottom: 40px;
+  }
+  .speakers__list--guest::after {
+    height: 70%;
+  }
+
+  .speakers__list--guest .speaker__name {
+    font-size: 18px;
+  }
+
+  .speakers__list--guest .speaker__company {
+    font-size: 14px;
+  }
+
+  /* --------------------------------
+   * timetable
+   * -------------------------------- */
+  .timetable {
+    padding: 80px 16px 0;
+  }
+
+  .timetable .sectionTitle {
+    margin-bottom: 32px;
+  }
+
+  /* --------------------------------
+   * Sponsors
+   * -------------------------------- */
+  .sponsors {
+    padding-bottom: 16px;
+  }
+
+  .sponsors .sectionTitle {
+    padding-top: 80px;
+    margin-bottom: 32px;
+  }
+
+  .sponsors .sponsors__note {
+    font-size: 12px;
+  }
+
+  .sponsors__list li {
+    margin-bottom: 16px;
+  }
+
+  .sponsor {
+    width: calc(100vw - 32px);
+  }
+
+  .sponsor__wanted br {
+    display: block;
+  }
+}

@@ -1,29 +1,29 @@
-<router-outlet></router-outlet>
-<footer class="footer inverse">
-  <section class="followUs">
-    <p class="followUs__text" i18n="@@twitter">Get updates on Twitter!</p>
-    <div class="followUs__twitterButton">
-      <a href="https://twitter.com/ng_japan?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @ng_japan</a>
-    </div>
-  </section>
-  <nav class="footer__nav">
+<header>
+  <app-logo class="logo"></app-logo>
+  <app-header-menu class="headerMenu"></app-header-menu>
+</header>
+
+<main><router-outlet></router-outlet></main>
+
+<footer>
+  <nav class="footerNav">
     <ul>
       <li>
-        <a href="https://goo.gl/forms/utt8Dv4TIpHEcMMa2" target="_blank" rel="noreferrer noopener">Contact</a>
+        <a
+          href="https://goo.gl/forms/BPxgGhNhdU803JDP2"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          Contact
+        </a>
       </li>
-      <li>
-        <a i18n-href href="/coc-en.html" target="_blank">Code of Conduct</a>
-      </li>
-      <li>
-        <a href="/2017/" target="_blank">2017</a>
-      </li>
-      <li>
-        <a href="/2016/" target="_blank">2016</a>
-      </li>
-      <li>
-        <a href="/2015/" target="_blank">2015</a>
-      </li>
+      <li><a href="/coc.html" target="_blank">行動規範</a></li>
+      <li><a href="/coc-en.html" target="_blank">Code of Conduct</a></li>
+      <li><a href="https://2018.ngjapan.org/" target="_blank">2018</a></li>
+      <li><a href="https://2017.ngjapan.org/" target="_blank">2017</a></li>
+      <li><a href="https://2016.ngjapan.org/" target="_blank">2016</a></li>
+      <li><a href="https://2015.ngjapan.org/" target="_blank">2015</a></li>
     </ul>
   </nav>
-  <p>© 2018 Angular Japan User Group</p>
+  <p>© 2019 Angular Japan User Group</p>
 </footer>

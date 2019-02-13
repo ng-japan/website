@@ -1,42 +1,28 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { LayoutModule } from '@angular/cdk/layout';
 import { NgModule } from '@angular/core';
-
-import { AppRoutingModule } from './app-routing.module';
-
+import { BrowserModule } from '@angular/platform-browser';
 import { ServiceWorkerModule } from '@angular/service-worker';
-import { AppComponent } from './app.component';
-import { TopComponent } from './top/top.component';
-import { SpeakersComponent } from './speakers/speakers.component';
-import { SessionsComponent } from './sessions/sessions.component';
-
-import { HeaderComponent } from './header/header.component';
-import { SubHeaderComponent } from './sub-header/sub-header.component';
-import { LogoComponent } from './logo/logo.component';
-import { TimetableComponent } from './timetable/timetable.component';
-import { TimetableCardComponent } from './timetable-card/timetable-card.component';
-import { SpeakerAvatarComponent } from './speaker-avatar/speaker-avatar.component';
-
 import { environment } from '../environments/environment';
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { HeaderMenuComponent } from './components/header-menu/header-menu.component';
+import { LogoComponent } from './components/logo/logo.component';
+import { SharedModule } from './shared/shared.module';
+import { TopModule } from './pages/top/top.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    TopComponent,
-    HeaderComponent,
-    SubHeaderComponent,
-    LogoComponent,
-    TimetableComponent,
-    TimetableCardComponent,
-    SpeakersComponent,
-    SessionsComponent,
-    SpeakerAvatarComponent,
-  ],
+  declarations: [AppComponent, LogoComponent, HeaderMenuComponent],
   imports: [
-    BrowserModule.withServerTransition({ appId: 'serverApp' }),
+    BrowserModule,
     AppRoutingModule,
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production, scope: environment.swScope }),
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production
+    }),
+    LayoutModule,
+    SharedModule,
+    TopModule // Initial Page (Eager Loading)
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

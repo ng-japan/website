@@ -1,0 +1,23 @@
+:host {
+  display: block;
+  position: relative;
+}
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url('/assets/images/hero-background.jpg') no-repeat;
+  background-size: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.66);
+}

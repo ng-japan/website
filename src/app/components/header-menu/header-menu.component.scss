@@ -1,0 +1,74 @@
+.headerNav ul {
+  display: flex;
+
+  .navLink {
+    color: currentColor;
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 18px;
+    text-decoration: none;
+    transition: all 0.3s ease-out;
+  }
+}
+
+.navLink:focus,
+.navLink:hover,
+.navLink.is-active {
+  color: currentColor;
+}
+
+.menuButton {
+  color: currentColor;
+  appearance: none;
+  border: none;
+  background-color: transparent;
+}
+
+.menuPane {
+  display: block;
+  position: fixed;
+  width: 100%;
+  padding: 32px;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  background-color: #fff;
+  transition: transform 0.2s ease-out;
+  z-index: 20;
+  transform-origin: right top;
+  transform: rotate(-90deg);
+
+  &.isOpen {
+    transform: rotate(0deg);
+  }
+
+  .closeButton {
+    position: absolute;
+    right: 18px;
+    top: 25px;
+    appearance: none;
+    border: none;
+    background-color: transparent;
+  }
+
+  .headerNav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    li:not(:last-child) {
+      margin-bottom: 32px;
+    }
+
+    .navLink {
+      color: var(--color-main-light);
+      display: inline-block;
+      padding: 0 20px;
+      font-size: 24px;
+      letter-spacing: 1.26px;
+      text-decoration: none;
+      transition: all 0.3s ease-out;
+    }
+  }
+}

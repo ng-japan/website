@@ -1,0 +1,52 @@
+header {
+  position: absolute;
+  width: 100%;
+  height: 104px;
+  background: transparent;
+  color: var(--color-text-contrast);
+  display: flex;
+  align-items: center;
+  padding: 0 calc((100% - 1200px) / 2);
+  z-index: 10;
+  transition: all 0.3s ease-out;
+
+  .logo {
+    color: var(--color-main-light);
+    margin-right: auto;
+  }
+
+  .headerMenu {
+    color: var(--color-text-contrast);
+  }
+}
+
+@media (max-width: 667px) {
+  header {
+    height: 70px;
+    padding: 0 16px;
+    justify-content: space-between;
+
+    .logo {
+      margin: 0;
+    }
+  }
+}
+
+footer {
+  background-color: #1d212b;
+  padding: 32px 16px;
+  color: var(--color-text-contrast);
+
+  a {
+    color: var(--color-text-contrast);
+  }
+
+  .footerNav {
+    margin-bottom: 12px;
+
+    li {
+      display: inline;
+      margin-right: 6px;
+    }
+  }
+}

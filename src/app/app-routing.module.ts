@@ -1,19 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { TopComponent } from './top/top.component';
-import { SpeakersComponent } from './speakers/speakers.component';
-import { SessionsComponent } from './sessions/sessions.component';
-
-const routes: Routes = [
-  { path: '', component: TopComponent },
-  { path: 'en', component: TopComponent },
-  { path: 'speakers', component: SpeakersComponent },
-  // { path: 'sessions', component: SessionsComponent },
-];
+const routes: Routes = [];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [
+    RouterModule.forRoot(routes, {
+      anchorScrolling: 'enabled'
+    })
+  ],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
