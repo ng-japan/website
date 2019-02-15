@@ -4,7 +4,7 @@
   <h1 class="title">{{ eventTitle }}</h1>
   <p class="subtitle">{{ eventSubtitle }}</p>
   <p class="information">
-    {{ eventStartDate | date: 'yyyy.MM.dd' }} - {{ eventVenue }}<br />
+    {{ eventStartDate | date: 'yyyy.MM.dd' : '+0900' }} - {{ eventVenue }}<br />
     <span>{{ eventVenueLocation }}</span>
   </p>
 
