@@ -42,7 +42,13 @@ export class EventInfoService {
   }
 
   isCallingForSponsors(date: DateTime) {
-    // TBD
-    return false;
+    return (
+      DateTime.fromObject({
+        year: 2019,
+        month: 7,
+        day: 12,
+        zone: 'Asia/Tokyo'
+      }).diff(date, 'minutes').minutes > 0
+    );
   }
 }
