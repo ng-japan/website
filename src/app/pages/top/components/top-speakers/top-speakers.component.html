@@ -1,0 +1,23 @@
+<ul class="speakerList featured">
+  <li class="speakerListItem" *ngFor="let speaker of featuredSpeakers">
+    <app-speaker-avatar class="avatar" [isFeatured]="true" [speaker]="speaker">
+    </app-speaker-avatar>
+    <div class="info">
+      <h3 class="name">{{ speaker.fullName }}</h3>
+      <div class="tagLine">{{ speaker.tagLine }}</div>
+    </div>
+  </li>
+</ul>
+
+<div class="comingSoon">Coming soon...</div>
+
+<!-- <ul class="speakerList">
+  <li class="speakerListItem" *ngFor="let speaker of sessionSpeakers">
+    <app-speaker-avatar class="avatar" [speaker]="speaker">
+    </app-speaker-avatar>
+    <div class="info">
+      <h3 class="name">{{ speaker.fullName }}</h3>
+      <div class="tagLine">{{ speaker.tagLine }}</div>
+    </div>
+  </li>
+</ul> -->

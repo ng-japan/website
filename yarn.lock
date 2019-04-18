@@ -234,6 +234,11 @@
   dependencies:
     tslib "^1.9.0"
 
+"@lacolaco/reactive-store@^3.0.2":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@lacolaco/reactive-store/-/reactive-store-3.0.2.tgz#98e6080c3fd547e00f3e8fa789f09e584de90f1d"
+  integrity sha512-vVkgUYmHinDkKco3hlG0oXh2JYEoxCQw0Kg3A8GW3d92q8REgpt7FPG9wsj9WYn1YdUIA5fON6QL/2hB9lbsWw==
+
 "@ngtools/webpack@7.2.2":
   version "7.2.2"
   resolved "https://registry.yarnpkg.com/@ngtools/webpack/-/webpack-7.2.2.tgz#361d877f01feae800a58901b066b46539e1fe0e3"
