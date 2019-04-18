@@ -6,6 +6,14 @@
   # Default build command.
   command = "npm run build"
 
+# Disable NGSW
+
+[[redirects]]
+  from = "/ngsw.json"
+  to = "/notfound"
+  force = true
+  status = 404
+
 # SPA Fallbacks
 
 [[redirects]]
