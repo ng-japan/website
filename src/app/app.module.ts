@@ -14,14 +14,14 @@ import { TopModule } from './pages/top/top.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ServiceWorkerModule.register('ngsw-worker.js', {
-      enabled: false,
+    ServiceWorkerModule.register('safety-worker.js', {
+      enabled: true,
     }),
     LayoutModule,
     SharedModule,
-    TopModule // Initial Page (Eager Loading)
+    TopModule, // Initial Page (Eager Loading)
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {}
