@@ -1,12 +1,20 @@
-/* --------------------------------
- * components
- * -------------------------------- */
+section {
+  margin-top: 64px;
+}
 
 .sectionTitle {
   font-size: 48px;
   font-weight: var(--weight-bold);
+}
+
+#about .sectionTitle {
+  margin: 32px 0;
   color: var(--color-main-light);
 }
+
+/* --------------------------------
+ * components
+ * -------------------------------- */
 
 .sectionTitle--sub {
   font-size: 24px;
@@ -15,41 +23,6 @@
 
 .highlight {
   color: var(--color-main-light);
-}
-
-.button {
-  display: block;
-  width: 286px;
-  height: 60px;
-  max-width: 100%;
-  line-height: 60px;
-  text-align: center;
-  border-radius: 100px;
-  background-color: #fff;
-  color: var(--color-main-light);
-  font-size: 20px;
-  font-weight: bold;
-  box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.16);
-  outline: none;
-  cursor: pointer;
-  text-decoration: none;
-  transition: all 0.2s ease-out;
-}
-.button:lang(en) {
-  font-weight: var(--weight-bold);
-}
-.button:hover,
-.button:focus {
-  box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.16);
-  transform: translateY(1px);
-}
-.button.is-disabled {
-  opacity: 0.37;
-}
-.button--ghost {
-  background: transparent;
-  border: 2px solid #fff;
-  color: #fff;
 }
 
 .card {
@@ -119,27 +92,6 @@
 }
 
 /* --------------------------------
- * about
- * -------------------------------- */
-.about {
-  padding: 160px 0;
-}
-
-.about__logo {
-  width: 140px;
-  margin-bottom: 50px;
-}
-
-.about__description {
-  margin-top: 26px;
-  font-size: 16px;
-  line-height: 1.7;
-}
-.about__description:lang(ja) {
-  letter-spacing: 1.14px;
-}
-
-/* --------------------------------
  * speakers
  * -------------------------------- */
 .speakers {
@@ -175,23 +127,6 @@
   text-decoration: none;
 }
 
-.speaker__image {
-  width: 180px;
-  height: 180px;
-  margin: 0 20px 24px;
-}
-
-.speaker__name {
-  font-weight: bold;
-  font-size: 18px;
-  margin-bottom: 4px;
-}
-
-.speaker__company {
-  font-size: 14px;
-  margin: 0 auto;
-  line-height: 1.4;
-}
 .speakers__list .speaker__company {
   width: 160px;
 }
@@ -221,10 +156,6 @@
 .speakers__list--guest .speaker__image {
   width: 220px;
   height: 220px;
-}
-
-.speakers__list--guest .speaker__name {
-  font-size: 24px;
 }
 
 .speakers__list--guest .speaker__company {

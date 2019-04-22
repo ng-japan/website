@@ -3,17 +3,12 @@
   padding: 64px 0;
 }
 
-.sectionTitle {
-  margin-bottom: 32px;
-  font-size: 32px;
-  font-weight: var(--weight-bold);
-}
-
 .videos {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  width: 100%;
   margin-right: -16px;
   margin-bottom: -16px;
 

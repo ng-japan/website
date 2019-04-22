@@ -28,6 +28,7 @@
     "@angular/platform-server": "^7.2.1",
     "@angular/router": "^7.2.1",
     "@angular/service-worker": "^7.2.1",
+    "@lacolaco/reactive-store": "^3.0.2",
     "core-js": "^2.4.1",
     "luxon": "^1.10.0",
     "rxjs": "^6.3.3",
