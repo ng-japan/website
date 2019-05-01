@@ -24,10 +24,22 @@
       height: 180px;
       margin: 0 20px 24px;
     }
+    .label {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 4px;
+
+      > app-speaker-link {
+        margin-left: 4px;
+        width: 16px;
+        height: 16px;
+      }
+    }
     .name {
       font-weight: bold;
       font-size: 18px;
-      margin-bottom: 4px;
     }
     .tagLine {
       width: 160px;
@@ -62,6 +74,18 @@
     .avatar {
       width: 220px;
       height: 220px;
+    }
+    .label {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      > app-speaker-link {
+        margin-left: 4px;
+        width: 16px;
+        height: 16px;
+      }
     }
     .name {
       font-size: 24px;

@@ -73,6 +73,13 @@ export class SpeakerService {
   }
 
   private async initializeSessionSpeakers() {
-    // TODO
+    const speakers = await this.httpClient
+      .get<Speaker[]>('https://sessionize.com/api/v2/72q4wa3q/view/speakers')
+      .toPromise();
+    console.log(speakers);
+    this.store.update(state => ({
+      ...state,
+      sessionSpeakers: speakers
+    }));
   }
 }

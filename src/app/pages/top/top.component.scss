@@ -5,6 +5,11 @@ section {
 .sectionTitle {
   font-size: 48px;
   font-weight: var(--weight-bold);
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 }
 
 #about .sectionTitle {

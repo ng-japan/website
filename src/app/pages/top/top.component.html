@@ -1,12 +1,14 @@
 <app-hero></app-hero>
 
 <section id="about">
-  <h2 class="sectionTitle">What's <span class="highlight">ng-japan</span>?</h2>
+  <h2 class="sectionTitle">
+    <a href="#about">What's <span class="highlight">ng-japan</span>?</a>
+  </h2>
   <app-top-introduction></app-top-introduction>
 </section>
 
-<section id="featuredSpeakers">
-  <h2 class="sectionTitle">Speakers</h2>
+<section id="speakers">
+  <h2 class="sectionTitle"><a href="#speakers">Speakers</a></h2>
   <app-top-speakers
     [featuredSpeakers]="featuredSpeakers$ | async"
     [sessionSpeakers]="sessionSpeakers$ | async"
