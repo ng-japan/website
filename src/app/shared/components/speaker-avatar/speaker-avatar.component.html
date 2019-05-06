@@ -1,17 +1,5 @@
-<ng-container *ngIf="speakerLink; else noLink">
-  <a [href]="speakerLink" target="_blank" rel="noopenner">
-    <div
-      class="avatar"
-      [class.isFeatured]="isFeatured"
-      [ngStyle]="{ 'background-image': 'url(' + speaker.profilePicture + ')' }"
-    ></div>
-  </a>
-</ng-container>
-
-<ng-template #noLink>
-  <div
-    class="avatar"
-    [class.isFeatured]="isFeatured"
-    [ngStyle]="{ 'background-image': 'url(' + speaker.profilePicture + ')' }"
-  ></div>
-</ng-template>
+<div
+  class="avatar"
+  [class.isFeatured]="isFeatured"
+  [ngStyle]="{ 'background-image': 'url(' + speaker.profilePicture + ')' }"
+></div>
