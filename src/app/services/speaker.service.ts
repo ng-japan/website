@@ -41,12 +41,18 @@ export class SpeakerService {
       {
         id: 'F01',
         fullName: 'Miles Malerba',
-        tagLine: 'Angular Material Team',
+        tagLine: 'Angular Components Team',
         profilePicture: 'https://angular.io/generated/images/bios/mmalerba.jpg',
         sessions: [],
-        links: [],
+        links: [
+          {
+            linkType: 'Twitter',
+            url: 'https://twitter.com/milesmalerba',
+            title: 'Twitter'
+          }
+        ],
         // tslint:disable-next-line: max-line-length
-        bio: `Miles is a software engineer on the Angular Material team at Google. In addition to Javascripting he enjoys eating food and ogling cute puppies.`
+        bio: `Miles is a software engineer on the Angular Components team at Google. In addition to Javascripting he enjoys eating food and ogling cute puppies.`
       },
       // Rado Kirov
       {
