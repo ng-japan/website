@@ -9,6 +9,8 @@ import { HeaderMenuComponent } from './components/header-menu/header-menu.compon
 import { LogoComponent } from './components/logo/logo.component';
 import { TopModule } from './pages/top/top.module';
 import { SharedModule } from './shared/shared.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SessionsModule } from './pages/sessions/sessions.module';
 
 @NgModule({
   declarations: [AppComponent, LogoComponent, HeaderMenuComponent],
@@ -21,7 +23,9 @@ import { SharedModule } from './shared/shared.module';
     // }),
     LayoutModule,
     SharedModule,
-    TopModule // Initial Page (Eager Loading)
+    TopModule,
+    BrowserAnimationsModule, // Initial Page (Eager Loading)
+    SessionsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

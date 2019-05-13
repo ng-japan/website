@@ -18,3 +18,22 @@ export interface Speaker {
   sessions: SessionOfSpeaker[];
   links: SpeakerLink[];
 }
+
+export interface SessionCategoryItem {
+  id: number;
+  name: string;
+}
+
+export interface SessionCategory {
+  id: number;
+  name: string;
+  categoryItems: SessionCategoryItem[];
+}
+
+export interface Session {
+  id: string;
+  title: string;
+  description: string;
+  speakers: Array<{ id: string; name: string }>;
+  categories: SessionCategory[];
+}
