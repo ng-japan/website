@@ -35,14 +35,18 @@
 
 .sessionsList {
   list-style-type: none;
-  > :not(:last-child) {
-    margin-bottom: 24px;
-  }
 }
 
 .sessionsListItem {
   > * {
     font-family: var(--font-family);
+  }
+
+  > hr {
+    margin: 32px 0;
+    @media (max-width: 667px) {
+      margin: 24px 0;
+    }
   }
 }
 
