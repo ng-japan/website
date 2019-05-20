@@ -1,0 +1,31 @@
+<div class="pageHeader">
+  <div class="pageTitle">Sessions</div>
+</div>
+
+<div class="sessionsListWrapper">
+  <ng-container *ngIf="sessionsLoading$ | async">
+    <mat-spinner></mat-spinner>
+  </ng-container>
+
+  <ul class="sessionsList">
+    <li
+      class="sessionsListItem"
+      *ngFor="let session of sessions$ | async; last as isLast"
+    >
+      <div class="speakerCard">
+        <div class="sessionHeader">{{ session.title }}</div>
+        <div class="sessionSubheader">
+          <div class="sessionSpeakerName">{{ session.speakers[0].name }}</div>
+          <div class="sessionLanguage">
+            [{{ isEnglishSession(session) ? 'EN' : 'JA' }}]
+          </div>
+        </div>
+        <div
+          class="sessionDescription"
+          [innerHTML]="session.description | htmlstring"
+        ></div>
+      </div>
+      <hr *ngIf="!isLast" />
+    </li>
+  </ul>
+</div>
