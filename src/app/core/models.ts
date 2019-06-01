@@ -17,6 +17,7 @@ export interface Speaker {
   bio: string;
   sessions: SessionOfSpeaker[];
   links: SpeakerLink[];
+  isTopSpeaker: boolean;
 }
 
 export interface SessionCategoryItem {

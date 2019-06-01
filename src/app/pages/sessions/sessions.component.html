@@ -15,7 +15,7 @@
       <div class="speakerCard">
         <div class="sessionHeader">{{ session.title }}</div>
         <div class="sessionSubheader">
-          <div class="sessionSpeakerName">{{ session.speakers[0].name }}</div>
+          <div class="sessionSpeakerName">{{ getSpeakerName(session) }}</div>
           <div class="sessionLanguage">
             [{{ isEnglishSession(session) ? 'EN' : 'JA' }}]
           </div>

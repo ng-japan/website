@@ -23,7 +23,9 @@ export class SpeakerService {
     return this.store.select(state => state.featuredSpeakers);
   }
   get sessionSpeakers$() {
-    return this.store.select(state => state.sessionSpeakers);
+    return this.store.select(state =>
+      state.sessionSpeakers.filter(speaker => !speaker.isTopSpeaker)
+    );
   }
 
   constructor(private httpClient: HttpClient) {}
@@ -52,7 +54,8 @@ export class SpeakerService {
           }
         ],
         // tslint:disable-next-line: max-line-length
-        bio: `Miles is a software engineer on the Angular Components team at Google. In addition to Javascripting he enjoys eating food and ogling cute puppies.`
+        bio: `Miles is a software engineer on the Angular Components team at Google. In addition to Javascripting he enjoys eating food and ogling cute puppies.`,
+        isTopSpeaker: true
       },
       // Rado Kirov
       {
@@ -69,7 +72,8 @@ export class SpeakerService {
           }
         ],
         // tslint:disable-next-line: max-line-length
-        bio: `Rado has been on the Angular Core team since Summer 2014. Before Angular, he worked on the Adsense serving stack, responsible for serving billions of ads daily. Being passionate about open source, he made contributions to Angular as a Google-20% project, before making the fulltime jump. He is a recovering academic; ask him about error-correcting codes from algebraic curves (or don't).`
+        bio: `Rado has been on the Angular Core team since Summer 2014. Before Angular, he worked on the Adsense serving stack, responsible for serving billions of ads daily. Being passionate about open source, he made contributions to Angular as a Google-20% project, before making the fulltime jump. He is a recovering academic; ask him about error-correcting codes from algebraic curves (or don't).`,
+        isTopSpeaker: true
       }
     ];
     this.store.update(state => ({

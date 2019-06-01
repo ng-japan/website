@@ -8,10 +8,10 @@ import { SessionsComponent } from './sessions.component';
     RouterModule.forChild([
       {
         path: '',
-        component: SessionsComponent,
-      },
-    ]),
+        component: SessionsComponent
+      }
+    ])
   ],
-  exports: [RouterModule],
+  exports: [RouterModule]
 })
 export class SessionsRoutingModule {}
