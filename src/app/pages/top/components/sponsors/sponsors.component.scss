@@ -1,0 +1,69 @@
+@import '~@angular/material/theming';
+
+:host {
+  display: block;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.description {
+  padding: 16px 0;
+}
+
+.gradeLabel {
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding-top: 16px;
+  padding-bottom: 24px;
+}
+
+.sponsorsList {
+  max-width: 980px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0 auto;
+
+  li {
+    margin: 0 auto 24px;
+  }
+}
+
+.sponsor {
+  mat-card {
+    @include mat-elevation(2);
+    display: flex;
+    align-items: center;
+  }
+  img {
+    object-fit: contain;
+    width: 100%;
+  }
+}
+
+.gold, .special {
+  mat-card {
+    height: 104px;
+    width: 400px;
+    padding: 16px 64px;
+    @media (max-width: 667px) {
+      width: 90vw;
+    }
+  }
+}
+.silver {
+  mat-card {
+    height: 75px;
+    width: 300px;
+    padding: 8px 48px;
+    @media (max-width: 667px) {
+      width: 90vw;
+    }
+  }
+}
+
