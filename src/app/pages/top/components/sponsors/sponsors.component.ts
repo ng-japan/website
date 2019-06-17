@@ -8,8 +8,7 @@ import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 })
 export class SponsorsComponent {
   imgHeight = {
-    gold: 80,
+    gold: 72,
     silver: 40,
-    special: 80,
   };
 }

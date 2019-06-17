@@ -37,6 +37,8 @@
 .sponsor {
   mat-card {
     @include mat-elevation(2);
+    display: flex;
+    align-items: center;
   }
   img {
     object-fit: contain;
@@ -44,9 +46,11 @@
   }
 }
 
-.gold {
+.gold, .special {
   mat-card {
+    height: 104px;
     width: 400px;
+    padding: 16px 64px;
     @media (max-width: 667px) {
       width: 90vw;
     }
@@ -54,17 +58,12 @@
 }
 .silver {
   mat-card {
-    width: 200px;
+    height: 75px;
+    width: 300px;
+    padding: 8px 48px;
     @media (max-width: 667px) {
       width: 90vw;
     }
   }
 }
-.special {
-  mat-card {
-    width: 400px;
-    @media (max-width: 667px) {
-      width: 90vw;
-    }
-  }
-}
+
