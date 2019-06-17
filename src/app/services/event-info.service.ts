@@ -45,8 +45,8 @@ export class EventInfoService {
     return (
       DateTime.fromObject({
         year: 2019,
-        month: 7,
-        day: 12,
+        month: 6,
+        day: 17,
         zone: 'Asia/Tokyo'
       }).diff(date, 'minutes').minutes > 0
     );
