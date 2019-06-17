@@ -178,90 +178,6 @@ section {
   margin-bottom: 64px;
 }
 
-/* --------------------------------
- * sponsors
- * -------------------------------- */
-.sponsors {
-  padding-bottom: 96px;
-}
-
-.sponsors .sectionTitle {
-  padding-top: 160px;
-  color: var(--color-main-light);
-  margin-bottom: 64px;
-}
-
-.sponsors .sponsors__note {
-  margin-top: 5px;
-  font-size: 14px;
-  color: #8e9299;
-  display: block;
-  font-weight: normal;
-}
-
-.sponsors__list,
-.sponsors__list--community {
-  max-width: 980px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: space-between;
-  list-style-type: none;
-  margin: 0 auto;
-}
-
-.sponsors__list li {
-  margin: 0 auto 40px;
-}
-
-.sponsor {
-  width: 300px;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #fff;
-  box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.16);
-  border-radius: 8px;
-  margin: 0 auto;
-  transition: all 0.2s ease-out;
-}
-.sponsor:hover {
-  transform: translateY(2px);
-  box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.16);
-}
-
-.sponsor img {
-  max-width: 80%;
-  max-height: 80%;
-}
-
-.sponsor__wanted {
-  font-size: 14px;
-  line-height: 1.6;
-  margin: 24px auto;
-  font-weight: bold;
-}
-
-.sponsor__wanted br {
-  display: none;
-}
-
-.sponsors .button {
-  background-color: var(--color-main-light);
-  color: #fff;
-  margin: 0 auto;
-}
-
-.sponsors__list--community {
-  align-items: center;
-  justify-content: center;
-}
-
-.sponsors__list--community li {
-  margin: 0 32px 64px;
-}
-
 /* ================================
  * SP
  * ================================ */
@@ -366,33 +282,5 @@ section {
 
   .timetable .sectionTitle {
     margin-bottom: 32px;
-  }
-
-  /* --------------------------------
-   * Sponsors
-   * -------------------------------- */
-  .sponsors {
-    padding-bottom: 16px;
-  }
-
-  .sponsors .sectionTitle {
-    padding-top: 80px;
-    margin-bottom: 32px;
-  }
-
-  .sponsors .sponsors__note {
-    font-size: 12px;
-  }
-
-  .sponsors__list li {
-    margin-bottom: 16px;
-  }
-
-  .sponsor {
-    width: calc(100vw - 32px);
-  }
-
-  .sponsor__wanted br {
-    display: block;
   }
 }
