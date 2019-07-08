@@ -11,6 +11,7 @@ import { IntroductionComponent } from './components/introduction/introduction.co
 import { HighlightsComponent } from './components/highlights/highlights.component';
 import { TopSpeakersComponent } from './components/top-speakers/top-speakers.component';
 import { SponsorsComponent } from './components/sponsors/sponsors.component';
+import { VideosComponent } from './components/videos/videos.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SponsorsComponent } from './components/sponsors/sponsors.component';
     IntroductionComponent,
     HighlightsComponent,
     TopSpeakersComponent,
-    SponsorsComponent
+    SponsorsComponent,
+    VideosComponent
   ],
   imports: [CommonModule, TopRoutingModule, SharedModule, MatCardModule]
 })

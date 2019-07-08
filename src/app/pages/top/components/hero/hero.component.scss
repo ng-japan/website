@@ -78,4 +78,12 @@ a:not(.button) {
   .information {
     font-size: 20px;
   }
+  .links {
+    flex-direction: column;
+    margin-bottom: -16px;
+    padding: 0 16px;
+    .link {
+      margin-bottom: 16px;
+    }
+  }
 }

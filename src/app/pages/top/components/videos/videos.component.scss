@@ -1,0 +1,14 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.iframeWrapper {
+  margin-top: 16px;
+  width: 600px;
+
+  @media (max-width: 667px) {
+    width: 90vw;
+  }
+}

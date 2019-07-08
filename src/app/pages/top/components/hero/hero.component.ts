@@ -17,6 +17,10 @@ export class HeroComponent {
   eventVenue = this.eventInfo.getVenue();
   eventVenueLocation = this.eventInfo.getVenueLocation();
 
+  showCallForAttendeesLink = this.eventInfo.isCallingForAttendees(
+    DateTime.local()
+  );
+
   showCallForSpeakersLink = this.eventInfo.isCallingForSpeakers(
     DateTime.local()
   );
