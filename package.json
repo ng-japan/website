@@ -11,7 +11,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "format": "prettier --write --single-quote 'src/**/*.{ts,scss,html,css}'"
+    "format": "prettier --write 'src/**/*.{ts,scss,html,css}'"
   },
   "private": true,
   "dependencies": {

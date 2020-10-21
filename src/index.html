@@ -9,7 +9,7 @@
     />
     <title>
       ng-japan - The Angular conference in Tokyo, Japan.
-      日本最大のAngularカンファレンス (2019/7/13)
+      日本最大のAngularカンファレンス (2020/10/17) 今年はオンラインで開催！
     </title>
     <meta property="og:title" content="ng-japan" />
     <meta property="og:url" content="https://ngjapan.org" />
@@ -21,7 +21,7 @@
     />
     <meta
       property="og:description"
-      content="Angular Conference ng-japan 2019-07-13 in Tokyo"
+      content="Angular Conference ng-japan 2020-10-17"
     />
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link
@@ -30,43 +30,7 @@
     />
 
     <script src="https://unpkg.com/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
-    <script>
-      (function(i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        (i[r] =
-          i[r] ||
-          function() {
-            (i[r].q = i[r].q || []).push(arguments);
-          }),
-          (i[r].l = 1 * new Date());
-        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m);
-      })(
-        window,
-        document,
-        'script',
-        'https://www.google-analytics.com/analytics.js',
-        'ga'
-      );
-      ga('create', 'UA-59853299-1', 'auto');
-      ga('send', 'pageview');
 
-      var userAgent = window.navigator.userAgent.toLowerCase();
-      if (
-        userAgent.indexOf('msie') !== -1 ||
-        userAgent.indexOf('trident') !== -1
-      ) {
-        window.document.body.innerHTML = 'お使いのブラウザは対応環境外です。';
-      }
-
-      console.log(
-        atob(
-          'QENvbmZlcmVuY2UoewogIHNlbGVjdG9yOiAnbmctamFwYW4nLAogIHBsYWNlOiAndG9reW8nLAogIHRlbXBsYXRlOiBgPGgxPkhlbGxvIEFuZ3VsYXIhITwvaDE+YAp9KQpjbGFzcyBOZ0phcGFuIHsgeWVhciA9IDIwMTk7IH0='
-        )
-      );
-    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#E23030" />
     <link
@@ -79,5 +43,25 @@
   </head>
   <body>
     <app-root></app-root>
+
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-performance.js"></script>
+
+    <script>
+      var firebaseConfig = {
+        apiKey: 'AIzaSyCgx4EzQBQSY44MvEUahKGisXvApcwBeZA',
+        authDomain: 'ng-japan.firebaseapp.com',
+        databaseURL: 'https://ng-japan.firebaseio.com',
+        projectId: 'ng-japan',
+        storageBucket: 'ng-japan.appspot.com',
+        messagingSenderId: '999333506911',
+        appId: '1:999333506911:web:fce3ec998221a666fc50ea',
+        measurementId: 'G-53F1F4M9VT'
+      };
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+      firebase.performance();
+    </script>
   </body>
 </html>

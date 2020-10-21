@@ -2,7 +2,6 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-// import { ServiceWorkerModule } from '@angular/service-worker';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderMenuComponent } from './components/header-menu/header-menu.component';
@@ -17,9 +16,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    // ServiceWorkerModule.register('ngsw-worker.js', {
-    //   enabled: true,
-    // }),
     LayoutModule,
     SharedModule,
     TopModule,

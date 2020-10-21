@@ -2,39 +2,39 @@ import { Injectable } from '@angular/core';
 import { DateTime } from 'luxon';
 
 @Injectable({
-  providedIn: 'root',
+  providedIn: 'root'
 })
 export class EventInfoService {
   getEventStartDate() {
     return DateTime.fromObject({
-      year: 2019,
-      month: 7,
-      day: 13,
-      zone: 'Asia/Tokyo',
+      year: 2020,
+      month: 10,
+      day: 17,
+      zone: 'Asia/Tokyo'
     });
   }
 
   getVenue() {
-    return 'Google Japan';
+    return 'YouTube Live';
   }
 
   getVenueLocation() {
-    return 'Tokyo, Roppongi Hills';
+    return '';
   }
 
   getTitle() {
-    return `ng-japan 2019`;
+    return `mini ng-japan 2020`;
   }
 
   getSubtitle() {
-    return `"World x Angular"`;
+    return ``;
   }
 
   isCallingForAttendees(date: DateTime) {
     return (
       this.getEventStartDate()
         .minus({
-          day: 3,
+          day: 3
         })
         .diff(date, 'minutes').minutes > 0
     );
@@ -46,7 +46,7 @@ export class EventInfoService {
         year: 2019,
         month: 3,
         day: 16,
-        zone: 'Asia/Tokyo',
+        zone: 'Asia/Tokyo'
       }).diff(date, 'minutes').minutes > 0
     );
   }
@@ -57,7 +57,7 @@ export class EventInfoService {
         year: 2019,
         month: 6,
         day: 17,
-        zone: 'Asia/Tokyo',
+        zone: 'Asia/Tokyo'
       }).diff(date, 'minutes').minutes > 0
     );
   }
