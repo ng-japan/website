@@ -46,6 +46,7 @@
     "@types/node": "~6.0.60",
     "axios": "^0.18.0",
     "codelyzer": "^5.0.1",
+    "firebase-tools": "^8.13.0",
     "jasmine-core": "~2.8.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~2.0.0",
