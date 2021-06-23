@@ -1,4 +1,4 @@
-@import '~@angular/material/theming';
+@use '~@angular/material' as mat;
 
 :host {
   display: block;
@@ -36,7 +36,7 @@
 
 .sponsor {
   mat-card {
-    @include mat-elevation(2);
+    @include mat.elevation(2);
     display: flex;
     align-items: center;
   }
