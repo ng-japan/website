@@ -10,21 +10,21 @@ export interface State {
 
 export const initialValue: State = {
   featuredSpeakers: [],
-  sessionSpeakers: []
+  sessionSpeakers: [],
 };
 
 @Injectable({ providedIn: 'root' })
 export class SpeakerService {
   private store = new Store<State>({
-    initialValue
+    initialValue,
   });
 
   get featuredSpeakers$() {
-    return this.store.select(state => state.featuredSpeakers);
+    return this.store.select((state) => state.featuredSpeakers);
   }
   get sessionSpeakers$() {
-    return this.store.select(state =>
-      state.sessionSpeakers.filter(speaker => !speaker.isTopSpeaker)
+    return this.store.select((state) =>
+      state.sessionSpeakers.filter((speaker) => !speaker.isTopSpeaker)
     );
   }
 

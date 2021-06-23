@@ -10,20 +10,20 @@ export interface State {
 
 export const initialValue: State = {
   sessions: [],
-  sessionsLoading: 0
+  sessionsLoading: 0,
 };
 
 @Injectable({ providedIn: 'root' })
 export class SessionService {
   private store = new Store<State>({
-    initialValue
+    initialValue,
   });
 
   get sessions$() {
-    return this.store.select(state => state.sessions);
+    return this.store.select((state) => state.sessions);
   }
   get sessionsLoading$() {
-    return this.store.select(state => state.sessionsLoading > 0);
+    return this.store.select((state) => state.sessionsLoading > 0);
   }
 
   constructor(private httpClient: HttpClient) {}

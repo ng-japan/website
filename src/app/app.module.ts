@@ -19,9 +19,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     LayoutModule,
     SharedModule,
     TopModule,
-    BrowserAnimationsModule // Initial Page (Eager Loading)
+    BrowserAnimationsModule, // Initial Page (Eager Loading)
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {}

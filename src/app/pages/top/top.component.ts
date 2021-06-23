@@ -5,7 +5,7 @@ import { SpeakerService } from '../../services/speaker.service';
 
 @Component({
   templateUrl: './top.component.html',
-  styleUrls: ['./top.component.scss']
+  styleUrls: ['./top.component.scss'],
 })
 export class TopComponent implements OnInit {
   featuredSpeakers$: Observable<Speaker[]>;

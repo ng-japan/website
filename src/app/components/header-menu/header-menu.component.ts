@@ -4,7 +4,7 @@ import {
   Component,
   OnDestroy,
   OnInit,
-  ChangeDetectorRef
+  ChangeDetectorRef,
 } from '@angular/core';
 import { Subject } from 'rxjs';
 import { map, takeUntil } from 'rxjs/operators';
@@ -13,7 +13,7 @@ import { map, takeUntil } from 'rxjs/operators';
   selector: 'app-header-menu',
   templateUrl: './header-menu.component.html',
   styleUrls: ['./header-menu.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HeaderMenuComponent implements OnInit, OnDestroy {
   showMenuButton = false;
@@ -31,9 +31,9 @@ export class HeaderMenuComponent implements OnInit, OnDestroy {
       .observe(`(max-width: 667px)`)
       .pipe(
         takeUntil(this.onDestroy$),
-        map(state => state.matches)
+        map((state) => state.matches)
       )
-      .subscribe(isSmallDevice => {
+      .subscribe((isSmallDevice) => {
         this.showMenuButton = isSmallDevice;
         this.cdRef.markForCheck();
       });

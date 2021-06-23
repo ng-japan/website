@@ -2,7 +2,7 @@ import {
   Component,
   OnInit,
   ChangeDetectionStrategy,
-  Input
+  Input,
 } from '@angular/core';
 import { Speaker } from '../../../../core/models';
 
@@ -10,7 +10,7 @@ import { Speaker } from '../../../../core/models';
   selector: 'app-top-speakers',
   templateUrl: './top-speakers.component.html',
   styleUrls: ['./top-speakers.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class TopSpeakersComponent {
   @Input()

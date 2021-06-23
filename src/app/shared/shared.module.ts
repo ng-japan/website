@@ -10,8 +10,8 @@ import { HtmlstringPipe } from './pipes/htmlstring.pipe';
     CommonModule,
     SpeakerAvatarComponent,
     SpeakerLinkComponent,
-    HtmlstringPipe
+    HtmlstringPipe,
   ],
-  imports: [CommonModule]
+  imports: [CommonModule],
 })
 export class SharedModule {}

@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { DateTime } from 'luxon';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class EventInfoService {
   getEventStartDate() {
@@ -10,7 +10,7 @@ export class EventInfoService {
       year: 2020,
       month: 10,
       day: 17,
-      zone: 'Asia/Tokyo'
+      zone: 'Asia/Tokyo',
     });
   }
 
@@ -34,7 +34,7 @@ export class EventInfoService {
     return (
       this.getEventStartDate()
         .minus({
-          day: 3
+          day: 3,
         })
         .diff(date, 'minutes').minutes > 0
     );
@@ -46,7 +46,7 @@ export class EventInfoService {
         year: 2019,
         month: 3,
         day: 16,
-        zone: 'Asia/Tokyo'
+        zone: 'Asia/Tokyo',
       }).diff(date, 'minutes').minutes > 0
     );
   }
@@ -57,7 +57,7 @@ export class EventInfoService {
         year: 2019,
         month: 6,
         day: 17,
-        zone: 'Asia/Tokyo'
+        zone: 'Asia/Tokyo',
       }).diff(date, 'minutes').minutes > 0
     );
   }

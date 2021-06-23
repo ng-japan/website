@@ -5,7 +5,7 @@ import { Speaker } from '../../../core/models';
   selector: 'app-speaker-avatar',
   templateUrl: './speaker-avatar.component.html',
   styleUrls: ['./speaker-avatar.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SpeakerAvatarComponent {
   @Input() speaker: Speaker;

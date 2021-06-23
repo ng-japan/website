@@ -5,7 +5,7 @@ import { Speaker } from '../../../core/models';
   selector: 'app-speaker-link',
   templateUrl: './speaker-link.component.html',
   styleUrls: ['./speaker-link.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SpeakerLinkComponent {
   @Input() speaker: Speaker;
@@ -16,7 +16,7 @@ export class SpeakerLinkComponent {
       return null;
     }
     const twitter = this.speaker.links.find(
-      link => link.linkType === 'Twitter'
+      (link) => link.linkType === 'Twitter'
     );
     if (twitter) {
       return twitter.url;
