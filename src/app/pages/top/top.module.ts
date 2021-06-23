@@ -22,8 +22,8 @@ import { VideosComponent } from './components/videos/videos.component';
     HighlightsComponent,
     TopSpeakersComponent,
     SponsorsComponent,
-    VideosComponent
+    VideosComponent,
   ],
-  imports: [CommonModule, TopRoutingModule, SharedModule, MatCardModule]
+  imports: [CommonModule, TopRoutingModule, SharedModule, MatCardModule],
 })
 export class TopModule {}

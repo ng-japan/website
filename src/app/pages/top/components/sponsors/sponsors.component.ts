@@ -4,11 +4,11 @@ import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
   selector: 'app-top-sponsors',
   templateUrl: './sponsors.component.html',
   styleUrls: ['./sponsors.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SponsorsComponent {
   imgHeight = {
     gold: 72,
-    silver: 40
+    silver: 40,
   };
 }

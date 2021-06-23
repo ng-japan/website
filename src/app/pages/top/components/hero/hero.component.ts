@@ -6,7 +6,7 @@ import { EventInfoService } from '../../../../services/event-info.service';
   selector: 'app-hero',
   templateUrl: './hero.component.html',
   styleUrls: ['./hero.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HeroComponent {
   constructor(private eventInfo: EventInfoService) {}
